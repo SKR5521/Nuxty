@@ -117,7 +117,7 @@ export default {
   data() {
     return {
       drawer: false,
-      Home: { icon: "dashboard", text: "Home", route: "/Home" },
+      Home: { icon: "dashboard", text: "Home", route: "/" },
       Process: { icon: "folder", text: "Process", route: "/Process" },
       Oldak: {
         icon: "home",
