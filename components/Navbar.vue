@@ -1,0 +1,135 @@
+<template>
+  <nav>
+    <v-toolbar flat app >
+      <v-toolbar-side-icon class="purple--text" @click="drawer=!drawer"></v-toolbar-side-icon>
+      <v-toolbar-title class="text-uppercase black--text">
+        <span class="font-weight-bold">AAKRUTI</span>
+        <span class="font-weight-light">2019</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat  router :to="Home.route">
+          <v-icon left>{{Home.icon}}</v-icon>
+          <span>{{Home.text}}</span>
+        </v-btn>
+        <v-btn flat  router :to="Process.route">
+          <v-icon left>{{Process.icon}}</v-icon>
+          <span>{{Process.text}}</span>
+          
+        </v-btn>
+
+        <v-menu open-on-hover bottom offset-y>
+          <template v-slot:activator="{ on }">
+            <v-btn flat  v-on="on">
+              <v-icon left>{{Oldak.icon}}</v-icon>
+              <span>{{Oldak.text}}</span>
+              <v-icon>keyboard_arrow_down</v-icon>
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-tile v-for="(item, index) in Oldak.items" :key="index" route :to="item.route">
+              <v-list-tile-title>{{ item.text }}</v-list-tile-title>
+            </v-list-tile>
+          </v-list>
+        </v-menu>
+        <v-btn flat  router :to="Gallery.route">
+          <v-icon left>{{Gallery.icon}}</v-icon>
+          <span>{{Gallery.text}}</span>
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-navigation-drawer v-model="drawer" temporary app class="white">
+      <div class="text-uppercase black--text text-xs-center py-2">
+        <span class="font-weight-bold display-1">AAKRUTI</span>
+        <span class="font-weight-light display-1">2019</span>
+      </div>
+
+      <v-list>
+        <v-list-tile active-class="teal lighten-4" avatar router :to="Home.route">
+          <v-list-tile-avatar>
+            <v-icon class="grey--text">{{ Home.icon }}</v-icon>
+          </v-list-tile-avatar>
+
+          <v-list-tile-content>
+            <v-list-tile-title class="black--text">{{Home.text}}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+
+        <v-divider></v-divider>
+
+        <v-list-tile active-class="teal lighten-4" avatar router :to="Process.route">
+          <v-list-tile-avatar>
+            <v-icon class="grey--text">{{ Process.icon }}</v-icon>
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title class="black--text">{{Process.text}}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+
+        <v-divider></v-divider>
+
+        <v-list-group>
+          <template v-slot:activator>
+            <v-list-tile>
+              <v-list-tile-avatar>
+                <v-icon class="grey--text">{{ Oldak.icon }}</v-icon>
+              </v-list-tile-avatar>
+              <v-list-tile-content>
+                <v-list-tile-title>{{ Oldak.text }}</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </template>
+
+          <v-list-tile
+            v-for="subItem in Oldak.items"
+            :key="subItem.title"
+            router
+            :to="subItem.route"
+            active-class="teal lighten-4"
+          >
+            <v-list-tile-content>
+              <v-list-tile-title>{{ subItem.text }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list-group>
+
+        <v-divider></v-divider>
+
+        <v-list-tile active-class="teal lighten-4" avatar router :to="Gallery.route">
+          <v-list-tile-avatar>
+            <v-icon class="grey--text">{{ Gallery.icon }}</v-icon>
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title class="black--text">{{Gallery.text}}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+
+        <v-divider></v-divider>
+        
+      </v-list>
+    </v-navigation-drawer>
+  </nav>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      drawer: false,
+      Home: { icon: "dashboard", text: "Home", route: "/Home" },
+      Process: { icon: "folder", text: "Process", route: "/Process" },
+      Oldak: {
+        icon: "home",
+        text: "Journey So Far",
+        items: [
+          // { text: "AAKRUTI2018", route: "/Previous/18" },
+          { text: "AAKRUTI2017", route: "/Previous/17" },
+          { text: "AAKRUTI2016", route: "/Previous/16" }
+        ]
+      },
+      Gallery: { icon: "insert_photo", text: "Gallery", route: "/Gallery" }
+    };
+  }
+};
+</script>
