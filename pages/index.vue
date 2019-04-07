@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Homehero />
  
   <v-container>
     
@@ -69,9 +70,13 @@
 </template>
 
 <script>
+import Homehero from '@/components/HomeHero'
 
 
 export default {
+  components: {
+    Homehero
+  },
 
   data: () => ({
     ecosystem: [

@@ -1,11 +1,11 @@
 <template>
   <div>
     <navbar />
-    <v-container mt-5>
-    <v-card class="elevation-15" style="border-radius:50px;"> 
+    <!-- <v-container mt-5>
+    <v-card class="elevation-15" style="border-radius:50px;">  -->
     <nuxt/>
-    </v-card>
-    </v-container>
+    <!-- </v-card>
+    </v-container> -->
     <Footer />
   </div>
 </template>

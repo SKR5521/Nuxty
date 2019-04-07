@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-toolbar flat app >
+    <v-toolbar flat app dense>
       <v-toolbar-side-icon class="purple--text" @click="drawer=!drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase black--text">
         <span class="font-weight-bold">AAKRUTI</span>
