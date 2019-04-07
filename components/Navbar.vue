@@ -8,19 +8,18 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat  router :to="Home.route">
+        <v-btn flat router :to="Home.route">
           <v-icon left>{{Home.icon}}</v-icon>
           <span>{{Home.text}}</span>
         </v-btn>
-        <v-btn flat  router :to="Process.route">
+        <v-btn flat router :to="Process.route">
           <v-icon left>{{Process.icon}}</v-icon>
           <span>{{Process.text}}</span>
-          
         </v-btn>
 
         <v-menu open-on-hover bottom offset-y>
           <template v-slot:activator="{ on }">
-            <v-btn flat  v-on="on">
+            <v-btn flat v-on="on">
               <v-icon left>{{Oldak.icon}}</v-icon>
               <span>{{Oldak.text}}</span>
               <v-icon>keyboard_arrow_down</v-icon>
@@ -33,7 +32,7 @@
             </v-list-tile>
           </v-list>
         </v-menu>
-        <v-btn flat  router :to="Gallery.route">
+        <v-btn flat router :to="Gallery.route">
           <v-icon left>{{Gallery.icon}}</v-icon>
           <span>{{Gallery.text}}</span>
         </v-btn>
@@ -106,7 +105,6 @@
         </v-list-tile>
 
         <v-divider></v-divider>
-        
       </v-list>
     </v-navigation-drawer>
   </nav>
@@ -117,19 +115,19 @@ export default {
   data() {
     return {
       drawer: false,
-      Home: { icon: "dashboard", text: "Home", route: "/" },
-      Process: { icon: "folder", text: "Process", route: "/Process" },
+      Home: { icon: 'dashboard', text: 'Home', route: '/' },
+      Process: { icon: 'folder', text: 'Process', route: '/Process' },
       Oldak: {
-        icon: "home",
-        text: "Journey So Far",
+        icon: 'home',
+        text: 'Journey So Far',
         items: [
           // { text: "AAKRUTI2018", route: "/Previous/18" },
-          { text: "AAKRUTI2017", route: "/Previous/17" },
-          { text: "AAKRUTI2016", route: "/Previous/16" }
+          { text: 'AAKRUTI2017', route: '/Previous/17' },
+          { text: 'AAKRUTI2016', route: '/Previous/16' }
         ]
       },
-      Gallery: { icon: "insert_photo", text: "Gallery", route: "/Gallery" }
-    };
+      Gallery: { icon: 'insert_photo', text: 'Gallery', route: '/Gallery' }
+    }
   }
-};
+}
 </script>

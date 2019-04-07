@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  props: ["subtopic"]
-};
+  props: ['subtopic']
+}
 </script>

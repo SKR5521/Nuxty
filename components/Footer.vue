@@ -34,22 +34,22 @@ export default {
   data: () => ({
     items: [
       {
-        icon: "fab fa-facebook",
-        ref: "https://vuetifyjs.com"
+        icon: 'fab fa-facebook',
+        ref: 'https://vuetifyjs.com'
       },
       {
-        icon: "fab fa-linkedin",
-        ref: "https://community.vuetifyjs.com"
+        icon: 'fab fa-linkedin',
+        ref: 'https://community.vuetifyjs.com'
       },
       {
-        icon: "fab fa-twitter",
-        ref: "https://madewithvuetifyjs.com"
+        icon: 'fab fa-twitter',
+        ref: 'https://madewithvuetifyjs.com'
       },
       {
-        icon: "fab fa-instagram",
-        ref: "https://twitter.com/vuetifyjs"
+        icon: 'fab fa-instagram',
+        ref: 'https://twitter.com/vuetifyjs'
       }
     ]
   })
-};
+}
 </script>

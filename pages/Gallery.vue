@@ -21,8 +21,6 @@
 import Title from '@/components/Title'
 import Subtitle from '@/components/Subtitle'
 
-
-
 export default {
   data() {
     return {
