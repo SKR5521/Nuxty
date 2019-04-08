@@ -3,22 +3,12 @@
     <Homehero/>
 
     <v-container>
-      <v-layout text-xs-center wrap>
-        <v-flex xs12>
-          <v-img :src="require('~/static/v.png')" class="my-3" contain height="200"></v-img>
+      <v-layout text-xs-center wrap justify-center> 
+        <v-flex xs12 xl8 mb-4>
+          <h1 class="display-2 font-weight-bold mb-3">Process</h1>
+          <Timeline />
         </v-flex>
 
-        <v-flex mb-4>
-          <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
-          <p class="subheading font-weight-regular">
-            For help and collaboration with other Vuetify developers,
-            <br>please join our online
-            <a
-              href="https://community.vuetifyjs.com"
-              target="_blank"
-            >Discord Community</a>
-          </p>
-        </v-flex>
 
         <v-flex mb-5 xs12>
           <h2 class="headline font-weight-bold mb-3">What's next?</h2>
@@ -68,10 +58,12 @@
 
 <script>
 import Homehero from '@/components/HomeHero'
+import Timeline from '@/components/Timeline'
 
 export default {
   components: {
-    Homehero
+    Homehero,
+    Timeline
   },
 
   data: () => ({
