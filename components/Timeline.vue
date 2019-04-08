@@ -1,11 +1,12 @@
 <template>
-  <v-timeline align-top v-resize="onResize" :dense="den">
+  <v-timeline align-top v-resize="onResize" :dense="den" >
     <v-timeline-item
       v-for="(item, i) in items"
       :key="i"
       :color="item.color"
       :icon="item.icon"
       fill-dot
+      :small="den"
     >
       <v-card
         :color="item.color"
