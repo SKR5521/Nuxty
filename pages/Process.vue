@@ -1,11 +1,26 @@
 <template>
   <div>
     <v-container>
-      <h1 class="yellow--text">This segment is for Process</h1>
+      <Title topic="Process" />
+
+      <v-layout row wrap>
+        <Subtitle subtopic="Registration" />
+        
+      </v-layout>
+
     </v-container>
   </div>
 </template>
 
 <script>
-export default {}
+import Title from '@/components/Title'
+import Subtitle from '@/components/Subtitle'
+
+export default {
+  components: {
+    Title,
+    Subtitle
+  }
+  
+  }
 </script>
