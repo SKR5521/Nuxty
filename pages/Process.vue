@@ -7,7 +7,7 @@
         <Subtitle id="register" subtopic="Registration Criteria" />
         <v-container >
           <div v-for="item in reg" :key="item">            
-          <p class="para font-weight-regular"> <v-icon class="black--text">fas fa-chevron-circle-right</v-icon> {{ item }}</p>
+          <p class="para font-weight-regular"> <v-icon class="black--text para">fas fa-chevron-circle-right</v-icon> {{ item }}</p>
         </div>
         <v-layout row wrap text-xs-center>
           <v-flex xs6>
@@ -74,7 +74,7 @@ export default {
 
   computed: {
     calcSize() {
-      var num = (16 + 2 * ((windows.innerheight - 320) / 880))
+      var num = (14 + 2 * ((windows.innerheight - 320) / 880))
       return num
     }
   }

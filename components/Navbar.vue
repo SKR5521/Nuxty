@@ -1,10 +1,9 @@
 <template>
   <nav>
-    <v-toolbar flat app dense>
-      <v-toolbar-side-icon class="purple--text" @click="drawer=!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase black--text">
-        <span class="font-weight-bold">AAKRUTI</span>
-        <span class="font-weight-light">2019</span>
+    <v-toolbar flat app dark  color="indigo">
+      <v-toolbar-side-icon  @click="drawer=!drawer"></v-toolbar-side-icon>
+      <v-toolbar-title class="text-uppercase white--text" router :to="Home.route">
+        <span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span>        
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -38,31 +37,32 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer v-model="drawer" temporary app class="white">
-      <div class="text-uppercase black--text text-xs-center py-2">
-        <span class="font-weight-bold display-1">AAKRUTI</span>
-        <span class="font-weight-light display-1">2019</span>
+    <v-navigation-drawer v-model="drawer" temporary app class="indigo ">
+      <div class="text-uppercase  white--text text-xs-center py-2 my-4">
+        <span class="font-weight-bold display-1">AAKRUTI</span><span class="font-weight-light display-1">2019</span><br/>
+        <span class="font-weight-light body-1">Shaping Imagination</span>
+        
       </div>
 
       <v-list>
-        <v-list-tile active-class="teal lighten-4" avatar router :to="Home.route">
-          <v-list-tile-avatar>
-            <v-icon class="grey--text">{{ Home.icon }}</v-icon>
+        <v-list-tile active-class="indigo lighten-1" avatar  router :to="Home.route">
+          <v-list-tile-avatar >
+            <v-icon class="white--text">{{ Home.icon }}</v-icon>
           </v-list-tile-avatar>
 
           <v-list-tile-content>
-            <v-list-tile-title class="black--text">{{Home.text}}</v-list-tile-title>
+            <v-list-tile-title class="white--text">{{Home.text}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
 
         <v-divider></v-divider>
 
-        <v-list-tile active-class="teal lighten-4" avatar router :to="Process.route">
+        <v-list-tile active-class="indigo lighten-1" avatar router :to="Process.route">
           <v-list-tile-avatar>
-            <v-icon class="grey--text">{{ Process.icon }}</v-icon>
+            <v-icon class="white--text">{{ Process.icon }}</v-icon>
           </v-list-tile-avatar>
           <v-list-tile-content>
-            <v-list-tile-title class="black--text">{{Process.text}}</v-list-tile-title>
+            <v-list-tile-title class="white--text">{{Process.text}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
 
@@ -72,10 +72,10 @@
           <template v-slot:activator>
             <v-list-tile>
               <v-list-tile-avatar>
-                <v-icon class="grey--text">{{ Oldak.icon }}</v-icon>
+                <v-icon class="white--text">{{ Oldak.icon }}</v-icon>
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title>{{ Oldak.text }}</v-list-tile-title>
+                <v-list-tile-title class="white--text">{{ Oldak.text }}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
           </template>
@@ -85,22 +85,22 @@
             :key="subItem.title"
             router
             :to="subItem.route"
-            active-class="teal lighten-4"
+            active-class="indigo lighten-1"
           >
             <v-list-tile-content>
-              <v-list-tile-title>{{ subItem.text }}</v-list-tile-title>
+              <v-list-tile-title class="white--text">{{ subItem.text }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list-group>
 
         <v-divider></v-divider>
 
-        <v-list-tile active-class="teal lighten-4" avatar router :to="Gallery.route">
+        <v-list-tile active-class="indigo lighten-1" avatar router :to="Gallery.route">
           <v-list-tile-avatar>
-            <v-icon class="grey--text">{{ Gallery.icon }}</v-icon>
+            <v-icon class="white--text">{{ Gallery.icon }}</v-icon>
           </v-list-tile-avatar>
           <v-list-tile-content>
-            <v-list-tile-title class="black--text">{{Gallery.text}}</v-list-tile-title>
+            <v-list-tile-title class="white--text">{{Gallery.text}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
 

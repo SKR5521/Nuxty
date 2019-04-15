@@ -1,38 +1,40 @@
 <template>
   <div class="akprevious grey">
-    <Title :topic="'AAKRUTI20' + this.$route.params.id"/>
     <v-container>
-      <v-layout py-4 row wrap>
-        <v-flex xs6 md3 v-for="stat in states" :key="stat.st" pa-3>
-          <v-img
-            contain
-            :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + stat.st + '.png')"
-          ></v-img>
-        </v-flex>
-      </v-layout>
-      <v-layout py-4 row wrap>
-        <v-flex xs6 v-for="(stat, index) in states" :key="stat.st" pa-3>
-          <v-img
-            contain
-            :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + (index+1) + '.png')"
-          ></v-img>
-        </v-flex>
-      </v-layout>
-    </v-container>
-    <Subtitle :subtopic="'Themes'"/>
+      <Title :topic="'AAKRUTI20' + this.$route.params.id"/>
+      <v-container>
+        <v-layout py-4 row wrap>
+          <v-flex xs6 md3 v-for="stat in states" :key="stat.st" pa-3>
+            <v-img
+              contain
+              :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + stat.st + '.png')"
+            ></v-img>
+          </v-flex>
+        </v-layout>
+        <v-layout py-4 row wrap>
+          <v-flex xs6 v-for="(stat, index) in states" :key="stat.st" pa-3>
+            <v-img
+              contain
+              :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + (index+1) + '.png')"
+            ></v-img>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      <Subtitle :subtopic="'Themes'"/>
 
-    <v-container>
-      <v-layout row justify-space-around>
-        <v-flex xs10 xl8>
-          <v-carousel hide-delimiters height="auto" width="auto">
-            <v-carousel-item v-for="i in 10" height="auto" width="auto" :key="i">
-              <v-img
-                :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/top10/' + i + '.jpg')"
-              ></v-img>
-            </v-carousel-item>
-          </v-carousel>
-        </v-flex>
-      </v-layout>
+      <v-container>
+        <v-layout row justify-space-around>
+          <v-flex xs10 xl8>
+            <v-carousel hide-delimiters height="auto" width="auto">
+              <v-carousel-item v-for="i in 10" height="auto" width="auto" :key="i">
+                <v-img
+                  :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/top10/' + i + '.jpg')"
+                ></v-img>
+              </v-carousel-item>
+            </v-carousel>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-container>
   </div>
 </template>

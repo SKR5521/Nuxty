@@ -25,6 +25,13 @@ export default {
 
 .body-all {
   font-size: 16px;
+  font-family: '3ds', sans-serif;
+  text-align: justify!important;
+  letter-spacing: 0.01rem;
+}
+@font-face {
+  font-family: "3ds" ;
+  src: url("/assets/3DS_fonts/3ds Regular.otf");
 }
 
 </style>
