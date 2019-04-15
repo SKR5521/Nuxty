@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body-all">
     <navbar />
     <!-- <v-container mt-5>
     <v-card class="elevation-15" style="border-radius:50px;">  -->
@@ -21,3 +21,10 @@ export default {
   }
 }
 </script>
+<style>
+
+.body-all {
+  font-size: 16px;
+}
+
+</style>
