@@ -2,8 +2,8 @@
   <nav>
     <v-toolbar flat app dark  color="indigo">
       <v-toolbar-side-icon  @click="drawer=!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase white--text" router :to="Home.route">
-        <span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span>        
+      <v-toolbar-title class="text-uppercase white--text">
+        <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>       
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">

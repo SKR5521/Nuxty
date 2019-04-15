@@ -19,8 +19,33 @@
             ></v-img>
           </v-flex>
         </v-layout>
+        <Subtitle :subtopic="'Themes'"/>
+
+      <Subtitle :subtopic="'Jury Members'"/>    
+        <template v-if="this.$route.params.id == 16"> 
+          <v-layout py-4 row wrap>        
+          <v-flex xs6 md3 v-for="(stat, index) in 6" :key="index" pa-3>
+            <v-img
+            class="elevation-6"
+              contain
+              :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
+            ></v-img>
+          </v-flex>
+        </v-layout>
+        </template>
+        <template v-if="this.$route.params.id == 17"> 
+          <v-layout py-4 row wrap>        
+          <v-flex xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
+            <v-img
+            class="elevation-6"
+              contain
+              :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
+            ></v-img>
+          </v-flex>
+        </v-layout>
+        </template>
       </v-container>
-      <Subtitle :subtopic="'Themes'"/>
+      
 
       <v-container>
         <v-layout row justify-space-around>
@@ -47,8 +72,10 @@ export default {
   components: { Title, Subtitle },
   data() {
     return {
+      rid: '',
+      // jury: 8,
       themes: [
-        {
+        {          
           year: '18',
           subthems: [
             'Innovative Products to Boost Rural Economy',
@@ -57,7 +84,7 @@ export default {
             'Solar/Wind Energy based usful Equipments'
           ]
         },
-        {
+        {          
           year: '17',
           subthems: [
             'Transforming Existing Products with Future Technology',
@@ -66,7 +93,7 @@ export default {
             'Products for Waste Management and Reuse'
           ]
         },
-        {
+        {          
           year: '16',
           subthems: [
             'Conservation and Smart usage of Natural resources',
@@ -74,7 +101,7 @@ export default {
             'Futuristic Agriculture'
           ]
         },
-        {
+        {          
           year: '15',
           subthems: [
             'Smart Products for Smart Cities',
@@ -90,6 +117,17 @@ export default {
       ]
       //
     }
+  },
+methods: {
+  juryUpdate(){
+    if (this.$route.params.id === 16) {
+      return 6;
+    }
+    else
+    {
+      return  8;
+    }
   }
+}
 }
 </script>
