@@ -28,10 +28,11 @@ export default {
   font-family: '3ds', sans-serif;
   text-align: justify!important;
   letter-spacing: 0.01rem;
+  background-color: #FAFAFA;
 }
 @font-face {
   font-family: "3ds" ;
-  src: url("/assets/3DS_fonts/3ds Regular.otf");
+  src: url("/assets/3DS_fonts/3ds Regular.otf") format('otf');
 }
 
 </style>

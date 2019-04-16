@@ -20,18 +20,18 @@
           </v-flex>
         </v-layout>
         <Subtitle :subtopic="'Themes'"/>
-        <v-layout justify-center row wrap>
-          <div v-for="item in themes" :key="item">
-            <template v-if=" $route.params.id == item.year">
-              <v-flex v-for="th in item.subthems" :key="th">
-                <p class="para font-weight-regular">
-                  <v-icon class="black--text para">fa-chevron-circle-right</v-icon>
-                  {{ th }}
-                </p>
+
+        <div v-for="item in themes" :key="item">
+          <template v-if=" $route.params.id == item.year">
+            <v-layout justify-center row wrap>
+              <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
+                <v-card class="text-xs-center elevation-8 pa-2 ma-2" style="border: 5px solid indigo">
+                  <v-card-text class="para font-weight-regular">{{ th }}</v-card-text>
+                </v-card>
               </v-flex>
-            </template>
-          </div>
-        </v-layout>
+            </v-layout>
+          </template>
+        </div>
 
         <Subtitle :subtopic="'Jury Members'"/>
         <template v-if="this.$route.params.id == 16">
@@ -82,9 +82,7 @@ import Subtitle from '~/components/Subtitle'
 export default {
   components: { Title, Subtitle },
   data() {
-    return {
-      rid: '',
-      // jury: 8,
+    return {     
       themes: [
         {
           year: '18',
