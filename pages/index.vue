@@ -5,15 +5,15 @@
     <v-container id="first">
       <v-layout row>
         <v-flex xs12>
-          <v-icon >fas fa-quote-left</v-icon>
+          <v-icon>fas fa-quote-left</v-icon>
           <blockquote
-            class=" headline py-1 px-5 block font-italic"
+            class="headline py-1 px-5 block font-italic"
             v-for="item in about"
             :key="item"
           >{{ item }}</blockquote>
           <v-layout>
             <v-spacer></v-spacer>
-            <v-icon >fas fa-quote-right</v-icon>
+            <v-icon>fas fa-quote-right</v-icon>
           </v-layout>
         </v-flex>
       </v-layout>
@@ -65,6 +65,6 @@ export default {
 .block {
   justify-content: center;
   font-size: calc(16px + 2 * ((100vw - 320px) / 880)) !important;
-  line-height:  0.2rem;  
+  line-height: 0.2rem;
 }
 </style>
