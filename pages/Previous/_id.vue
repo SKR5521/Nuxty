@@ -1,16 +1,46 @@
 <template>
-  <div class="akprevious grey">
+  <div class="akprevious ">
     <v-container>
       <Title :topic="'AAKRUTI20' + this.$route.params.id"/>
       <v-container>
-        <v-layout py-4 row wrap>
+        <!-- <v-layout py-4 row wrap>
           <v-flex xs6 md3 v-for="stat in states" :key="stat.st" pa-3>
             <v-img
               contain
               :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + stat.st + '.png')"
             ></v-img>
           </v-flex>
-        </v-layout>
+        </v-layout>-->
+
+        <div v-for="item in stats" :key="item.year">
+          <template v-if=" $route.params.id == item.year">
+            <v-layout justify-center row wrap>
+              <v-flex xs6 md3 pa-2>
+                <v-card >
+                  <v-responsive  text-xs-center>                    
+                      <v-icon class="pa-4 iconFont" color="indigo" >fas fa-university</v-icon>                    
+                  </v-responsive>
+                </v-card>
+              </v-flex>
+              <v-flex xs6 md3 pa-2>
+                <v-card>
+                  <v-icon x-large>fa-book</v-icon>
+                </v-card>
+              </v-flex>
+              <v-flex xs6 md3 pa-2>
+                <v-card>
+                  <v-icon x-large>fa-book</v-icon>
+                </v-card>
+              </v-flex>
+              <v-flex xs6 md3 pa-2>
+                <v-card>
+                  <v-icon x-large>fa-book</v-icon>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </template>
+        </div>
+
         <v-layout py-4 row wrap>
           <v-flex xs6 v-for="(stat, index) in states" :key="stat.st" pa-3>
             <v-img
@@ -21,11 +51,14 @@
         </v-layout>
         <Subtitle :subtopic="'Themes'"/>
 
-        <div v-for="item in themes" :key="item">
+        <div v-for="item in themes" :key="item.year">
           <template v-if=" $route.params.id == item.year">
             <v-layout justify-center row wrap>
               <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
-                <v-card class="text-xs-center elevation-8 pa-2 ma-2" style="border: 5px solid indigo">
+                <v-card
+                  class="text-xs-center elevation-8 pa-2 ma-2"
+                  style="border: 5px solid indigo"
+                >
                   <v-card-text class="para font-weight-regular">{{ th }}</v-card-text>
                 </v-card>
               </v-flex>
@@ -38,7 +71,7 @@
           <v-layout py-4 row wrap>
             <v-flex xs6 md3 v-for="(stat, index) in 6" :key="index" pa-3>
               <v-img
-                class="elevation-6"
+                class="elevation-10"
                 contain
                 :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
               ></v-img>
@@ -82,7 +115,7 @@ import Subtitle from '~/components/Subtitle'
 export default {
   components: { Title, Subtitle },
   data() {
-    return {     
+    return {
       themes: [
         {
           year: '18',
@@ -118,6 +151,36 @@ export default {
           ]
         }
       ],
+      stats: [
+        {
+          year: '18',
+          student: '2240',
+          state: '24',
+          college: '218',
+          teams: '1120'
+        },
+        {
+          year: '17',
+          student: '1700',
+          state: '21',
+          college: '196',
+          teams: '850'
+        },
+        {
+          year: '16',
+          student: '1632',
+          state: '19',
+          college: '146',
+          teams: '816'
+        },
+        {
+          year: '15',
+          student: '1406',
+          state: '17',
+          college: '129',
+          teams: '703'
+        }
+      ],
       states: [
         { st: 'collage' },
         { st: 'state' },
@@ -133,5 +196,10 @@ export default {
 <style scoped>
 .para {
   font-size: calc(16px + 2 * ((100vw - 320px) / 880));
+}
+.iconFont {
+  font-size: 100px;
+  border: 4px solid rgb(206, 28, 230);
+  border-radius: 100px ;
 }
 </style>

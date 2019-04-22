@@ -37,7 +37,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer v-model="drawer" temporary app class="indigo ">
+    <v-navigation-drawer v-model="drawer" temporary app dark class="indigo ">
       <div class="text-uppercase  white--text text-xs-center py-2 my-4">
         <span class="font-weight-bold display-1">AAKRUTI</span><span class="font-weight-light display-1">2019</span><br/>
         <span class="font-weight-light body-1">Shaping Imagination</span>
@@ -115,10 +115,10 @@ export default {
   data() {
     return {
       drawer: false,
-      Home: { icon: 'dashboard', text: 'Home', route: '/' },
-      Process: { icon: 'folder', text: 'Process', route: '/Process' },
+      Home: { icon: 'home', text: 'Home', route: '/' },
+      Process: { icon: 'pages', text: 'Process', route: '/Process' },
       Oldak: {
-        icon: 'home',
+        icon: 'bubble_chart',
         text: 'Journey So Far',
         items: [
           // { text: "AAKRUTI2018", route: "/Previous/18" },
