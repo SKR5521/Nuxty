@@ -1,8 +1,8 @@
 <template>
-  <v-container mt-3>
+  <v-container class="mt-4">
     <v-layout row align-center justify-center >
       <v-flex xs10 text-xs-center>
-        <h1 class="fontSize darken-3 py-2 purple--text">{{ topic }}</h1>
+        <h1 class="text-uppercase purple--text" v-resize-text="{ratio: '1.2',minFontSize: '20px', maxFontSize: '50px'}">{{ topic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
     </v-layout>
@@ -10,16 +10,20 @@
 </template>
 
 <script>
+import ResizeText from 'vue-resize-text'
+
 export default {
-  props: ['topic']
+  props: ['topic'],
+
+   directives: {
+    ResizeText
+ }
+
 }
 </script>
 
 <style scoped>
-.fontSize {
-  /* font-size: calc(26px + 2 * ((100vw - 320px) / 880)); */
-  font-size: calc( 2px + (1141/6000) * 100vw - (681/10) );
-}
+
 .break-small {
     background: #8f108f;
     border: 0;

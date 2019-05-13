@@ -2,10 +2,11 @@
   <div>
     <Homehero/>
 
+<div class=" py-2 back white--text"> 
     <v-container id="first">
       <v-layout row>
-        <v-flex xs12>
-          <v-icon>fas fa-quote-left</v-icon>
+        <v-flex xs12 >
+          <v-icon class="white--text" large>fas fa-quote-left</v-icon>
           <blockquote
             class="headline py-1 px-5 block font-italic"
             v-for="item in about"
@@ -13,15 +14,17 @@
           >{{ item }}</blockquote>
           <v-layout>
             <v-spacer></v-spacer>
-            <v-icon>fas fa-quote-right</v-icon>
+            <v-icon class="white--text" large>fas fa-quote-right</v-icon>
           </v-layout>
         </v-flex>
       </v-layout>
     </v-container>
+    </div>
 
-    <v-container>
+    <v-container >
       <Title topic="Themes"/>
     </v-container>
+    <h1 >sample text</h1>
 
     <v-container>
       <Title topic="Prizes"/>
@@ -42,17 +45,23 @@
 import Homehero from '@/components/HomeHero'
 import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
+import ResizeText from 'vue-resize-text'
+
 
 export default {
   components: {
     Homehero,
-    Timeline,
+    Timeline,    
     Title
   },
 
+   directives: {
+    ResizeText
+ },
+
   data: () => ({
     about: [
-      'AAKRUTI is Dassault Systèmes Foundation Nationwide Product Design Contest. AAKRUTI was launched in 2011 and has received tremendous response from all over India in the last 7 years. Each year brings forth a different theme with students surpassing the expectations with their innovative designs and ideas.',
+      'AAKRUTI is Dassault Systèmes Foundation Nationwide Product Design Contest. AAKRUTI was launched in 2011 and has received tremendous response from all over India in the last 8 years. Each year brings forth a different theme with students surpassing the expectations with their innovative designs and ideas.',
       'The objective of AAKRUTI is to reach out to the engineering colleges and universities across India and make them aware about latest trends in the Product Design and Manufacturing domain. AAKRUTI encourages students to showcase their design skills, creativity and innate talent and to use this contest as a platform to design a product that can be commercially manufactured which can eventually benifit the nation.',
       'AAKRUTI is well amalgamated with Dassault Systèmes Foundation’s vision to promote the advancement of excellence and skill enhancement in all aspects of engineering, technology and design while fostering innovation.',
       'Participating students can use any product design applications of their choice, Dassault Systèmes will offer a limited period license of SOLIDWORKS education edition to all the registered teams to design and simulate their product ideas.'
@@ -64,7 +73,12 @@ export default {
 <style scoped>
 .block {
   justify-content: center;
-  font-size: calc(16px + 2 * ((100vw - 320px) / 880)) !important;
-  line-height: 0.2rem;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 880)) !important;
+  line-height: 1.5rem !important;
+}
+
+.back {
+  /* background-color: #239DE8; */
+  background-image: linear-gradient(to right, #005386 ,#239DE8);
 }
 </style>

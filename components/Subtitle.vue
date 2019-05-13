@@ -1,8 +1,8 @@
 <template>
-  <v-container>
-    <v-layout row justify-space-around>
+  <v-container class="pt-3">
+    <v-layout  row justify-space-around>
       <v-flex xs8 py-1 text-xs-center>
-        <h1 class="display-1 darken-3 purple--text">{{ subtopic }}</h1>
+        <h1 class="darken-3 purple--text" v-resize-text="{minFontSize: '16px', maxFontSize: '40px'}" >{{ subtopic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
     </v-layout>
@@ -10,8 +10,15 @@
 </template>
 
 <script>
+import ResizeText from 'vue-resize-text'
+
 export default {
-  props: ['subtopic']
+  props: ['subtopic'] ,
+
+   directives: {
+    ResizeText
+ }
+
 }
 </script>
 

@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.6.3",
+    "vue-resize-text": "^0.1.0",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"
   },

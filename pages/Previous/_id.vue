@@ -3,52 +3,26 @@
     <v-container>
       <Title :topic="'AAKRUTI20' + this.$route.params.id"/>
       <v-container>
-        <!-- <v-layout py-4 row wrap>
+        <v-layout py-4 row wrap>
           <v-flex xs6 md3 v-for="stat in states" :key="stat.st" pa-3>
             <v-img
+            class="elevation-10" 
               contain
               :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + stat.st + '.png')"
             ></v-img>
           </v-flex>
-        </v-layout>-->
-
-        <div v-for="item in stats" :key="item.year">
-          <template v-if=" $route.params.id == item.year">
-            <v-layout justify-center row wrap>
-              <v-flex xs6 md3 pa-2>
-                <v-card >
-                  <v-responsive  text-xs-center>                    
-                      <v-icon class="pa-4 iconFont" color="indigo" >fas fa-university</v-icon>                    
-                  </v-responsive>
-                </v-card>
-              </v-flex>
-              <v-flex xs6 md3 pa-2>
-                <v-card>
-                  <v-icon x-large>fa-book</v-icon>
-                </v-card>
-              </v-flex>
-              <v-flex xs6 md3 pa-2>
-                <v-card>
-                  <v-icon x-large>fa-book</v-icon>
-                </v-card>
-              </v-flex>
-              <v-flex xs6 md3 pa-2>
-                <v-card>
-                  <v-icon x-large>fa-book</v-icon>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </template>
-        </div>
+        </v-layout>
 
         <v-layout py-4 row wrap>
           <v-flex xs6 v-for="(stat, index) in states" :key="stat.st" pa-3>
             <v-img
+            class="elevation-10" 
               contain
               :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + (index+1) + '.png')"
             ></v-img>
           </v-flex>
         </v-layout>
+        
         <Subtitle :subtopic="'Themes'"/>
 
         <div v-for="item in themes" :key="item.year">
@@ -56,7 +30,7 @@
             <v-layout justify-center row wrap>
               <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
                 <v-card
-                  class="text-xs-center elevation-8 pa-2 ma-2"
+                  class="text-xs-center elevation-10 pa-2 ma-2"
                   style="border: 5px solid indigo"
                 >
                   <v-card-text class="para font-weight-regular">{{ th }}</v-card-text>
@@ -67,6 +41,7 @@
         </div>
 
         <Subtitle :subtopic="'Jury Members'"/>
+
         <template v-if="this.$route.params.id == 16">
           <v-layout py-4 row wrap>
             <v-flex xs6 md3 v-for="(stat, index) in 6" :key="index" pa-3>
@@ -80,9 +55,9 @@
         </template>
         <template v-if="this.$route.params.id == 17">
           <v-layout py-4 row wrap>
-            <v-flex xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
+            <v-flex  xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
               <v-img
-                class="elevation-6"
+                class="elevation-10" 
                 contain
                 :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
               ></v-img>
@@ -95,8 +70,8 @@
         <v-layout row justify-space-around>
           <v-flex xs10 xl8>
             <v-carousel hide-delimiters height="auto" width="auto">
-              <v-carousel-item v-for="i in 10" height="auto" width="auto" :key="i">
-                <v-img
+              <v-carousel-item class="elevation-10"  v-for="i in 10" height="auto" width="auto" :key="i">
+                <v-img                
                   :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/top10/' + i + '.jpg')"
                 ></v-img>
               </v-carousel-item>
