@@ -10,7 +10,7 @@
             <v-flex xs11>
               <div v-for="item in reg" :key="item">
                 <p class="para font-weight-regular">
-                  <v-icon class="black--text para">fas fa-chevron-circle-right</v-icon>
+                  <v-icon class="black--text para">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -18,10 +18,10 @@
           </v-layout>
           <v-layout row wrap text-xs-center>
             <v-flex xs12 md6>
-              <v-btn outline color="blue">SOLIDWORKS Download instruction</v-btn>
+              <v-btn outline small color="blue">SOLIDWORKS Download instruction</v-btn>
             </v-flex>
             <v-flex xs12 md6>
-              <v-btn outline color="indigo">Register here</v-btn>
+              <v-btn outline small color="red">Register here</v-btn>
             </v-flex>
           </v-layout>
         </v-container>
@@ -32,7 +32,7 @@
             <v-flex xs11>
               <div v-for="item in contest" :key="item">
                 <p class="para font-weight-regular">
-                  <v-icon class="black--text para">fa-chevron-circle-right</v-icon>
+                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -84,6 +84,6 @@ export default {
 </script>
 <style scoped>
 .para {
-  font-size: calc(14px + 2 * ((100vw - 320px) / 880));
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
 }
 </style>

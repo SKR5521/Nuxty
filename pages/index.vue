@@ -7,11 +7,11 @@
       <v-layout row>
         <v-flex xs12 >
           <v-icon class="white--text" large>fas fa-quote-left</v-icon>
-          <blockquote
+          <p
             class="headline py-1 px-5 block font-italic"
             v-for="item in about"
             :key="item"
-          >{{ item }}</blockquote>
+          >{{ item }}</p>
           <v-layout>
             <v-spacer></v-spacer>
             <v-icon class="white--text" large>fas fa-quote-right</v-icon>
