@@ -1,10 +1,17 @@
 <template>
   <nav>
-    <v-toolbar flat app dark  color="indigo">
+    <v-toolbar flat app dark  color="#005386">
       <v-toolbar-side-icon  @click="drawer=!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase white--text">
-        <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>       
+      <v-toolbar-title class="text-uppercase white--text ml-1" justify-center>
+        <!-- <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>        -->
+        <v-card width="130px" color="#005386" :to="Home.route">
+          <v-img contain :src="require('../assets/img/logo.png')"></v-img>
+        </v-card>
+        
+          
+        
       </v-toolbar-title>
+     
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat router :to="Home.route">
@@ -37,7 +44,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer v-model="drawer" temporary app dark class="indigo ">
+    <v-navigation-drawer v-model="drawer" temporary app dark>
       <div class="text-uppercase  white--text text-xs-center py-2 my-4">
         <span class="font-weight-bold display-1">AAKRUTI</span><span class="font-weight-light display-1">2019</span><br/>
         <span class="font-weight-light body-1">Shaping Imagination</span>
@@ -45,7 +52,7 @@
       </div>
 
       <v-list>
-        <v-list-tile active-class="indigo lighten-1" avatar  router :to="Home.route">
+        <v-list-tile active-class="blue darken-4" avatar  router :to="Home.route">
           <v-list-tile-avatar >
             <v-icon class="white--text">{{ Home.icon }}</v-icon>
           </v-list-tile-avatar>
@@ -57,7 +64,7 @@
 
         <v-divider></v-divider>
 
-        <v-list-tile active-class="indigo lighten-1" avatar router :to="Process.route">
+        <v-list-tile active-class="blue darken-4" avatar router :to="Process.route">
           <v-list-tile-avatar>
             <v-icon class="white--text">{{ Process.icon }}</v-icon>
           </v-list-tile-avatar>
@@ -85,7 +92,7 @@
             :key="subItem.title"
             router
             :to="subItem.route"
-            active-class="indigo lighten-1"
+            active-class="blue darken-4"
           >
             <v-list-tile-content>
               <v-list-tile-title class="white--text">{{ subItem.text }}</v-list-tile-title>
@@ -95,7 +102,7 @@
 
         <v-divider></v-divider>
 
-        <v-list-tile active-class="indigo lighten-1" avatar router :to="Gallery.route">
+        <v-list-tile active-class="blue darken-4" avatar router :to="Gallery.route">
           <v-list-tile-avatar>
             <v-icon class="white--text">{{ Gallery.icon }}</v-icon>
           </v-list-tile-avatar>
@@ -131,3 +138,6 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+</style>
