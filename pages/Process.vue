@@ -9,7 +9,7 @@
           <v-layout row wrap justify-center>
             <v-flex xs12>
               <div v-for="item in reg" :key="item">
-                <p class="para font-weight-regular">
+                <p class="fontz font-weight-regular">
                   <v-icon class="black--text para">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
@@ -31,7 +31,7 @@
           <v-layout row wrap justify-center>
             <v-flex xs11>
               <div v-for="item in contest" :key="item">
-                <p class="para font-weight-regular">
+                <p class="fontz font-weight-regular">
                   <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
@@ -85,5 +85,14 @@ export default {
 <style scoped>
 .para {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  
+}
+.fontz {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds';
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color:#424242;
 }
 </style>

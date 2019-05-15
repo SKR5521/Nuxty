@@ -32,7 +32,16 @@ export default {
 }
 @font-face {
   font-family: "3ds" ;
-  src: url("/assets/3DS_fonts/3ds Regular.otf") format('otf');
+  src: url("https://ui.3ds.com/fonts/3ds/3ds-Regular-v2.woff2") format('woff2');
 }
 
+@font-face {
+  font-family: "3ds-light";
+  src: url("https://ui.3ds.com/fonts/3ds/3ds-Light-v2.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "3ds-SemiBold";
+  src: url("https://ui.3ds.com/fonts/3ds/3ds-SemiBold-v2.woff2") format('woff2');
+}
 </style>

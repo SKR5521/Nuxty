@@ -30,11 +30,15 @@ export default {
     display: inline-block;
     height: 3px;
     margin: 4px 0 10px;
-    width: 90px;
+    width: 70px;
 }
 
 .fontz {
-  font-size: calc(28px + 12 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(28px + 10 * ((100vw - 320px) / 880)) !important;
+  font-family: '3ds';
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -.2px
 }
 </style>
 

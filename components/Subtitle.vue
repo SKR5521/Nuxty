@@ -2,7 +2,7 @@
   <v-container class="py-0">
     <v-layout  row justify-space-around>
       <v-flex xs8 py-1 text-xs-center>
-        <h1 class="darken-3 font-weight-regular purple--text fontz"  >{{ subtopic }}</h1>
+        <h1 class="darken-3 purple--text fontz"  >{{ subtopic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
     </v-layout>
@@ -10,14 +10,9 @@
 </template>
 
 <script>
-import ResizeText from 'vue-resize-text'
 
 export default {
-  props: ['subtopic'] ,
-
-   directives: {
-    ResizeText
- }
+  props: ['subtopic'] 
 
 }
 </script>
@@ -30,9 +25,13 @@ export default {
     display: inline-block;
     height: 2px;
     margin: 4px 0 8px;
-    width: 60px;
+    width: 50px;
 }
 .fontz {
-  font-size: calc(18px + 10 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(18px + 8 * ((100vw - 320px) / 880)) !important;
+  font-family: '3ds';
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -.2px
 }
 </style>
