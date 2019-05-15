@@ -1,23 +1,21 @@
 <template>
   <v-container class="mt-4 pb-0 mb-4">
     <v-layout row align-center justify-center >
+      <transition name="fade">
       <v-flex xs10 text-xs-center>
         <h1 class="text-uppercase font-weight-light purple--text fontz" >{{ topic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
+      </transition>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-import ResizeText from 'vue-resize-text'
+
 
 export default {
-  props: ['topic'],
-
-   directives: {
-    ResizeText
- }
+  props: ['topic']
 
 }
 </script>

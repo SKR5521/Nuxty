@@ -1,26 +1,33 @@
 <template>
-  <v-container fluid fill-height class="home-hero" style="height: 100vh;">
-    <!-- <v-layout row >
-      <v-flex xs1>
-        <v-card width="130px" color="#005386" :to="Home.route">
-          <v-img contain :src="require('../assets/img/logo.png')"></v-img>
-        </v-card>
+  <v-container fluid class="home-hero" style="height: 100vh;">
+    <v-layout class="mt-5">
+      <v-flex xs4 sm3 md2>
+        <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
       </v-flex>
-    </v-layout> -->
+    </v-layout>
 
-    <v-layout justify-center align-center column  >
-      <div justify-center text-xs-center class="white--text">
-        <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span></h1>
-        <h2 class="fontz2 px-auto" >Shaping Imagination</h2>
+    <v-layout justify-center align-center column style="margin-top: 12vh;">
+      <div justify-center text-xs-center class="white--text animated fadeInDown">
+        <h1 class="fontz">
+          AAKRUTI
+          <span class="font-weight-light lightfont">2019</span>
+        </h1>
+        <h2 class="fontz2 px-auto">Shaping Imagination</h2>
       </div>
       <!-- <div class="font-weight-bold white--text fontz text-xs-center pa-0 ma-0" >AAKRUTI<span class="font-weight-light">2019</span>
       </div>
       
       <div class="font-weight-light white--text fontz2 text-xs-center pa-0 ma-0">Shaping Imagination</div>
-       -->
-      <v-btn outline large class="mt-5" color="red darken-2">Register Here</v-btn>
-      <v-btn fab dark class="mt-5" color="indigo" @click="$vuetify.goTo('#first', options)">
-        <v-icon dark  >fas fa-angle-down</v-icon>
+      -->
+      <v-btn outline large class="mt-5 animated fadeInUp" color="red darken-2">Register Here</v-btn>
+      <v-btn
+        fab
+        dark
+        class="mt-5 animated infinite bounce"
+        color="indigo"
+        @click="$vuetify.goTo('#first', options)"
+      >
+        <v-icon dark>fas fa-angle-down</v-icon>
       </v-btn>
     </v-layout>
   </v-container>
@@ -28,13 +35,10 @@
 
 <script>
 import * as easings from 'vuetify/es5/util/easing-patterns'
-import ResizeText from 'vue-resize-text'
 
 export default {
   name: 'HomeHero',
-  directives: {
-    ResizeText
- },
+
   computed: {
     options() {
       return {
@@ -60,20 +64,18 @@ export default {
   font-family: '3ds-SemiBold';
   font-weight: 300;
   /* line-height: 1.5; */
-  letter-spacing: -.2px;
-
+  letter-spacing: -0.2px;
 }
 .fontz2 {
   font-size: calc(28px + 18 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-light';
   font-weight: 300;
   /* line-height: 1.5; */
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   text-align: center !important;
 }
 .lightfont {
   font-family: '3ds-light';
   font-weight: 300;
 }
-
 </style>

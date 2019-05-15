@@ -10,8 +10,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
-  "dependencies": {    
-    "nuxt": "^2.6.3",    
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "nuxt": "^2.6.3",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"
   },

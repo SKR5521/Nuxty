@@ -22,9 +22,9 @@
         </v-layout>
       </v-card-title>
 
-      <v-card-actions class="grey darken-3 justify-center">
+      <v-card-actions class="grey subheading darken-3 justify-center">
         &copy;2018 —
-        <strong class="subheading">Sooraj Kumar</strong>
+        <strong class="subheading">Dassault Systems La Fondation</strong>
       </v-card-actions>
     </v-card>
   </v-footer>

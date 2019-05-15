@@ -20,7 +20,7 @@
     <v-container>
       <Title topic="Themes"/>
     </v-container>
-    <h1>sample text</h1>
+    
 
     <v-container>
       <Title topic="Prizes"/>
@@ -41,7 +41,7 @@
 import Homehero from '@/components/HomeHero'
 import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
-import ResizeText from 'vue-resize-text'
+
 
 export default {
   components: {
@@ -50,9 +50,6 @@ export default {
     Title
   },
 
-  directives: {
-    ResizeText
-  },
 
   data: () => ({
     about: [
@@ -66,11 +63,6 @@ export default {
 </script>
 
 <style scoped>
-.block {
-  justify-content: center;
-  font-size: calc(12px + 2 * ((100vw - 320px) / 880)) !important;
-  line-height: 1.5rem !important;
-}
 
 .back {
   /* background-color: #7e7e7e; */
