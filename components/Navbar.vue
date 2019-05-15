@@ -120,7 +120,7 @@ export default {
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
       Process: { icon: 'fas fa-cogs', text: 'Process', route: '/Process' },
       Oldak: {
-        icon: 'fas fa-map-signs',
+        icon: 'fas fa-location-arrow',
         text: 'Journey So Far',
         items: [
           { text: "AAKRUTI2018", route: "/Previous/18" },
