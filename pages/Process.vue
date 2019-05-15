@@ -7,7 +7,7 @@
         <Subtitle id="register" subtopic="Registration Criteria"/>
         <v-container>
           <v-layout row wrap justify-center>
-            <v-flex xs11>
+            <v-flex xs12>
               <div v-for="item in reg" :key="item">
                 <p class="para font-weight-regular">
                   <v-icon class="black--text para">fas fa-caret-right</v-icon>
@@ -18,10 +18,10 @@
           </v-layout>
           <v-layout row wrap text-xs-center>
             <v-flex xs12 md6>
-              <v-btn outline small color="blue">SOLIDWORKS Download instruction</v-btn>
+              <v-btn outline  color="indigo"> <p class="my-auto caption" >SOLIDWORKS Download instruction</p> </v-btn>
             </v-flex>
             <v-flex xs12 md6>
-              <v-btn outline small color="red">Register here</v-btn>
+              <v-btn outline  color="red"><p class="my-auto caption" >Register Here</p> </v-btn>
             </v-flex>
           </v-layout>
         </v-container>

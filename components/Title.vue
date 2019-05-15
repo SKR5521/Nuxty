@@ -1,8 +1,8 @@
 <template>
-  <v-container class="mt-4">
+  <v-container class="mt-4 pb-0 mb-4">
     <v-layout row align-center justify-center >
       <v-flex xs10 text-xs-center>
-        <h1 class="text-uppercase purple--text fontz" >{{ topic }}</h1>
+        <h1 class="text-uppercase font-weight-light purple--text fontz" >{{ topic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
     </v-layout>
@@ -28,7 +28,7 @@ export default {
     background: #8f108f;
     border: 0;
     display: inline-block;
-    height: 4px;
+    height: 3px;
     margin: 4px 0 10px;
     width: 90px;
 }

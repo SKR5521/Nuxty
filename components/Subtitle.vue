@@ -1,8 +1,8 @@
 <template>
-  <v-container class="pt-3">
+  <v-container class="py-0">
     <v-layout  row justify-space-around>
       <v-flex xs8 py-1 text-xs-center>
-        <h1 class="darken-3 purple--text fontz"  >{{ subtopic }}</h1>
+        <h1 class="darken-3 font-weight-regular purple--text fontz"  >{{ subtopic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
     </v-layout>
@@ -28,7 +28,7 @@ export default {
     background: #8f108f;
     border: 0;
     display: inline-block;
-    height: 3px;
+    height: 2px;
     margin: 4px 0 8px;
     width: 60px;
 }
