@@ -30,6 +30,10 @@ export default {
   letter-spacing: 0.01rem;
   background-color: #F5F5F5;
 }
+.img-fluid {
+  max-width: 100% !important ;
+  height: auto !important;
+}
 @font-face {
   font-family: "3ds" ;
   src: url("https://ui.3ds.com/fonts/3ds/3ds-Regular-v2.woff2") format('woff2');
