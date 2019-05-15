@@ -2,29 +2,25 @@
   <div>
     <Homehero/>
 
-<div class=" py-5 back white--text"> 
-    <v-container id="first">
-      <v-layout row>
-        <v-flex xs12 >
-          <!-- <v-icon class="white--text" large>fas fa-quote-left</v-icon> -->
-          <p
-            class="fontz py-1 mb-0  font-italic"
-            v-for="item in about"
-            :key="item"
-          >{{ item }}</p>
-          <v-layout>
-            <!-- <v-spacer></v-spacer>
-            <v-icon class="white--text" large>fas fa-quote-right</v-icon> -->
-          </v-layout>
-        </v-flex>
-      </v-layout>
-    </v-container>
+    <div class="py-5 back white--text">
+      <v-container id="first">
+        <v-layout row>
+          <v-flex xs12>
+            <p
+              class="fontz white--text py-1 mb-0 font-italic"
+              v-for="item in about"
+              :key="item"
+            >{{ item }}</p>
+            <v-layout></v-layout>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </div>
 
-    <v-container >
+    <v-container>
       <Title topic="Themes"/>
     </v-container>
-    <h1 >sample text</h1>
+    <h1>sample text</h1>
 
     <v-container>
       <Title topic="Prizes"/>
@@ -47,17 +43,16 @@ import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
 import ResizeText from 'vue-resize-text'
 
-
 export default {
   components: {
     Homehero,
-    Timeline,    
+    Timeline,
     Title
   },
 
-   directives: {
+  directives: {
     ResizeText
- },
+  },
 
   data: () => ({
     about: [
@@ -79,15 +74,15 @@ export default {
 
 .back {
   /* background-color: #7e7e7e; */
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(119, 119, 119);
 }
 
 .fontz {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
-  font-family: '3ds';
+  font-family: '3ds-light';
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -.2px;
-  color:#3f3d3d;
+  letter-spacing: -0.2px;
+  color: #3f3d3d;
 }
 </style>

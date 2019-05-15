@@ -7,10 +7,10 @@
       :icon="item.icon"
       :large="!den"
     >
-      <v-card :color="item.color" dark class="elevation-10">
-        <v-card-title class="title">{{ item.title}}</v-card-title>
-        <v-card-text class="grey lighten-3 text--primary">
-          <p class="black--text">Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+      <v-card  dark class="elevation-10 ">
+        <v-card-title  class="fontz2 ">{{ item.title}}</v-card-title>
+        <v-card-text class=" white--text">
+          <p class="fontz white--text">Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
           <v-btn :color="item.color" class="mx-0" outline router :to="item.link">More...</v-btn>
         </v-card-text>
       </v-card>
@@ -63,3 +63,25 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.back {
+  /* background-color: #7e7e7e; */
+  background-color: rgb(141, 139, 139);
+}
+.fontz2 {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  font-family: '3ds';
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  
+}
+.fontz {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds-light';
+  line-height: 1.5;
+  letter-spacing: -.2px;
+
+}
+</style>

@@ -20,7 +20,7 @@
        -->
       <v-btn outline large class="mt-5" color="red darken-2">Register Here</v-btn>
       <v-btn fab dark class="mt-5" color="indigo" @click="$vuetify.goTo('#first', options)">
-        <v-icon dark>expand_more</v-icon>
+        <v-icon dark  >fas fa-angle-down</v-icon>
       </v-btn>
     </v-layout>
   </v-container>
