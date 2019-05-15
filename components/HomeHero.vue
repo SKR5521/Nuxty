@@ -8,9 +8,7 @@
 
     <v-layout justify-center align-center column style="margin-top: 12vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
-        <h1 class="fontz">
-          AAKRUTI
-          <span class="font-weight-light lightfont">2019</span>
+        <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span>
         </h1>
         <h2 class="fontz2 px-auto">Shaping Imagination</h2>
       </div>
@@ -60,7 +58,7 @@ export default {
 }
 
 .fontz {
-  font-size: calc(52px + 32 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(50px + 32 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-SemiBold';
   font-weight: 300;
   /* line-height: 1.5; */
