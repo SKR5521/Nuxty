@@ -123,7 +123,7 @@ export default {
         icon: 'fas fa-map-signs',
         text: 'Journey So Far',
         items: [
-          // { text: "AAKRUTI2018", route: "/Previous/18" },
+          { text: "AAKRUTI2018", route: "/Previous/18" },
           { text: 'AAKRUTI2017', route: '/Previous/17' },
           { text: 'AAKRUTI2016', route: '/Previous/16' }
         ]

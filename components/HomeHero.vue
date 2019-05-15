@@ -1,5 +1,13 @@
 <template>
   <v-container fluid fill-height class="home-hero" style="height: 100vh;">
+    <!-- <v-layout row >
+      <v-flex xs1>
+        <v-card width="130px" color="#005386" :to="Home.route">
+          <v-img contain :src="require('../assets/img/logo.png')"></v-img>
+        </v-card>
+      </v-flex>
+    </v-layout> -->
+
     <v-layout justify-center align-center column  >
       <div justify-center text-xs-center class="white--text">
         <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span></h1>

@@ -2,19 +2,19 @@
   <div>
     <Homehero/>
 
-<div class=" py-2 back white--text"> 
+<div class=" py-5 back white--text"> 
     <v-container id="first">
       <v-layout row>
         <v-flex xs12 >
-          <v-icon class="white--text" large>fas fa-quote-left</v-icon>
+          <!-- <v-icon class="white--text" large>fas fa-quote-left</v-icon> -->
           <p
-            class="headline py-1 px-5 block font-italic"
+            class="fontz py-1 mb-0  font-italic"
             v-for="item in about"
             :key="item"
           >{{ item }}</p>
           <v-layout>
-            <v-spacer></v-spacer>
-            <v-icon class="white--text" large>fas fa-quote-right</v-icon>
+            <!-- <v-spacer></v-spacer>
+            <v-icon class="white--text" large>fas fa-quote-right</v-icon> -->
           </v-layout>
         </v-flex>
       </v-layout>
@@ -78,7 +78,16 @@ export default {
 }
 
 .back {
-  /* background-color: #239DE8; */
-  background-image: linear-gradient(to right, #005386 ,#239DE8);
+  /* background-color: #7e7e7e; */
+  background-color: rgb(218, 218, 218);
+}
+
+.fontz {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds';
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color:#3f3d3d;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-footer dark height="auto">
     <v-card class="flex" flat tile>
-      <v-card-title class="teal">
+      <v-card-title class="blue darken-3">
         <v-layout wrap align-center row fill-height class="text-xs-center">
           <v-flex xs12 md6 class="justify-center">
             <strong class="subheading">Get connected with us on social networks!</strong>
@@ -12,6 +12,7 @@
               :key="item.icon"
               class="mx-3 white--text"
               dark
+              target="_blank"
               icon
               :href="item.ref"
             >
@@ -23,7 +24,7 @@
 
       <v-card-actions class="grey darken-3 justify-center">
         &copy;2018 —
-        <strong>Sooraj Kumar</strong>
+        <strong class="subheading">Sooraj Kumar</strong>
       </v-card-actions>
     </v-card>
   </v-footer>
@@ -35,7 +36,7 @@ export default {
     items: [
       {
         icon: 'fab fa-facebook',
-        ref: 'https://vuetifyjs.com'
+        ref: 'https://www.facebook.com/AakrutiContest/'
       },
       {
         icon: 'fab fa-linkedin',
@@ -53,3 +54,8 @@ export default {
   })
 }
 </script>
+<style scoped>
+.subheading {
+  font-family: '3ds' !important;
+}
+</style>
