@@ -18,10 +18,14 @@
           </v-layout>
           <v-layout row wrap text-xs-center>
             <v-flex xs12 md6>
-              <v-btn outline  color="indigo" router to="/DownloadInstructions"> <p class="my-auto caption" >SOLIDWORKS Download instruction</p> </v-btn>
+              <v-btn outline color="indigo" router to="/DownloadInstructions">
+                <p class="my-auto caption">SOLIDWORKS Download instruction</p>
+              </v-btn>
             </v-flex>
             <v-flex xs12 md6>
-              <v-btn outline  color="red"><p class="my-auto caption" >Register Here</p> </v-btn>
+              <v-btn outline color="red">
+                <p class="my-auto caption">Register Here</p>
+              </v-btn>
             </v-flex>
           </v-layout>
         </v-container>
@@ -67,7 +71,7 @@ export default {
       ],
 
       contest: [
-        'Interested teams should register for the AAKRUTI2018 using the Registration link.',
+        'Interested teams should register for the AAKRUTI2019 using the Registration link.',
         'After successful registration, students may download SOLIDWORKS student version. Download link and installation instructions will be sent to all the registered teams.',
         'Teams need to submit their complete design with details to pass the evaluation criteria before last date of Model submission.',
         'Teams submitting detailed design will only be considered as Qualifying Entries. Details for models submission will be communicated through e-mail.',
@@ -85,14 +89,13 @@ export default {
 <style scoped>
 .para {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
-  
 }
 .fontz {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -.2px;
-  color:#424242;
+  letter-spacing: -0.2px;
+  color: #424242;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="akprevious ">
+  <div class="akprevious">
     <v-container>
       <Title :topic="'AAKRUTI20' + this.$route.params.id"/>
       <v-container>
         <v-layout py-4 row wrap>
           <v-flex xs6 md3 v-for="stat in states" :key="stat.st" pa-3>
             <v-img
-            class="elevation-10" 
+              class="elevation-10"
               contain
               :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + stat.st + '.png')"
             ></v-img>
@@ -16,13 +16,13 @@
         <v-layout py-4 row wrap>
           <v-flex xs6 v-for="(stat, index) in states" :key="stat.st" pa-3>
             <v-img
-            class="elevation-10" 
+              class="elevation-10"
               contain
               :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + (index+1) + '.png')"
             ></v-img>
           </v-flex>
         </v-layout>
-        
+
         <Subtitle :subtopic="'Themes'"/>
 
         <div v-for="item in themes" :key="item.year">
@@ -55,9 +55,9 @@
         </template>
         <template v-if="this.$route.params.id == 17 ">
           <v-layout py-4 row wrap>
-            <v-flex  xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
+            <v-flex xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
               <v-img
-                class="elevation-10" 
+                class="elevation-10"
                 contain
                 :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
               ></v-img>
@@ -66,9 +66,9 @@
         </template>
         <template v-if="this.$route.params.id == 18 ">
           <v-layout py-4 row wrap>
-            <v-flex  xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
+            <v-flex xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
               <v-img
-                class="elevation-10" 
+                class="elevation-10"
                 contain
                 :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
               ></v-img>
@@ -81,8 +81,14 @@
         <v-layout row justify-space-around>
           <v-flex xs10 xl8>
             <v-carousel hide-delimiters height="auto" width="auto">
-              <v-carousel-item class="elevation-10"  v-for="i in 10" height="auto" width="auto" :key="i">
-                <v-img                
+              <v-carousel-item
+                class="elevation-10"
+                v-for="i in 10"
+                height="auto"
+                width="auto"
+                :key="i"
+              >
+                <v-img
                   :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/top10/' + i + '.jpg')"
                 ></v-img>
               </v-carousel-item>
@@ -186,6 +192,6 @@ export default {
 .iconFont {
   font-size: 100px;
   border: 4px solid rgb(206, 28, 230);
-  border-radius: 100px ;
+  border-radius: 100px;
 }
 </style>

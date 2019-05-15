@@ -25,7 +25,7 @@
             <v-btn flat v-on="on">
               <v-icon small left>{{Oldak.icon}}</v-icon>
               <span>{{Oldak.text}}</span>
-              <v-icon >keyboard_arrow_down</v-icon>
+              <v-icon>keyboard_arrow_down</v-icon>
             </v-btn>
           </template>
 
@@ -43,7 +43,8 @@
     </v-toolbar>
     <v-navigation-drawer class="navtogglebg" v-model="drawer" temporary app dark>
       <div class="text-uppercase white--text text-xs-center py-1 mt-4 mb-5">
-        <span class="font-weight-bold display-1">AAKRUTI</span><span class="thin">2019</span>
+        <span class="font-weight-bold display-1">AAKRUTI</span>
+        <span class="thin">2019</span>
         <br>
         <span class="font-weight-light body-1">Shaping Imagination</span>
       </div>
@@ -123,7 +124,7 @@ export default {
         icon: 'fas fa-location-arrow',
         text: 'Journey So Far',
         items: [
-          { text: "AAKRUTI2018", route: "/Previous/18" },
+          { text: 'AAKRUTI2018', route: '/Previous/18' },
           { text: 'AAKRUTI2017', route: '/Previous/17' },
           { text: 'AAKRUTI2016', route: '/Previous/16' }
         ]
@@ -134,7 +135,7 @@ export default {
 }
 </script>
 <style scoped>
-.thin { 
+.thin {
   font-family: '3ds-light';
   font-size: 34px;
 }
@@ -153,5 +154,4 @@ export default {
 .display-1 {
   font-family: '3ds' !important;
 }
-
 </style>
