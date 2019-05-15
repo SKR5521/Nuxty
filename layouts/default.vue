@@ -26,9 +26,9 @@ export default {
 .body-all {
   font-size: 16px;
   font-family: '3ds', sans-serif;
-  text-align: justify!important;
+  text-align: justify !important;
   letter-spacing: 0.01rem;
-  background-color: #FAFAFA;
+  background-color: #F5F5F5;
 }
 @font-face {
   font-family: "3ds" ;

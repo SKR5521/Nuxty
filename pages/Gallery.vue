@@ -2,10 +2,10 @@
   <div>
     <v-container class="gallery-css">
       <Title topic="Gallery"/>
-      <div v-for="item in items" v-bind:key="item.folder">
+      <div class="my-3" v-for="item in items" v-bind:key="item.folder">
         <Subtitle v-bind:subtopic="item.text"/>
         <v-layout row wrap>
-          <v-flex xs12 sm6 md3 v-for="n in 8" :key="n" pa-2>
+          <v-flex xs12 sm6 md3 class="pa-3" v-for="n in 8" :key="n">
             <v-img
               contain
               :src="require('~/assets/img/galleryImg/'+ item.folder + '/0' + n + '.jpg')"
