@@ -4,6 +4,10 @@ import pkg from './package'
 export default {
   mode: 'spa',
 
+  router: {
+    base: '/Nuxty/'
+  },
+
   /*
   ** Headers of the page
   */
