@@ -1,19 +1,19 @@
 <template>
   <div>
-    <v-container>
-      <Title topic="Download Instructions"/>
-      <p class="font-weight-normal">
-        <i class="fas fa-chevron-circle-right white-text mr-3 fa-1x"></i>Participating students can use product design applications of their choice, Dassault Systèmes will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time, to all participants asking for it to design and simulate their product ideas.
+    <v-container class="mt-5">
+      <Subtitle subtopic="Download Instructions"/>
+      <p class="my-font">
+        <i class="fas fa-chevron-circle-right white-text mr-2 fa-1x"></i>Participating students can use product design applications of their choice, Dassault Systèmes will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time, to all participants asking for it to design and simulate their product ideas.
       </p>
 
-      <p class="font-weight-normal">
-        <i class="fas fa-chevron-circle-right white-text mr-3 fa-1x"></i>You will need to submit in detailed Product report containing Design content and DIY Manufacturing content on or before
+      <p class="my-font">
+        <i class="fas fa-chevron-circle-right white-text mr-2 fa-1x"></i>You will need to submit in detailed Product report containing Design content and DIY Manufacturing content on or before
         <b
           class="my-font-cyan font-weight-light"
         >20th September, 2019 (Registered teams will be informed about the model submission details through e-mail).</b>
       </p>
 
-      <ul class="font-weight-normal">
+      <ul class="my-font">
         <li>Presentation providing details of design/concept/mechanism behind the design.</li>
         <li>Details of the Design Calculations/Hand Calculations (if any).</li>
         <li>CAD Model and drawing of the Innovative Design.</li>
@@ -21,16 +21,16 @@
         <li>A complete DIY Manual having the Manufacturing content.</li>
       </ul>
 
-      <p class="font-weight-normal">
-        <i class="fas fa-chevron-circle-right white-text mr-3 fa-1x"></i>
+      <p class="my-font">
+        <i class="fas fa-chevron-circle-right white-text mr-2 fa-1x"></i>
         <span class="my-font-cyan">Serial Number:</span>On request, students will be provided with SOLIDWORKS serial number through separate e-mail communication following the successful registration.
       </p>
 
-      <p class="font-weight-normal">
-        <i class="fas fa-chevron-circle-right white-text mr-3 fa-1x"></i>Please follow below instructions to download and Install SOLIDWORKS 2017-2018 Education Version:
+      <p class="my-font">
+        <i class="fas fa-chevron-circle-right white-text mr-2 fa-1x"></i>Please follow below instructions to download and Install SOLIDWORKS 2017-2018 Education Version:
       </p>
 
-      <ol class="font-weight-normal" style="font-size: 0.9rem !important;">
+      <ol class="my-font ml-4" style="font-size: 1rem !important;">
         <li>
           Use the link:
           <a
@@ -65,7 +65,7 @@
           <v-btn dark class="indigo round" router to="/Process">Back to Process</v-btn>
         </v-flex>
         <v-flex text-xs-center>
-          <p class="font-weight-normal mt-3">
+          <p class="my-font mt-3">
             Let us know if you have any query related to installation on
             <span
               class="my-font-cyan"
@@ -77,13 +77,12 @@
   </div>
 </template>
 <script>
-import Title from '@/components/Title'
+import Subtitle from '@/components/Subtitle'
 
 export default {
   components: {
-    Title
+    Subtitle
   }
-  
 }
 </script>
 <style scoped>
@@ -91,10 +90,17 @@ export default {
   font-family: '3ds-SemiBold' !important;
   color: #8f108f;
 }
+.my-font {
+  font-size: calc(14px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds' !important;
+  font-weight: 300 ;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
 
 .round {
-    border-radius: 40px !important;
-    padding: 0 25px 0 25px ;
+  border-radius: 40px !important;
+  padding: 0 25px 0 25px;
 }
 </style>
 
