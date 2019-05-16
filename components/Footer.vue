@@ -1,8 +1,8 @@
 <template>
   <v-footer dark height="auto">
-    <v-card class="flex" flat tile>
-      <v-card-title class="blue darken-3">
-        <v-layout wrap align-center row fill-height class="text-xs-center">
+    <v-card class="flex " flat tile>
+      <v-card-title class="blue darken-4 pa-1">
+        <v-layout wrap align-center row fill-height class="text-xs-center ">
           <v-flex xs12 md6 class="justify-center">
             <strong class="subheading">Get connected with us on social networks!</strong>
           </v-flex>
@@ -21,8 +21,13 @@
           </v-flex>
         </v-layout>
       </v-card-title>
+      <v-layout class="blue darken-4" row justify-center text-xs-center>
+        <v-flex xs3 sm2 md1>
+        <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
+      </v-flex>
+      </v-layout>
 
-      <v-card-actions class="grey subheading darken-3 justify-center">
+      <v-card-actions class="grey darken-3  subheading justify-center">
         &copy;2018 —
         <strong class="subheading">Dassault Systems La Fondation</strong>
       </v-card-actions>
@@ -56,6 +61,7 @@ export default {
 </script>
 <style scoped>
 .subheading {
-  font-family: '3ds' !important;
+  font-family: '3ds-light' !important;
+  font-size: calc(13px + 4 * ((100vw - 320px) / 880)) !important;
 }
 </style>
