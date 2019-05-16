@@ -28,7 +28,8 @@ export default {
   font-family: '3ds', sans-serif;
   text-align: justify !important;
   letter-spacing: 0.01rem;
-  background-color: #f5f5f5;
+  /* DCDCDC   dbdbdb */
+  background-color: #dbdbdb;
 }
 .img-fluid {
   max-width: 100% !important ;
