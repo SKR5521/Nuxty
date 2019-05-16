@@ -29,7 +29,7 @@ export default {
   text-align: justify !important;
   letter-spacing: 0.01rem;
   /* DCDCDC   dbdbdb */
-  background-color: #dbdbdb;
+  background-color: #F5F5F5;
 }
 .img-fluid {
   max-width: 100% !important ;

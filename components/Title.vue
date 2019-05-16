@@ -32,7 +32,7 @@ export default {
 }
 
 .fontz {
-  font-size: calc(28px + 10 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(24px + 10 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds';
   font-weight: 300;
   line-height: 1.5;

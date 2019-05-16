@@ -33,7 +33,7 @@
         <Subtitle id="contest" subtopic="Contest Process"/>
         <v-container>
           <v-layout row wrap justify-center>
-            <v-flex xs11>
+            <v-flex xs12>
               <div v-for="item in contest" :key="item">
                 <p class="fontz font-weight-regular">
                   <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
@@ -91,7 +91,7 @@ export default {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
 }
 .fontz {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 4 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 500;
   line-height: 1.5;
