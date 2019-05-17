@@ -7,6 +7,7 @@
         <v-layout row wrap>
           <v-flex xs12 sm6 md3 class="pa-3" v-for="n in 8" :key="n">
             <v-img
+            data-aos="fade-down"
               contain
               :src="require('~/assets/img/galleryImg/'+ item.folder + '/0' + n + '.jpg')"
             ></v-img>

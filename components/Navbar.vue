@@ -1,10 +1,10 @@
 <template>
-  <nav>
-    <v-toolbar flat app dark color="#005386">
+  <nav >
+    <v-toolbar flat app dark scroll-off-screen :scroll-threshold="100"  :color="col" >
       <v-toolbar-side-icon @click="drawer=!drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase white--text ml-1" justify-center>
         <!-- <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>        -->
-        <v-card width="130px" color="#005386" :to="Home.route">
+        <v-card width="130px" color="transparent" :to="Home.route">
           <v-img contain :src="require('../assets/img/logo.png')"></v-img>
         </v-card>
       </v-toolbar-title>
@@ -115,8 +115,25 @@
 
 <script>
 export default {
+//   methods: {
+//   handleScroll () {
+//     if ( window.scrollY > 200) {
+//       this.col = "#005386"
+//     } 
+//     if($nuxt.$route.name =="/") {
+//       this.col = 'transparent'
+//     }
+//   }
+// },
+// beforeMount () {
+//   window.addEventListener('scroll', this.handleScroll);
+// },
+// beforeDestroy () {
+//   window.removeEventListener('scroll', this.handleScroll);
+// },
   data() {
     return {
+      col: '#005386',
       drawer: false,
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
       Process: { icon: 'fas fa-cogs', text: 'Process', route: '/Process' },
@@ -133,6 +150,7 @@ export default {
     }
   }
 }
+
 </script>
 <style scoped>
 .thin {
@@ -154,4 +172,5 @@ export default {
 .display-1 {
   font-family: '3ds' !important;
 }
+
 </style>

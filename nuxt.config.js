@@ -44,14 +44,16 @@ export default {
   */
   css: [
     '~/assets/style/app.styl',
-    '~/assets/style/main.css'
+    '~/assets/style/main.css',
+    'aos/dist/aos.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    '@/plugins/aos.js'
   ],
 
   /*
