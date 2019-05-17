@@ -1,6 +1,7 @@
 <template>
   <v-container fluid class="home-hero" style="height: 100vh;">
     <v-layout class="mt-5">
+      <v-spacer></v-spacer>
       <v-flex xs4 sm3 md2>
         <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
       </v-flex>
@@ -8,16 +9,11 @@
 
     <v-layout justify-center align-center column style="margin-top: 12vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
-        <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span>
-        </h1>
+        <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span></h1>
         <h2 class="fontz2 px-auto">Shaping Imagination</h2>
       </div>
-      <!-- <div class="font-weight-bold white--text fontz text-xs-center pa-0 ma-0" >AAKRUTI<span class="font-weight-light">2019</span>
-      </div>
-      
-      <div class="font-weight-light white--text fontz2 text-xs-center pa-0 ma-0">Shaping Imagination</div>
-      -->
-      <v-btn outline large class="mt-5 animated fadeInUp" color="red darken-2">Register Here</v-btn>
+
+      <v-btn outline large class="mt-5 animated fadeInDown" color="red">Register Here</v-btn>
       <v-btn
         fab
         dark
