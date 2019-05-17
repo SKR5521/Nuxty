@@ -2,12 +2,12 @@
   <div>
     <Homehero/>
 
-    <div class="py-5 back white--text">
+    <div class="py-5 back">
       <v-container id="first">
         <v-layout row>
           <v-flex xs12>
             <p
-              class="fontz white--text py-1 mb-0 font-italic"
+              class="fontz grey--text text--darken-3 wow animated lightSpeedIn py-1 mb-0 font-italic"
               v-for="item in about"
               :key="item"
             >{{ item }}</p>
@@ -20,7 +20,6 @@
     <v-container>
       <Title topic="Themes"/>
     </v-container>
-    
 
     <v-container>
       <Title topic="Prizes"/>
@@ -43,13 +42,13 @@ import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
 
 
+
 export default {
   components: {
     Homehero,
     Timeline,
     Title
   },
-
 
   data: () => ({
     about: [
@@ -60,13 +59,15 @@ export default {
     ]
   })
 }
+
+
+
 </script>
 
 <style scoped>
-
 .back {
-  /* background-color: #7e7e7e; */
-  background-color: rgb(119, 119, 119);
+  background-color: white;
+  /* background-color: rgb(119, 119, 119); */
 }
 
 .fontz {
@@ -75,6 +76,7 @@ export default {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  color: #3f3d3d;
+  /* color: white; */
+  /* 3f3d3d */
 }
 </style>
