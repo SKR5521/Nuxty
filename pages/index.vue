@@ -7,7 +7,8 @@
         <v-layout row>
           <v-flex xs12>
             <p
-              class="fontz grey--text text--darken-3 wow animated lightSpeedIn py-1 mb-0 font-italic"
+            data-aos="zoom-in-up"
+              class="fontz grey--text text--darken-3 py-1 mb-0 font-italic"
               v-for="item in about"
               :key="item"
             >{{ item }}</p>
@@ -19,10 +20,24 @@
 
     <v-container>
       <Title topic="Themes"/>
+      <v-layout row wrap>
+        <v-flex xs6 md3 data-aos="slide-down" v-for="stat in 4" :key="stat" pa-3>
+          <v-img
+            class="image-hover-highlight"
+            contain
+            :src="require('~/assets/img/Themes/' + stat + '.png')"
+          ></v-img>
+        </v-flex>
+      </v-layout>
     </v-container>
 
     <v-container>
       <Title topic="Prizes"/>
+      <v-layout row wrap>
+        <v-flex xs6 md3 data-aos="slide-down" v-for="stat in 4" :key="stat" pa-3>
+          <v-img class="image-hover-highlight" contain :src="require('~/assets/img/Prizes/' + stat + '.png')"></v-img>
+        </v-flex>
+      </v-layout>
     </v-container>
 
     <v-container>
@@ -41,8 +56,6 @@ import Homehero from '@/components/HomeHero'
 import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
 
-
-
 export default {
   components: {
     Homehero,
@@ -59,9 +72,6 @@ export default {
     ]
   })
 }
-
-
-
 </script>
 
 <style scoped>
@@ -78,5 +88,23 @@ export default {
   letter-spacing: -0.2px;
   /* color: white; */
   /* 3f3d3d */
+}
+
+.image-hover-highlight {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.image-hover-highlight:hover {
+  border: 2px solid #005386;
+  border-radius: 30px;
+  opacity: 0.9;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  -moz-filter: brightness(130%);
+  -o-filter: brightness(130%);
+  -ms-filter: brightness(130%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 </style>
