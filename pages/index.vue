@@ -8,7 +8,7 @@
           <v-flex xs12>
             <p
             data-aos="zoom-in-up"
-              class="fontz grey--text text--darken-4 py-1 mb-0 font-italic"
+              class="fontz  py-1 mb-0 font-italic"
               v-for="item in about"
               :key="item"
             >{{ item }}</p>
@@ -77,6 +77,7 @@ export default {
 <style scoped>
 .back {
   background-color: white;
+  color: #01406C;
   /* background-color: rgb(119, 119, 119); */
 }
 

@@ -3,7 +3,7 @@
     <v-layout row align-center justify-center >
       <transition name="fade">
       <v-flex xs10 text-xs-center>
-        <h1 class="text-uppercase font-weight-light purple--text fontz" >{{ topic }}</h1>
+        <h1 class="text-uppercase font-weight-light fontz" >{{ topic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
       </transition>
@@ -23,7 +23,7 @@ export default {
 <style scoped>
 /* v-resize-text="{ratio: '1.2',minFontSize: '20px', maxFontSize: '50px'}" */
 .break-small {
-    background: #8f108f;
+    background: #01548A;
     border: 0;
     display: inline-block;
     height: 3px;
@@ -36,6 +36,7 @@ export default {
   font-family: '3ds';
   font-weight: 300;
   line-height: 1.5;
+  color: #01548A;
   letter-spacing: -.2px
 }
 </style>

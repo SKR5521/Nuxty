@@ -2,7 +2,7 @@
   <v-container class="py-0">
     <v-layout  row justify-space-around>
       <v-flex xs8 py-1 text-xs-center>
-        <h1 class="darken-3 purple--text fontz"  >{{ subtopic }}</h1>
+        <h1 class=" fontz"  >{{ subtopic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>
     </v-layout>
@@ -20,7 +20,7 @@ export default {
 <style scoped>
 /* v-resize-text="{minFontSize: '16px', maxFontSize: '40px'}" */
 .break-small {
-    background: #8f108f;
+    background: #105C8E;
     border: 0;
     display: inline-block;
     height: 2px;
@@ -32,6 +32,7 @@ export default {
   font-family: '3ds';
   font-weight: 400;
   line-height: 1.5;
+  color: #105C8E;
   letter-spacing: -.2px
 }
 </style>

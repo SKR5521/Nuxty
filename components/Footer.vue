@@ -1,7 +1,7 @@
 <template>
   <v-footer dark height="auto">
     <v-card class="flex " flat tile>
-      <v-card-title style="background-color: #3F51B5 !important;" >
+      <v-card-title style="background-color: #00345C !important;" >
         <v-layout wrap align-center row fill-height class="text-xs-center ">
           <v-flex xs12 md6 class="justify-center">
             <strong class="subheading">Get connected with us on social networks!</strong>
@@ -21,7 +21,7 @@
           </v-flex>
         </v-layout>
       </v-card-title>
-      <v-layout style="background-color: #3F51B5 !important;" row justify-center text-xs-center>
+      <v-layout style="background-color: #00345C !important;" row justify-center text-xs-center>
         <v-flex xs3 sm2 md1>
         <v-img class="img-fluid" :src="require('../assets/img/DS.png')"></v-img>
       </v-flex>

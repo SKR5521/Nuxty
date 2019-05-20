@@ -115,23 +115,7 @@
 
 <script>
 export default {
-//   methods: {
-//   handleScroll () {
-//     if ( window.scrollY > 200) {
-//       this.col = "#005386"
-//     } 
-//     if($nuxt.$route.name =="/") {
-//       this.col = 'transparent'
-//     }
-//   }
-// },
-// beforeMount () {
-//   window.addEventListener('scroll', this.handleScroll);
-// },
-// beforeDestroy () {
-//   window.removeEventListener('scroll', this.handleScroll);
-// },
-  data() {
+data() {
     return {
       col: '#012D52',
       drawer: false,
@@ -158,11 +142,11 @@ export default {
   font-size: 34px;
 }
 .navtogglebg {
-  background: rgb(27, 67, 88);
+  background: #00345C;
   background: linear-gradient(
     180deg,
-    rgb(18, 54, 73) 0%,
-    rgba(22, 86, 125, 0.8) 100%
+    #00345C 0%,
+    rgba(2, 44, 67, 0.7) 100%
   ) !important;
   font-family: '3ds';
 }
