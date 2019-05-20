@@ -3,7 +3,7 @@
     <v-container>
       <Title :topic="'AAKRUTI20' + this.$route.params.id"/>
       <v-container>
-        <v-layout py-4 row wrap>
+        <!-- <v-layout py-4 row wrap>
           <v-flex xs6 md3 v-for="stat in states" :key="stat.st" pa-3>
             <v-img
               class="elevation-10"
@@ -11,7 +11,48 @@
               :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/' + stat.st + '.png')"
             ></v-img>
           </v-flex>
-        </v-layout>
+        </v-layout>-->
+
+        <div v-for="st in stats" :key="st">
+          <v-layout text-uppercase row wrap v-if="(st.year == $route.params.id)">
+            <v-flex class="px-1 py-1" xs6 md3 justify-center text-xs-center>
+              <v-card class="bord">
+                <v-icon class="iconsize mt-4">fas fa-university</v-icon>
+                <v-card-text text-xs-center>
+                  <h1 class="fontz2">{{st.college}}</h1>
+                  <h1 class="fontz">Colleges</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex class="px-1 py-1" xs6 md3 justify-center text-xs-center>
+              <v-card class="bord">
+                <v-icon class="iconsize mt-4">fas fa-map-marker-alt</v-icon>
+                <v-card-text text-xs-center>
+                  <h1 class="fontz2">{{st.state}}</h1>
+                  <h1 class="fontz">States</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex class="px-1 py-1" xs6 md3 justify-center text-xs-center>
+              <v-card class="bord">
+                <v-icon class="iconsize mt-4">fas fa-user-graduate</v-icon>
+                <v-card-text text-xs-center>
+                  <h1 class="fontz2">{{st.student}}</h1>
+                  <h1 class="fontz">Students</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex class="px-1 py-1" xs6 md3 justify-center text-xs-center>
+              <v-card class="bord">
+                <v-icon class="iconsize mt-4">fas fa-users</v-icon>
+                <v-card-text text-xs-center>
+                  <h1 class="fontz2">{{st.teams}}</h1>
+                  <h1 class="fontz">Teams</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </div>
 
         <v-layout py-4 row wrap>
           <v-flex xs6 v-for="(stat, index) in states" :key="stat.st" pa-3>
@@ -29,11 +70,8 @@
           <template v-if=" $route.params.id == item.year">
             <v-layout justify-center row wrap>
               <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
-                <v-card
-                  class="text-xs-center bord elevation-10 pa-2 ma-2"
-                  
-                >
-                  <v-card-text class="para font-weight-regular">{{ th }}</v-card-text>
+                <v-card class="text-xs-center bord elevation-10 pa-2 ma-2">
+                  <v-card-text class="para">{{ th }}</v-card-text>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -195,9 +233,28 @@ export default {
   border-radius: 100px;
 }
 .bord {
-  border: 3px solid #005386;
+  border: 2px solid #005386;
   border-radius: 30px;
   opacity: 0.9;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fontz2 {
+  font-size: calc(24px + 16 * ((100vw - 320px) / 880));
+  font-family: '3ds-SemiBold';
+  color: #2b2a2a;
+}
+.iconsize {
+  font-size: calc(35px + 20 * ((100vw - 320px) / 880)) !important;
+  color: #012d52;
+}
+.fontz {
+  font-size: calc(16px + 14 * ((100vw - 320px) / 880));
+  font-family: '3ds-light' !important;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: #2b2a2a;
+  /* 757575 424242*/
 }
 </style>
