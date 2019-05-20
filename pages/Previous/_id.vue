@@ -30,8 +30,8 @@
             <v-layout justify-center row wrap>
               <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
                 <v-card
-                  class="text-xs-center elevation-10 pa-2 ma-2"
-                  style="border: 5px solid indigo"
+                  class="text-xs-center bord elevation-10 pa-2 ma-2"
+                  
                 >
                   <v-card-text class="para font-weight-regular">{{ th }}</v-card-text>
                 </v-card>
@@ -193,5 +193,11 @@ export default {
   font-size: 100px;
   border: 4px solid rgb(206, 28, 230);
   border-radius: 100px;
+}
+.bord {
+  border: 3px solid #005386;
+  border-radius: 30px;
+  opacity: 0.9;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
 </style>

@@ -8,7 +8,7 @@
           <v-flex xs12>
             <p
             data-aos="zoom-in-up"
-              class="fontz grey--text text--darken-3 py-1 mb-0 font-italic"
+              class="fontz grey--text text--darken-4 py-1 mb-0 font-italic"
               v-for="item in about"
               :key="item"
             >{{ item }}</p>

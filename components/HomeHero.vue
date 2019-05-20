@@ -7,7 +7,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout justify-center align-center column style="margin-top: 12vh;">
+    <v-layout justify-center align-center column style="margin-top: 10vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
         <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span></h1>
         <h2 class="fontz2 px-auto">Shaping Imagination</h2>
@@ -18,7 +18,7 @@
         fab
         dark
         class="mt-5 animated infinite bounce"
-        color="indigo"
+        color="#015488"
         @click="$vuetify.goTo('#first', options)"
       >
         <v-icon dark>fas fa-angle-down</v-icon>

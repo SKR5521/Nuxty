@@ -133,7 +133,7 @@ export default {
 // },
   data() {
     return {
-      col: '#005386',
+      col: '#012D52',
       drawer: false,
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
       Process: { icon: 'fas fa-cogs', text: 'Process', route: '/Process' },
