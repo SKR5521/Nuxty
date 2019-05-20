@@ -29,8 +29,8 @@
             </v-btn>
           </template>
 
-          <v-list>
-            <v-list-tile v-for="(item, index) in Oldak.items" :key="index" route :to="item.route">
+          <v-list >
+            <v-list-tile color="#012D52" v-for="(item, index) in Oldak.items" :key="index" route :to="item.route">
               <v-list-tile-title>{{ item.text }}</v-list-tile-title>
             </v-list-tile>
           </v-list>

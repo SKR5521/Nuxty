@@ -21,7 +21,7 @@
     <v-container>
       <Title topic="Themes"/>
       <v-layout row wrap>
-        <v-flex xs6 md3 data-aos="slide-down" v-for="stat in 4" :key="stat" pa-3>
+        <v-flex xs6 md3 v-for="stat in 4" :key="stat" pa-3>
           <v-img
             class="image-hover-highlight"
             contain
@@ -34,7 +34,7 @@
     <v-container>
       <Title topic="Prizes"/>
       <v-layout row wrap>
-        <v-flex xs6 md3 data-aos="slide-down" v-for="stat in 4" :key="stat" pa-3>
+        <v-flex xs6 md3  v-for="stat in 4" :key="stat" pa-3>
           <v-img class="image-hover-highlight" contain :src="require('~/assets/img/Prizes/' + stat + '.png')"></v-img>
         </v-flex>
       </v-layout>

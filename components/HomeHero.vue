@@ -1,19 +1,19 @@
 <template>
   <v-container fluid class="home-hero" style="height: 100vh;">
-    <v-layout class="mt-5">
+    <v-layout class="mt-4 py-2">
       <v-spacer></v-spacer>
-      <v-flex xs4 sm3 md2>
+      <v-flex xs4 sm3 md2 class="py-2">
         <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
       </v-flex>
     </v-layout>
 
-    <v-layout justify-center align-center column style="margin-top: 10vh;">
+    <v-layout justify-center align-center column style="margin-top: 8vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
-        <h1 class="fontz">AAKRUTI<span class="font-weight-light lightfont">2019</span></h1>
+        <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span></h1>
         <h2 class="fontz2 px-auto">Shaping Imagination</h2>
       </div>
 
-      <v-btn outline large class="mt-5 animated fadeInDown" color="red">Register Here</v-btn>
+      <v-btn outline large class="mt-5 animated fadeInDown" round color="red" style="border: 2px solid !important;">Register Here</v-btn>
       <v-btn
         fab
         dark
@@ -57,14 +57,14 @@ export default {
   font-size: calc(50px + 32 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-SemiBold';
   font-weight: 300;
-  /* line-height: 1.5; */
+  line-height: 1.5;
   letter-spacing: -0.2px;
 }
 .fontz2 {
-  font-size: calc(28px + 18 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(24px + 12 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-light';
   font-weight: 300;
-  /* line-height: 1.5; */
+  line-height: .5;
   letter-spacing: -0.2px;
   text-align: center !important;
 }
