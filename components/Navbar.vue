@@ -1,6 +1,6 @@
 <template>
-  <nav >
-    <v-toolbar flat app dark scroll-off-screen :scroll-threshold="100"  :color="col" >
+  <nav>
+    <v-toolbar flat app dark scroll-off-screen :scroll-threshold="100" :color="col">
       <v-toolbar-side-icon @click="drawer=!drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase white--text ml-1" justify-center>
         <!-- <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>        -->
@@ -29,8 +29,14 @@
             </v-btn>
           </template>
 
-          <v-list >
-            <v-list-tile color="#012D52" v-for="(item, index) in Oldak.items" :key="index" route :to="item.route">
+          <v-list>
+            <v-list-tile
+              color="#012D52"
+              v-for="(item, index) in Oldak.items"
+              :key="index"
+              route
+              :to="item.route"
+            >
               <v-list-tile-title>{{ item.text }}</v-list-tile-title>
             </v-list-tile>
           </v-list>
@@ -40,7 +46,15 @@
           <span>{{Gallery.text}}</span>
         </v-btn>
       </v-toolbar-items>
+      <v-btn
+        class="hidden-sm-and-down"
+        outline
+        round
+        color="red"
+        style="border: 2px solid !important;"
+      >Register Here</v-btn>
     </v-toolbar>
+
     <v-navigation-drawer class="navtogglebg" v-model="drawer" temporary app dark>
       <div class="text-uppercase white--text text-xs-center py-1 mt-4 mb-5">
         <span class="font-weight-bold display-1">AAKRUTI</span>
@@ -109,13 +123,18 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
+      <v-layout text-xs-center row wrap>
+        <v-flex xs12>
+          <v-btn outline class="fontbtn" round color="red" style="border: 2px solid !important; font">Register Here</v-btn>
+        </v-flex>
+      </v-layout>
     </v-navigation-drawer>
   </nav>
 </template>
 
 <script>
 export default {
-data() {
+  data() {
     return {
       col: '#012D52',
       drawer: false,
@@ -134,7 +153,6 @@ data() {
     }
   }
 }
-
 </script>
 <style scoped>
 .thin {
@@ -142,10 +160,10 @@ data() {
   font-size: 34px;
 }
 .navtogglebg {
-  background: #00345C;
+  background: #00345c;
   background: linear-gradient(
     180deg,
-    #00345C 0%,
+    #00345c 0%,
     rgba(2, 44, 67, 0.7) 100%
   ) !important;
   font-family: '3ds';
@@ -156,5 +174,8 @@ data() {
 .display-1 {
   font-family: '3ds' !important;
 }
-
+.fontbtn {
+  font-family: '3ds' !important;
+  font-size: 13px !important;
+}
 </style>
