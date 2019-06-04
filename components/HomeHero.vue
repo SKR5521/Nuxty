@@ -9,11 +9,21 @@
 
     <v-layout justify-center align-center column style="margin-top: 8vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
-        <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span></h1>
+        <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span>
+        </h1>
         <h2 class="fontz2 px-auto">Shaping Imagination</h2>
       </div>
 
-      <v-btn outline large class="mt-5 animated fadeInDown" round color="red" style="border: 2px solid !important;">Register Here</v-btn>
+      <v-btn
+        outline
+        large
+        class="mt-5 animated fadeInDown"
+        target="_blank"
+        href="https://www.surveymonkey.com/r/7T7D2VH"
+        round
+        color="red"
+        style="border: 2px solid !important;"
+      >Register Here</v-btn>
       <v-btn
         fab
         dark
@@ -32,7 +42,6 @@ import * as easings from 'vuetify/es5/util/easing-patterns'
 
 export default {
   name: 'HomeHero',
-
   computed: {
     options() {
       return {
@@ -64,7 +73,7 @@ export default {
   font-size: calc(24px + 12 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-light';
   font-weight: 300;
-  line-height: .5;
+  line-height: 0.5;
   letter-spacing: -0.2px;
   text-align: center !important;
 }

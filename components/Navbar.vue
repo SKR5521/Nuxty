@@ -50,6 +50,8 @@
         class="hidden-sm-and-down"
         outline
         round
+        target="_blank"
+        href="https://www.surveymonkey.com/r/7T7D2VH"
         color="red"
         style="border: 2px solid !important;"
       >Register Here</v-btn>
@@ -125,7 +127,8 @@
       </v-list>
       <v-layout text-xs-center row wrap>
         <v-flex xs12>
-          <v-btn outline class="fontbtn" round color="red" style="border: 2px solid !important; font">Register Here</v-btn>
+          <v-btn outline class="fontbtn" target="_blank"
+        href="https://www.surveymonkey.com/r/7T7D2VH" round color="red" style="border: 2px solid !important; font">Register Here</v-btn>
         </v-flex>
       </v-layout>
     </v-navigation-drawer>

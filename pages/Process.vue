@@ -23,7 +23,13 @@
               </v-btn>
             </v-flex>-->
             <v-flex xs12 md6>
-              <v-btn outline round color="red">
+              <v-btn
+                outline
+                round
+                color="red"
+                target="_blank"
+                href="https://www.surveymonkey.com/r/7T7D2VH"
+              >
                 <p class="my-auto caption">Register Here</p>
               </v-btn>
             </v-flex>
@@ -170,11 +176,10 @@
               </div>
             </v-flex>
           </v-layout>
-         
         </v-container>
       </v-layout>
     </v-container>
-    <Finalday />
+    <Finalday/>
   </div>
 </template>
 
