@@ -1,7 +1,7 @@
 <template>
   <v-container class="py-0">
     <v-layout  row justify-space-around>
-      <v-flex xs8 py-1 text-xs-center>
+      <v-flex xs12 py-1 text-xs-center>
         <h1 class=" fontz"  >{{ subtopic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>

@@ -2,7 +2,7 @@
   <v-container class="mt-4 pb-0 mb-4">
     <v-layout row align-center justify-center >
       <transition name="fade">
-      <v-flex xs10 text-xs-center>
+      <v-flex xs12 text-xs-center>
         <h1 class="text-uppercase font-weight-light fontz" >{{ topic }}</h1>
         <div> <span class="break-small"></span></div>
       </v-flex>

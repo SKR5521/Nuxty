@@ -170,12 +170,11 @@
               </div>
             </v-flex>
           </v-layout>
-
-        <Finalday />
          
         </v-container>
       </v-layout>
     </v-container>
+    <Finalday />
   </div>
 </template>
 
