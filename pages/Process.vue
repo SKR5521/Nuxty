@@ -171,31 +171,8 @@
             </v-flex>
           </v-layout>
 
-          <Subtitle id="contest" subtopic="Final day event AAKRUTI2019"/>
-          <v-container>
-            <v-layout row wrap>
-              <v-flex xs12>
-                <p class="fontz black--text">
-                  <span class="grey--text fontz2">Venue</span> – Dassault Systèmes R&D Center, Pune
-                </p>
-
-                <p class="fontz black--text">
-                  <span class="grey--text fontz2">Participants</span> – Top 10 zonal finalist teams
-                </p>
-
-                <p class="fontz black--text">
-                  <span
-                    class="grey--text fontz2"
-                  >Each team will get 15 minutes to present their design to the AAKRUTI2019 jury panel, followed by a round of questions</span>
-                </p>
-                <p class="fontz black--text">
-                  <span
-                    class="grey--text fontz2"
-                  >Results will be announced during the prize distribution ceremony after the presentation round.</span>
-                </p>
-              </v-flex>
-            </v-layout>
-          </v-container>
+        <Finalday />
+         
         </v-container>
       </v-layout>
     </v-container>
@@ -205,11 +182,13 @@
 <script>
 import Title from '@/components/Title'
 import Subtitle from '@/components/Subtitle'
+import Finalday from '@/components/Finalday'
 
 export default {
   components: {
     Title,
-    Subtitle
+    Subtitle,
+    Finalday
   },
   data() {
     return {
