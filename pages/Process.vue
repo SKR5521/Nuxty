@@ -36,7 +36,7 @@
           </v-layout>
         </v-container>
 
-        <Subtitle id="contest" subtopic="HOW to choose a Theme?"/>
+        <Subtitle id="themesel" subtopic="HOW to choose a Theme?"/>
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -75,7 +75,7 @@
           </v-layout>
         </v-container>
 
-        <Subtitle id="contest" subtopic="HOW can I submit my Entry?"/>
+        <Subtitle id="msubmit" subtopic="HOW can I submit my Entry?"/>
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -179,7 +179,7 @@
         </v-container>
       </v-layout>
     </v-container>
-    <Finalday/>
+    <Finalday id="finalday"/>
   </div>
 </template>
 

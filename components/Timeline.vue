@@ -11,13 +11,13 @@
         <v-card-title class="fontz2">{{ item.title}}</v-card-title>
         <v-card-text class="grey--text">
           <div v-for="it in item.content" :key="it">
-            <p text-xs-left class="fontz grey--text">{{ it }}</p>
+            <p text-xs-left class="fontz grey--text text--darken-1">{{ it }}</p>
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-layout row wrap>
+          <v-layout row wrap justify-center>
             <v-flex xs12 md6>
-              <p class="fontz grey--text text--darken-2">Last Date - {{ item.date }}</p>
+              <p class="fontzd grey--text text--darken-2">Last Date - {{ item.date }}</p>
             </v-flex>
             <v-flex xs12 md6>
               <v-btn :color="item.color" round outline router :to="item.link">More..</v-btn>
@@ -38,8 +38,7 @@ export default {
         icon: 'fas fa-user-edit',
         date: '31st July 2019',
         content: [
-          'Use the Registration link.',
-          'Download SOLIDWORKS student version. Download link and installation instructions will be sent to all the registered teams.'
+          'This is first & very important step to participate in this contest. Entry to this contest only granted by Registration. Students from all engineering & Design colleges can register in contest. Use Registration link to get more insights.'
         ],
         link: '/Process'
       },
@@ -47,8 +46,12 @@ export default {
         title: 'Theme Selection',
         color: 'purple darken-1',
         icon: 'fas fa-cog',
+        content: [
+          'AAKRUTI contest is always aligned with different themes every year. To make contest more interesting & learning, we have provided themes. Participants have to select any theme/themes to submit models.',
+          'Use below link to know more about themes for AAKRUTI2019 contest.'
+        ],
         date: '31st July 2019',
-        link: '/Process/#contest'
+        link: '/Process/#themesel'
       },
       {
         title: 'Modal Submission',
@@ -56,10 +59,10 @@ export default {
         icon: 'fas fa-upload',
         date: '31st July 2019',
         content: [
-          'Submit your complete design with details to pass the evaluation criteria before last date of model submission.',
-          'Only teams which submit detailed design will be considered as Qualifying Entries. Details for model submission will be communicated via e-mail.'
+          'Here we start first phase of contest. Model submission is very important phase of contest. Teams which submits models before last date will only be considered for next phase.',
+          'Detailed information can be found here.'
         ],
-        link: '/Process/#contest'
+        link: '/Process/#msubmit'
       },
       {
         title: 'Final Presentation',
@@ -67,10 +70,10 @@ export default {
         icon: 'fas fa-award',
         date: '31st July 2019',
         content: [
-          'Submit your complete design with details to pass the evaluation criteria before last date of model submission.',
-          'Only teams which submit detailed design will be considered as Qualifying Entries. Details for model submission will be communicated via e-mail.'
+          'Here comes last & final stage of contest. AAKRUTI winners are announced after Final presentation.',
+          'Selected teams after evaluation are announced & gets invitation for Final Presentation in front of our esteemed juries. Get more details here:-'
         ],
-        link: '/Process/#contest'
+        link: '/Process/#finalday'
       }
     ],
     den: false
@@ -106,6 +109,12 @@ export default {
 .fontz {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
   font-family: '3ds-light';
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+.fontzd {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds';
   line-height: 1.5;
   letter-spacing: -0.2px;
 }
