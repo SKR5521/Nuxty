@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-toolbar flat app dark scroll-off-screen :scroll-threshold="100" :color="col">
+    <v-toolbar flat app dark fixed :color="col">
       <v-toolbar-side-icon @click="drawer=!drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase white--text ml-1" justify-center>
         <!-- <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>        -->
