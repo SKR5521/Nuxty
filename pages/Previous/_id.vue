@@ -104,7 +104,7 @@
         </template>
         <template v-if="this.$route.params.id == 18 ">
           <v-layout py-4 row wrap>
-            <v-flex xs6 md3 v-for="(stat, index) in 8" :key="index" pa-3>
+            <v-flex xs6 md3 v-for="(stat, index) in 7" :key="index" pa-3>
               <v-img
                 class="elevation-10"
                 contain

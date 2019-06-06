@@ -57,7 +57,7 @@ export default {
         title: 'Modal Submission',
         color: 'green lighten-1',
         icon: 'fas fa-upload',
-        date: '31st July 2019',
+        date: '1st Sept 2019 (Tentative)',
         content: [
           'Here we start first phase of contest. Model submission is very important phase of contest. Teams which submits models before last date will only be considered for next phase.',
           'Detailed information can be found here.'
@@ -68,7 +68,7 @@ export default {
         title: 'Final Presentation',
         color: 'indigo',
         icon: 'fas fa-award',
-        date: '31st July 2019',
+        date: '7tht Oct 2019 (Tentative)',
         content: [
           'Here comes last & final stage of contest. AAKRUTI winners are announced after Final presentation.',
           'Selected teams after evaluation are announced & gets invitation for Final Presentation in front of our esteemed juries. Get more details here:-'

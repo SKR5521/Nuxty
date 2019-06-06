@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       items: [
-        // {folder: 18, text: "AAKRUTI2018"},
+        {folder: 18, text: "AAKRUTI2018"},
         { folder: 17, text: 'AAKRUTI2017' },
         { folder: 16, text: 'AAKRUTI2016' },
         { folder: 15, text: 'AAKRUTI2015' }
