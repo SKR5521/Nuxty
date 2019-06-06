@@ -59,6 +59,7 @@ export default {
   })
 }
 </script>
+
 <style scoped>
 .subheading {
   font-family: '3ds' !important;

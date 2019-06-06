@@ -18,7 +18,8 @@
       </v-container>
     </div>
 
-    <v-container>
+  <Theme />
+    <!-- <v-container>
       <Title topic="Themes"/>
       <v-layout row wrap>
         <v-flex xs6 md3 v-for="stat in 4" :key="stat" pa-3>
@@ -29,7 +30,7 @@
           ></v-img>
         </v-flex>
       </v-layout>
-    </v-container>
+    </v-container> -->
 
     <v-container>
       <Title topic="Prizes"/>
@@ -55,12 +56,15 @@
 import Homehero from '@/components/HomeHero'
 import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
+import Theme from '@/components/Theme'
+
 
 export default {
   components: {
     Homehero,
     Timeline,
-    Title
+    Title,
+    Theme
   },
 
   data: () => ({
