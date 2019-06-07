@@ -1,8 +1,8 @@
 <template>
   <v-footer dark height="auto">
-    <v-card class="flex " flat tile>
-      <v-card-title style="background-color: #00345C !important;" >
-        <v-layout wrap align-center row fill-height class="text-xs-center ">
+    <v-card class="flex" flat tile>
+      <v-card-title style="background-color: #00345C !important;">
+        <v-layout wrap align-center row fill-height class="text-xs-center">
           <v-flex xs12 md6 class="justify-center">
             <strong class="subheading">Get connected with us on social networks!</strong>
           </v-flex>
@@ -21,15 +21,19 @@
           </v-flex>
         </v-layout>
       </v-card-title>
-      <v-layout style="background-color: #00345C !important;" row justify-center text-xs-center>
-        <v-flex xs3 sm2 md1>
-        <v-img class="img-fluid" :src="require('../assets/img/DS.png')"></v-img>
-      </v-flex>
+      <v-layout style="background-color: #00345C !important;" row justify-center text-xs-center align-center>
+        <v-flex xs4 sm2 md2 pl-2 pb-1>
+          <v-img class="img-fluid" :src="require('../assets/img/DS1.png')"></v-img>
+        </v-flex>
+        <v-spacer></v-spacer>
+        <v-flex xs4 sm2 md2 pr-2>
+          <v-img class="img-fluid" :src="require('../assets/img/DS.png')"></v-img>
+        </v-flex>
       </v-layout>
 
-      <v-card-actions class="grey darken-3  subheading justify-center">
-        &copy;2018 —
-        <strong class="subheading">Dassault Systems La Fondation</strong>
+      <v-card-actions class="grey darken-3 subheading justify-center">
+        &copy;2019 —
+        <strong class="subheading">Dassault Systems</strong>
       </v-card-actions>
     </v-card>
   </v-footer>
@@ -45,15 +49,15 @@ export default {
       },
       {
         icon: 'fab fa-linkedin',
-        ref: 'https://community.vuetifyjs.com'
+        ref: 'https://www.linkedin.com/showcase/solidworks/'
       },
       {
         icon: 'fab fa-twitter',
-        ref: 'https://madewithvuetifyjs.com'
+        ref: 'https://twitter.com/solidworks'
       },
       {
-        icon: 'fab fa-instagram',
-        ref: 'https://twitter.com/vuetifyjs'
+        icon: 'fab fa-youtube',
+        ref: 'https://www.youtube.com/solidworks'
       }
     ]
   })

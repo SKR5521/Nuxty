@@ -1,8 +1,11 @@
 <template>
   <v-container fluid class="home-hero" style="height: 100vh;">
     <v-layout class="mt-4 py-2">
+      <v-flex xs4 sm3 md2 class="py-3">
+        <v-img class="animated fadeInLeft img-fluid" :src="require('../assets/img/DS1.png')"></v-img>
+      </v-flex>
       <v-spacer></v-spacer>
-      <v-flex xs4 sm3 md2 class="py-2">
+      <v-flex xs4 sm3 md2 class="py-3">
         <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
       </v-flex>
     </v-layout>

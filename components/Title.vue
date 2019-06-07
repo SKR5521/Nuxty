@@ -21,9 +21,9 @@ export default {
 </script>
 
 <style scoped>
-/* v-resize-text="{ratio: '1.2',minFontSize: '20px', maxFontSize: '50px'}" */
+/* v-resize-text="{ratio: '1.2',minFontSize: '20px', maxFontSize: '50px'}" #01548A; */ 
 .break-small {
-    background: #01548A;
+    background: #E31818; 
     border: 0;
     display: inline-block;
     height: 3px;
@@ -36,7 +36,7 @@ export default {
   font-family: '3ds';
   font-weight: 300;
   line-height: 1.5;
-  color: #01548A;
+  color: #E31818;
   letter-spacing: -.2px
 }
 </style>

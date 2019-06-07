@@ -108,7 +108,7 @@
           <v-layout row wrap>
             <v-flex xs12>
               <p class="fontz grey--text">
-                <span class="black--text fontz2">Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
+                <span class=" fontz2" style="color: #E31818;" >Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -121,7 +121,7 @@
             </v-flex>
             <v-flex xs12>
               <p class="fontz grey--text">
-                <span class="black--text fontz2">DIY Manufacturing Content Criteria</span> – (Do It Yourself – Ready for manufacturing Digital content of designed Product) :
+                <span class="fontz2" style="color: #E31818;">DIY Manufacturing Content Criteria</span> – (Do It Yourself – Ready for manufacturing Digital content of designed Product) :
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -204,10 +204,10 @@ export default {
         'Dassault Systèmes will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time period.'
       ],
 
-      th: [],
-
       contest: [
-        'Teams need to submit their complete design with details to pass the evaluation criteria before last date of Model submission',
+        'Submission of ideas will be done in two phases "Initial Design Concept" phase and "Final Model Submission" phase. ',
+        'Teams need to provide products Synopsis & design concept during "Initial Design Concept" phase. Submission date will be announced separately.',
+        'Teams need to submit their complete design with details to pass the evaluation criteria before last date of Final Model submission phase.',
         'Only teams submitting detailed design will be considered as qualifying entries. Details for model submission will be communicated through e-mail. ',
         'Any duplicate/existing product design/idea or Copyright ideas/design will stand for rejection. ',
         'The design can either be an improved existing product, a brand new product or a machine or an entire solution architecture itself. ',
@@ -260,7 +260,7 @@ export default {
   font-size: calc(14px + 4 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: -0.2px;
   color: #757575;
   /* 757575 424242*/

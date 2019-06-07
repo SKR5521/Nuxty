@@ -70,7 +70,7 @@
           <template v-if=" $route.params.id == item.year">
             <v-layout justify-center row wrap>
               <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
-                <v-card class="text-xs-center bord elevation-10 pa-2 ma-2">
+                <v-card class="text-xs-center bord elevation-10  ma-1">
                   <v-card-text class="para">{{ th }}</v-card-text>
                 </v-card>
               </v-flex>
@@ -159,9 +159,9 @@ export default {
         {
           year: '17',
           subthems: [
-            'Transforming Existing Products with Future Technology',
-            'Smart Products for Specially Abled Citizens',
+            'Transforming Existing Products with Future Technology',            
             'Innovative Products for Transforming Rural Economy',
+            'Smart Products for Specially Abled Citizens',
             'Products for Waste Management and Reuse'
           ]
         },
@@ -225,7 +225,7 @@ export default {
 
 <style scoped>
 .para {
-  font-size: calc(16px + 2 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
 }
 .iconFont {
   font-size: 100px;
@@ -240,21 +240,21 @@ export default {
 }
 
 .fontz2 {
-  font-size: calc(24px + 16 * ((100vw - 320px) / 880));
+  font-size: calc(20px + 16 * ((100vw - 320px) / 880));
   font-family: '3ds-SemiBold';
-  color: #2b2a2a;
+  color: #012D52;
 }
 .iconsize {
-  font-size: calc(35px + 20 * ((100vw - 320px) / 880)) !important;
-  color: #012d52;
+  font-size: calc(35px + 25 * ((100vw - 320px) / 880)) !important;
+  color: #E31818;
 }
 .fontz {
-  font-size: calc(16px + 14 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 14 * ((100vw - 320px) / 880));
   font-family: '3ds-light' !important;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  color: #2b2a2a;
+  color: #012D52;
   /* 757575 424242*/
 }
 </style>
