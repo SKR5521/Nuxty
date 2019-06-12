@@ -1,11 +1,11 @@
 <template>
   <nav>
-    <v-toolbar flat app dark fixed :color="col">
-      <v-toolbar-side-icon @click="drawer=!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase white--text ml-1" justify-center>
+    <v-toolbar flat dark :color="col">
+      <v-toolbar-side-icon @click="drawer=!drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
+      <v-toolbar-title class="text-uppercase white--text ml-0">
         <!-- <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>        -->
-        <v-card width="130px" color="transparent" :to="Home.route">
-          <v-img contain :src="require('../assets/img/logo.png')"></v-img>
+        <v-card width="180px" color="transparent" :to="Home.route">
+          <v-img contain :src="require('../assets/img/SWX.png')"></v-img>
         </v-card>
       </v-toolbar-title>
 
@@ -20,7 +20,7 @@
           <span>{{Process.text}}</span>
         </v-btn>
 
-        <v-menu open-on-hover bottom offset-y>
+        <v-menu open-on-hover bottom>
           <template v-slot:activator="{ on }">
             <v-btn flat v-on="on">
               <v-icon small left>{{Oldak.icon}}</v-icon>
@@ -48,16 +48,14 @@
       </v-toolbar-items>
       <v-btn
         class="hidden-sm-and-down"
-        outline
         round
         target="_blank"
         href="https://www.surveymonkey.com/r/7T7D2VH"
-        color="red"
-        style="border: 2px solid !important;"
+        color="#239DE8"
       >Register Here</v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer class="navtogglebg" v-model="drawer" temporary app dark>
+    <v-navigation-drawer class="navtogglebg" v-model="drawer" app temporary dark>
       <div class="text-uppercase white--text text-xs-center py-1 mt-4 mb-5">
         <span class="font-weight-bold display-1">AAKRUTI</span>
         <span class="thin">2019</span>
@@ -127,8 +125,15 @@
       </v-list>
       <v-layout text-xs-center row wrap>
         <v-flex xs12>
-          <v-btn outline class="fontbtn" target="_blank"
-        href="https://www.surveymonkey.com/r/7T7D2VH" round color="red" style="border: 2px solid !important; font">Register Here</v-btn>
+          <v-btn
+            outline
+            class="fontbtn"
+            target="_blank"
+            href="https://www.surveymonkey.com/r/7T7D2VH"
+            round
+            color="red"
+            style="border: 2px solid !important; font"
+          >Register Here</v-btn>
         </v-flex>
       </v-layout>
     </v-navigation-drawer>
@@ -139,7 +144,7 @@
 export default {
   data() {
     return {
-      col: '#012D52',
+      col: '#E31818',
       drawer: false,
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
       Process: { icon: 'fas fa-cogs', text: 'Process', route: '/Process' },

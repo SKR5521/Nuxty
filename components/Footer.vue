@@ -1,16 +1,22 @@
 <template>
   <v-footer dark height="auto">
     <v-card class="flex" flat tile>
-      <v-card-title style="background-color: #00345C !important;">
-        <v-layout wrap align-center row fill-height class="text-xs-center">
-          <v-flex xs12 md6 class="justify-center">
-            <strong class="subheading">Get connected with us on social networks!</strong>
+      <v-card-title style="background-color: #E31818 !important;">
+        <v-layout wrap align-center row fill-height text-xs-center>
+          <v-flex xs12 md6 justify-center>
+            <v-img
+              height="33px"
+              width="180px"
+              class="py-2"
+              style="margin: 0 auto; display: block;"
+              :src="require('../assets/img/SWX.png')"
+            ></v-img>
           </v-flex>
           <v-flex xs12 md6 class="justify-center">
             <v-btn
               v-for="item in items"
               :key="item.icon"
-              class="mx-3 white--text"
+              class="mx-3 white--text py-2"
               dark
               target="_blank"
               icon
@@ -21,21 +27,76 @@
           </v-flex>
         </v-layout>
       </v-card-title>
-      <v-layout style="background-color: #00345C !important;" row justify-center text-xs-center align-center>
-        <v-flex xs4 sm2 md2 pl-2 pb-1>
-          <v-img class="img-fluid" :src="require('../assets/img/DS1.png')"></v-img>
-        </v-flex>
-        <v-spacer></v-spacer>
-        <v-flex xs4 sm2 md2 pr-2>
-          <v-img class="img-fluid" :src="require('../assets/img/DS.png')"></v-img>
-        </v-flex>
-      </v-layout>
 
-      <v-card-actions class="grey darken-3 subheading justify-center">
-        &copy;2019 —
-        <strong class="subheading">Dassault Systems</strong>
+      <v-card-actions class="grey darken-4 subheading justify-center">
+        <v-layout row wrap text-xs-center align-center fill-height color="grey">
+          <v-flex xs12 md6 align-center>
+            <p
+              class="mb-0 py-1"
+              style="color: rgba(255, 255, 255, .64);"
+            >©2019 Dassault Systèmes SOLIDWORKS Corporation</p>
+          </v-flex>
+          <v-flex xs12 md6>
+            <ul class="list-inline">
+              <li>
+                <a href="https://www.solidworks.com/terms-use" target="_blank">Terms of Use</a>
+              </li>
+              <li>
+                <a href="https://www.solidworks.com/privacy-policy" target="_blank">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="https://www.3ds.com/piracy/" target="_blank">Piracy Prevention</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.solidworks.com/license-agreement"
+                  target="_blank"
+                >License Agreement</a>
+              </li>
+            </ul>
+          </v-flex>
+        </v-layout>
       </v-card-actions>
     </v-card>
+
+    <!-- <v-container fluid py-2 >
+      
+        <v-layout row align-center color="red">
+        <v-flex xs4>
+          <a target="_blank" href="https://www.3ds.com/">
+            <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
+          </a>
+        </v-flex>
+      </v-layout>
+      
+      <v-layout row wrap text-xs-center align-center fill-height color="grey" >
+        <v-flex xs12 md6 align-center>
+          <p
+            class="mb-0 py-2"
+            style="color: rgba(255, 255, 255, .64);"
+          >©2019 Dassault Systèmes SOLIDWORKS Corporation</p>
+        </v-flex>
+        <v-flex xs12 md6>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.solidworks.com/terms-use" target="_blank">Terms of Use</a>
+            </li>
+            <li>
+              <a href="https://www.solidworks.com/privacy-policy" target="_blank">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="https://www.3ds.com/piracy/" target="_blank">Piracy Prevention</a>
+            </li>
+            <li>
+              <a
+                href="https://www.solidworks.com/license-agreement"
+                target="_blank"
+              >License Agreement</a>
+            </li>
+          </ul>
+        </v-flex>
+      </v-layout>
+    </v-container>-->
   </v-footer>
 </template>
 
@@ -67,6 +128,26 @@ export default {
 <style scoped>
 .subheading {
   font-family: '3ds' !important;
-  font-size: calc(14px + 4 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(12px + 3 * ((100vw - 320px) / 880)) !important;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.64);
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.list-inline li {
+  position: relative;
+  color: rgba(255, 255, 255, 0.64);
+  display: inline-block !important;
+  margin: 0 5px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="home-hero" style="height: 100vh;">
-    <v-layout class="mt-4 py-2">
+    <!-- <v-layout class="mt-4 py-2">
       <v-flex xs4 sm3 md2 class="py-3">
         <v-img class="animated fadeInLeft img-fluid" :src="require('../assets/img/DS1.png')"></v-img>
       </v-flex>
@@ -8,9 +8,9 @@
       <v-flex xs4 sm3 md2 class="py-3">
         <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
       </v-flex>
-    </v-layout>
+    </v-layout> -->
 
-    <v-layout justify-center align-center column style="margin-top: 8vh;">
+    <v-layout justify-center align-center column style="margin-top: 15vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
         <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span>
         </h1>
@@ -24,7 +24,7 @@
         target="_blank"
         href="https://www.surveymonkey.com/r/7T7D2VH"
         round
-        color="red"
+        color="#E31818"
         style="border: 2px solid !important;"
       >Register Here</v-btn>
       <v-btn

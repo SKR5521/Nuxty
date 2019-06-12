@@ -1,8 +1,17 @@
 <template>
-  <div class="body-all" >
+  <div class="body-all">
+    <v-container app fluid py-3>
+      <v-layout row align-center>
+        <v-flex xs4>
+          <a target="_blank" href="https://www.3ds.com/">
+            <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
+          </a>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <navbar/>
 
-    <nuxt />
+    <nuxt/>
 
     <Footer/>
   </div>
@@ -27,7 +36,7 @@ export default {
   text-align: justify !important;
   letter-spacing: 0.01rem;
   /* DCDCDC   dbdbdb */
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 .img-fluid {
   max-width: 100% !important ;
