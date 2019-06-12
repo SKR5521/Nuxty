@@ -2,17 +2,36 @@
   <v-footer dark height="auto">
     <v-card class="flex" flat tile>
       <v-card-title style="background-color: #E31818 !important;">
-        <v-layout wrap align-center row fill-height text-xs-center>
-          <v-flex xs12 md6 justify-center>
+        <v-layout wrap align-center row fill-height class="hidden-sm-and-down">
+          <v-flex xs3>
+            <v-img height="33px" width="180px" class :src="require('../assets/img/SWX.png')"></v-img>
+          </v-flex>
+          <v-flex xs6 class="ml-3 py-2">
+            <v-btn
+              v-for="item in items"
+              :key="item.icon"
+              class="mx-3 white--text"
+              dark
+              target="_blank"
+              icon
+              :href="item.ref"
+            >
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-btn>
+          </v-flex>
+        </v-layout>
+
+        <v-layout wrap align-center row fill-height class="hidden-md-and-up">
+          <v-flex xs12 md6>
             <v-img
               height="33px"
               width="180px"
               class="py-2"
-              style="margin: 0 auto; display: block;"
+              style=" margin: 5px auto; display: block;"
               :src="require('../assets/img/SWX.png')"
             ></v-img>
           </v-flex>
-          <v-flex xs12 md6 class="justify-center">
+          <v-flex xs12 md6 text-xs-center>
             <v-btn
               v-for="item in items"
               :key="item.icon"
@@ -29,7 +48,7 @@
       </v-card-title>
 
       <v-card-actions class="grey darken-4 subheading justify-center">
-        <v-layout row wrap text-xs-center align-center fill-height color="grey">
+        <v-layout row wrap text-xs-center align-center fill-height>
           <v-flex xs12 md6 align-center>
             <p
               class="mb-0 py-1"
