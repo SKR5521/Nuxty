@@ -1,5 +1,5 @@
 <template>
-  <v-timeline align-top v-resize="onResize" :dense="den">
+  <v-timeline text-xs-left align-top v-resize="onResize" :dense="den">
     <v-timeline-item
       v-for="(item, i) in items"
       :key="i"
@@ -7,20 +7,20 @@
       :icon="item.icon"
       :large="!den"
     >
-      <v-card text-xs-left class="elevation-10">
+      <v-card  class="elevation-10 py-2">
         <v-card-title class="fontz2">{{ item.title}}</v-card-title>
         <v-card-text class="grey--text">
           <div v-for="it in item.content" :key="it">
-            <p text-xs-left class="fontz grey--text text--darken-1">{{ it }}</p>
+            <p class="fontz grey--text text--darken-1">{{ it }}</p>
           </div>
         </v-card-text>
-        <v-card-actions>
-          <v-layout row wrap justify-center>
+        <v-card-actions >
+          <v-layout row wrap justify-center align-center>
             <v-flex xs12 md6>
-              <p class="fontzd grey--text text--darken-2">Last Date - {{ item.date }}</p>
+              <p class="fontzd grey--text text--darken-2 mb-0">Last Date - {{ item.date }}</p>
             </v-flex>
             <v-flex xs12 md6>
-              <v-btn :color="item.color" round outline router :to="item.link">More..</v-btn>
+              <v-btn :color="item.color" round  outline router :to="item.link">Read More</v-btn>
             </v-flex>
           </v-layout>
         </v-card-actions>
@@ -57,7 +57,7 @@ export default {
         title: 'Modal Submission',
         color: 'green lighten-1',
         icon: 'fas fa-upload',
-        date: '1st Sept 2019 (Tentative)',
+        date: 'Will be anounced later',
         content: [
           'Here we start first phase of contest. Model submission is very important phase of contest. Teams which submits models before last date will only be considered for next phase.',
           'Detailed information can be found here.'
@@ -65,10 +65,10 @@ export default {
         link: '/Process/#msubmit'
       },
       {
-        title: 'Final Presentation',
+        title: 'Contest Finale',
         color: 'indigo',
         icon: 'fas fa-award',
-        date: '7tht Oct 2019 (Tentative)',
+        date: '3rd Oct 2019 (Tentative)',
         content: [
           'Here comes last & final stage of contest. AAKRUTI winners are announced after Final presentation.',
           'Selected teams after evaluation are announced & gets invitation for Final Presentation in front of our esteemed juries. Get more details here:-'
@@ -107,13 +107,14 @@ export default {
   letter-spacing: -0.2px;
 }
 .fontz {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(12px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds-light';
   line-height: 1.5;
   letter-spacing: -0.2px;
+  text-align: left !important;
 }
 .fontzd {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(11px + 2 * ((100vw - 320px) / 880));
   font-family: '3ds';
   line-height: 1.5;
   letter-spacing: -0.2px;

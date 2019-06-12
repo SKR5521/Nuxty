@@ -30,8 +30,9 @@
       <v-btn
         fab
         dark
+        small
         class="mt-5 animated infinite bounce"
-        color="#015488"
+        color="#3DA9EB"
         @click="$vuetify.goTo('#first', options)"
       >
         <v-icon dark>fas fa-angle-down</v-icon>
