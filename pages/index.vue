@@ -32,14 +32,14 @@
       </v-layout>
     </v-container> -->
 
-    <!-- <v-container>
+    <v-container>
       <Title topic="Prizes"/>
       <v-layout row wrap>
         <v-flex xs6 md3  v-for="stat in 4" :key="stat" pa-3>
           <v-img  contain :src="require('~/assets/img/Prizes/' + stat + '.png')"></v-img>
         </v-flex>
       </v-layout>
-    </v-container> -->
+    </v-container>
 
     <v-container>
       <v-layout text-xs-center wrap justify-center>
