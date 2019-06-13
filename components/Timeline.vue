@@ -71,7 +71,7 @@ export default {
         date: '3rd Oct 2019 (Tentative)',
         content: [
           'Here comes last & final stage of contest. AAKRUTI winners are announced after Final presentation.',
-          'Selected teams after evaluation are announced & gets invitation for Final Presentation in front of our esteemed juries. Get more details here:-'
+          'Selected teams after evaluation are announced & gets invitation for Final Presentation in front of our esteemed juries.'
         ],
         link: '/Process/#finalday'
       }

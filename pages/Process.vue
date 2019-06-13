@@ -238,7 +238,7 @@ export default {
         'Protecting oceans and rivers from pollution, Oil spills, plastic, harmful hyacinth'
       ],
       th4: [
-        'Products which can Utilize /reuse/recycle e-waste',
+        'Products which can utilize /reuse/recycle e-waste',
         'Products which can recycle biodegradable (Bio-waste) & non-biodegradable Waste'
       ],
 
