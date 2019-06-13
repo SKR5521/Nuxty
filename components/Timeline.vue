@@ -7,7 +7,7 @@
       :icon="item.icon"
       :large="!den"
     >
-      <v-card  class="elevation-10 py-2">
+      <v-card  class="elevation-10 py-1">
         <v-card-title class="fontz2">{{ item.title}}</v-card-title>
         <v-card-text class="grey--text">
           <div v-for="it in item.content" :key="it">
@@ -17,7 +17,7 @@
         <v-card-actions >
           <v-layout row wrap justify-center align-center>
             <v-flex xs12 md6>
-              <p class="fontzd grey--text text--darken-2 mb-0">Last Date - {{ item.date }}</p>
+              <p class="fontzd grey--text text--darken-2 mb-0 py-2">Last Date - {{ item.date }}</p>
             </v-flex>
             <v-flex xs12 md6>
               <v-btn :color="item.color" round  outline router :to="item.link">Read More</v-btn>
@@ -103,20 +103,20 @@ export default {
   font-size: calc(16px + 6 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: -0.2px;
 }
 .fontz {
   font-size: calc(12px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds-light';
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: -0.2px;
   text-align: left !important;
 }
 .fontzd {
   font-size: calc(11px + 2 * ((100vw - 320px) / 880));
   font-family: '3ds';
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: -0.2px;
 }
 </style>

@@ -1,11 +1,17 @@
 <template>
   <div class="body-all">
     <v-container app fluid py-3>
-      <v-layout row align-center>
-        <v-flex xs4>
+      <v-layout row>
+        <v-flex xs3>
           <a target="_blank" href="https://www.3ds.com/">
             <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
           </a>
+        </v-flex>
+        <v-spacer></v-spacer>
+        <v-flex xs3>
+          <v-layout row wrap justify-end text-xs-right>
+            <v-img max-width="120px" :src="require('../assets/img/logo.png')"></v-img>
+          </v-layout>
         </v-flex>
       </v-layout>
     </v-container>
