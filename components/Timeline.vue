@@ -50,11 +50,11 @@ export default {
           'AAKRUTI contest is always aligned with different themes every year. To make contest more interesting & learning, we have provided themes. Participants have to select any theme/themes to submit models.',
           'Use below link to know more about themes for AAKRUTI2019 contest.'
         ],
-        date: '31st July 2019',
+        date: 'Till registration ends',
         link: '/Process/#themesel'
       },
       {
-        title: 'Modal Submission',
+        title: 'Final Design Submission',
         color: 'green lighten-1',
         icon: 'fas fa-upload',
         date: 'Will be anounced later',
