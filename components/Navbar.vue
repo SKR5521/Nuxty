@@ -20,7 +20,13 @@
           <span>{{Process.text}}</span>
         </v-btn>
 
-        <v-menu open-on-hover bottom>
+        <v-menu
+          open-on-hover
+          bottom
+          close-delay="150"
+          origin="center center"
+          transition="scale-transition"
+        >
           <template v-slot:activator="{ on }">
             <v-btn flat v-on="on">
               <v-icon small left>{{Oldak.icon}}</v-icon>
