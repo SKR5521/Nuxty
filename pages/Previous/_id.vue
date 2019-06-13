@@ -242,11 +242,12 @@ export default {
 .fontz2 {
   font-size: calc(20px + 16 * ((100vw - 320px) / 880));
   font-family: '3ds-SemiBold';
-  color: #012D52;
+  
+  color: #E31818;
 }
 .iconsize {
   font-size: calc(35px + 25 * ((100vw - 320px) / 880)) !important;
-  color: #E31818;
+  color: #012D52;
 }
 .fontz {
   font-size: calc(14px + 14 * ((100vw - 320px) / 880));
