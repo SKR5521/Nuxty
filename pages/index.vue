@@ -56,7 +56,7 @@
 import Homehero from '@/components/HomeHero'
 import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
-import Theme from '@/components/Theme'
+import Theme from '@/components/Th'
 
 
 export default {

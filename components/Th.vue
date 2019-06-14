@@ -1,5 +1,5 @@
 <template>
-  <div id="theme">
+  <div>
     <Title topic="Themes"/>
 
     <v-container class="hidden-sm-and-up">
@@ -45,10 +45,10 @@
             v-on:click.stop="diaClick(stat)"
             :src="require('~/assets/img/Themes/' + stat + '.png')"
           ></v-img>
-          <v-dialog v-model="dialog" max-width="500px">
+          <v-dialog v-model="dialog" max-width="600px">
             <v-card class="pa-5 bord2">
-              <v-template v-for="stat in cont" :key="stat.id">
-                <v-layout row wrap justify-center text-xs-center v-if="stat.id == it">
+              <div v-for="stat in cont" :key="stat.id">
+                <v-layout row wrap justify-center text-xs-center v-show="stat.id == it">
                   <v-flex xs12>
                     <v-img
                       contain
@@ -59,21 +59,11 @@
                   <v-flex xs12>
                     <p class="fontz2">{{ stat.tag }}</p>
                     <div v-for="it in stat.desc" :key="it">
-                      <p text-xs-left class="fontz grey--text text--darken-2">{{ it }}</p>
+                      <p class="fontz grey--text text--darken-2">{{ it }}</p>
                     </div>
                   </v-flex>
-                  <!-- <v-flex xs12 text-xs-right>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                      color="#3DA9EB"
-                      round
-                      outline
-                      @click="this.dialog = ! this.dialog"                   
-                      
-                    >Read More</v-btn>
-                  </v-flex>-->
                 </v-layout>
-              </v-template>
+              </div>
             </v-card>
           </v-dialog>
         </v-flex>
