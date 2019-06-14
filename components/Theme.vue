@@ -17,9 +17,10 @@
             <v-flex xs12 md3 justify-space-around>
               <v-img
                 contain
-                max-width="200px"
+                max-width="180px"
                 :src="require('~/assets/img/Themes/' + stat.id + '.png')"
               ></v-img>
+              <p class="fontz2">{{ stat.tag }}</p>
             </v-flex>
             <v-flex xs12 md7>
               <div v-for="it in stat.desc" :key="it">
@@ -56,6 +57,7 @@
                     ></v-img>
                   </v-flex>
                   <v-flex xs12>
+                    <p class="fontz2">{{ stat.tag }}</p>
                     <div v-for="it in stat.desc" :key="it">
                       <p text-xs-left class="fontz grey--text text--darken-2">{{ it }}</p>
                     </div>
@@ -69,7 +71,7 @@
                       @click="this.dialog = ! this.dialog"                   
                       
                     >Read More</v-btn>
-                  </v-flex> -->
+                  </v-flex>-->
                 </v-layout>
               </v-template>
             </v-card>
@@ -94,9 +96,9 @@ export default {
       this.it = st
       this.dialog = !this.dialog
     },
-    dialbtn () {
+    dialbtn() {
       this.dialog = !this.dialog
-      this.$route.push({ path: '/Process/#themesel'})
+      this.$route.push({ path: '/Process/#themesel' })
     }
   },
 
@@ -107,6 +109,7 @@ export default {
       cont: [
         {
           id: 1,
+          tag: 'Research, Refine and Redesign to Optimize',
           desc: [
             'Even a small mobile connected the whole world.',
             'Think, Re-engineer, simulate and validate existing product and optimize it.',
@@ -116,6 +119,7 @@ export default {
 
         {
           id: 2,
+          tag: 'Power the Future',
           desc: [
             'In the age of Smart Gadgets, let’s think of Smart Energy Designs.',
             'Can we create/convert products which uses only renewable energy in smarter way and be champions of green energy?',
@@ -125,6 +129,7 @@ export default {
 
         {
           id: 3,
+          tag: 'Harness and Protect for Future',
           desc: [
             'While water is viewed as next big challenge for the world, can we explore ways to use water for energy generation and transportation to create green and sustainable environment?',
             'Think how to protect ocean and aquatic life from contamination and harmful plants. Can we design a product to design to achieve this?',
@@ -134,6 +139,7 @@ export default {
 
         {
           id: 4,
+          tag: 'REDUCE - REUSE - RECYCLE',
           desc: [
             'Can we look at ‘waste’ in a different perspective to create greener and sustainable environment?',
             'Trigger your imagination and device a mechanism, which can convert solid, liquid, organic waste, recyclable waste & hazardous waste in a meaningful way to generate wealth for country and wonder for world.'
@@ -153,6 +159,11 @@ export default {
   line-height: 1.2;
   letter-spacing: -0.2px;
   /* 757575 424242*/
+}
+.fontz2 {
+  font-size: calc(16px + 5 * ((100vw - 320px) / 880));
+  font-family: '3ds-SemiBold';
+  color: #3098e1;
 }
 .bord {
   border: 2px solid #005386;
