@@ -4,13 +4,16 @@ import pkg from './package'
 export default {
   mode: 'spa',
 
-  router: {
-    base: '/Nuxty/'
+  router: {    
+    base: '/aakruti/'
   },
+
+  devtool: 'source-map',
 
   /*
   ** Headers of the page
   */
+
   head: {
     title: pkg.name,
     meta: [
