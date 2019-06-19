@@ -308,11 +308,11 @@ export default {
   font-family: '3ds-SemiBold';
 }
 .fontz22 {
-  font-size: calc(14px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(15px + 4 * ((100vw - 320px) / 880));
   font-family: '3ds';
 }
 .fontz {
-  font-size: calc(12px + 3 * ((100vw - 320px) / 880));
+  font-size: calc(13px + 2.5 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 500;
   margin-bottom: 12px;
