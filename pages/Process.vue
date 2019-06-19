@@ -17,11 +17,6 @@
             </v-flex>
           </v-layout>
           <v-layout row wrap text-xs-center>
-            <!-- <v-flex xs12 md6>
-              <v-btn outline color="indigo" router to="/DownloadInstructions">
-                <p class="my-auto caption">SOLIDWORKS Download instruction</p>
-              </v-btn>
-            </v-flex>-->
             <v-flex xs12>
               <v-btn
                 outline
