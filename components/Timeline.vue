@@ -11,7 +11,7 @@
         <v-card-title class="fontz2">{{ item.title}}</v-card-title>
         <v-card-text class="grey--text">
           <div v-for="it in item.content" :key="it">
-            <p class="fontz grey--text text--darken-1">{{ it }}</p>
+            <p class="fontz grey--text text--darken-2">{{ it }}</p>
           </div>
         </v-card-text>
         <v-card-actions >
