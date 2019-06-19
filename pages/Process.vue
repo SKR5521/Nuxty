@@ -134,7 +134,7 @@
           <v-layout row wrap>
             <v-flex xs12>
               <p class="fontz22 grey--text text--darken-3">
-                <span class="fontz2 black--text" >Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
+                <span class="fontz2 black--text">Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -206,7 +206,13 @@
       </v-layout>
       <Finalday id="finalday"/>
     </v-container>
-    
+
+    <v-container fluid class="hidden-xs-only">
+      <v-layout row wrap>
+        <v-spacer></v-spacer>
+        <fbtn/>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
@@ -214,12 +220,14 @@
 import Title from '@/components/Title'
 import Subtitle from '@/components/Subtitle'
 import Finalday from '@/components/Finalday'
+import fbtn from '@/components/floatbtn'
 
 export default {
   components: {
     Title,
     Subtitle,
-    Finalday
+    Finalday,
+    fbtn
   },
   data() {
     return {

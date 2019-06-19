@@ -70,7 +70,7 @@
           <template v-if=" $route.params.id == item.year">
             <v-layout justify-center row wrap>
               <v-flex xs12 md5 v-for="th in item.subthems" :key="th">
-                <v-card class="text-xs-center bord elevation-10  ma-1">
+                <v-card class="text-xs-center bord elevation-10 ma-1">
                   <v-card-text class="para">{{ th }}</v-card-text>
                 </v-card>
               </v-flex>
@@ -135,15 +135,22 @@
         </v-layout>
       </v-container>
     </v-container>
+    <v-container fluid class="hidden-xs-only">
+      <v-layout row wrap>
+        <v-spacer></v-spacer>
+        <fbtn/>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
 <script>
 import Title from '~/components/Title'
 import Subtitle from '~/components/Subtitle'
+import fbtn from '@/components/floatbtn'
 
 export default {
-  components: { Title, Subtitle },
+  components: { Title, Subtitle, fbtn },
   data() {
     return {
       themes: [
@@ -159,7 +166,7 @@ export default {
         {
           year: '17',
           subthems: [
-            'Transforming Existing Products with Future Technology',            
+            'Transforming Existing Products with Future Technology',
             'Innovative Products for Transforming Rural Economy',
             'Smart Products for Specially Abled Citizens',
             'Products for Waste Management and Reuse'
@@ -242,12 +249,12 @@ export default {
 .fontz2 {
   font-size: calc(20px + 16 * ((100vw - 320px) / 880));
   font-family: '3ds-SemiBold';
-  
-  color: #E31818;
+
+  color: #e31818;
 }
 .iconsize {
   font-size: calc(35px + 25 * ((100vw - 320px) / 880)) !important;
-  color: #012D52;
+  color: #012d52;
 }
 .fontz {
   font-size: calc(14px + 14 * ((100vw - 320px) / 880));
@@ -255,7 +262,7 @@ export default {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  color: #012D52;
+  color: #012d52;
   /* 757575 424242*/
 }
 </style>

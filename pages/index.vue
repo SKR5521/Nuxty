@@ -7,8 +7,8 @@
         <v-layout row>
           <v-flex xs12>
             <p
-            data-aos="zoom-in-up"
-              class="fontz  py-1 mb-0 font-italic"
+              data-aos="zoom-in-up"
+              class="fontz py-1 mb-0 font-italic"
               v-for="item in about"
               :key="item"
             >{{ item }}</p>
@@ -18,7 +18,7 @@
       </v-container>
     </div>
 
-  <Theme />
+    <Theme/>
     <!-- <v-container>
       <Title topic="Themes"/>
       <v-layout row wrap>
@@ -30,13 +30,13 @@
           ></v-img>
         </v-flex>
       </v-layout>
-    </v-container> -->
+    </v-container>-->
 
     <v-container>
       <Title topic="Prizes"/>
       <v-layout row wrap>
-        <v-flex xs6 md3  v-for="stat in 4" :key="stat" pa-3>
-          <v-img  contain :src="require('~/assets/img/Prizes/' + stat + '.png')"></v-img>
+        <v-flex xs6 md3 v-for="stat in 4" :key="stat" pa-3>
+          <v-img contain :src="require('~/assets/img/Prizes/' + stat + '.png')"></v-img>
         </v-flex>
       </v-layout>
     </v-container>
@@ -49,6 +49,12 @@
         </v-flex>
       </v-layout>
     </v-container>
+      <v-container fluid class="hidden-xs-only">
+      <v-layout row wrap>
+        <v-spacer></v-spacer>
+        <fbtn/>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
@@ -57,20 +63,21 @@ import Homehero from '@/components/HomeHero'
 import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
 import Theme from '@/components/Th'
-
+import fbtn from '@/components/floatbtn'
 
 export default {
   components: {
     Homehero,
     Timeline,
     Title,
-    Theme
+    Theme,
+    fbtn
   },
 
   data: () => ({
     about: [
       'AAKRUTI is Dassault Systèmes SOLIDWORKS Corporation Nationwide Product Design Contest. AAKRUTI was launched in 2011 and has received tremendous response from all over India in the last 8 years. Each year brings forth a different theme with students surpassing the expectations with their innovative designs and ideas.',
-      'The objective of AAKRUTI is to reach out to the engineering colleges and universities across India and make them aware about latest trends in the Product Design and Manufacturing domain. AAKRUTI encourages students to showcase their design skills, creativity and innate talent and to use this contest as a platform to design a product that can be commercially manufactured which can eventually benefit the nation.',      
+      'The objective of AAKRUTI is to reach out to the engineering colleges and universities across India and make them aware about latest trends in the Product Design and Manufacturing domain. AAKRUTI encourages students to showcase their design skills, creativity and innate talent and to use this contest as a platform to design a product that can be commercially manufactured which can eventually benefit the nation.',
       'Dassault Systèmes will offer a limited period license of SOLIDWORKS education edition to all the registered teams to design and simulate their product ideas.'
     ]
   })
@@ -80,7 +87,7 @@ export default {
 <style scoped>
 .back {
   background-color: white;
-  color: #01406C;
+  color: #01406c;
   /* background-color: rgb(119, 119, 119); */
 }
 

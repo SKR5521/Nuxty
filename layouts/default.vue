@@ -1,5 +1,5 @@
 <template>
-  <div class="body-all">
+  <div class="body-all" id="body">
     <v-container app fluid py-3>
       <v-layout row>
         <v-flex xs3>
@@ -18,7 +18,16 @@
     <navbar/>
 
     <nuxt/>
-
+  
+    <v-container class="hidden-sm-and-up pt-0">
+      <v-layout row wrap justify-center text-xs-center>
+        <v-flex xs12>
+          <v-btn color="#012D52" class="fontzd" round dark @click="top">
+            <v-icon class="mr-1">fas fa-angle-up</v-icon>Top
+          </v-btn>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <Footer/>
   </div>
 </template>
@@ -32,6 +41,15 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+  methods: {
+    top() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
   }
 }
 </script>

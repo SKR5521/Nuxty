@@ -14,12 +14,20 @@
         </v-layout>
       </div>
     </v-container>
+
+      <v-container fluid class="hidden-xs-only">
+      <v-layout row wrap>
+        <v-spacer></v-spacer>
+        <fbtn/>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
 <script>
 import Title from '@/components/Title'
 import Subtitle from '@/components/Subtitle'
+import fbtn from '@/components/floatbtn'
 
 export default {
   data() {
@@ -32,6 +40,6 @@ export default {
       ]
     }
   },
-  components: { Title, Subtitle }
+  components: { Title, Subtitle, fbtn }
 }
 </script>
