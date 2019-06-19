@@ -20,7 +20,7 @@
               <p class="fontzd grey--text text--darken-2 mb-0 py-2">Last Date - {{ item.date }}</p>
             </v-flex>
             <v-flex xs12 md6>
-              <v-btn :color="item.color" round  outline router :to="item.link">Read More</v-btn>
+              <v-btn :color="item.color" :small="den" class="fontzd" round outline router :to="item.link">Read More</v-btn>
             </v-flex>
           </v-layout>
         </v-card-actions>
@@ -38,7 +38,8 @@ export default {
         icon: 'fas fa-user-edit',
         date: '31st July 2019',
         content: [
-          'This is first & very important step to participate in this contest. Entry to this contest only granted by Registration. Students from all engineering & Design colleges can register in contest. Use Registration link to get more insights.'
+          'This is first step to participate in this contest.', 
+          'Students from all Engineering & Design colleges are eligible. Use registration link to get more details. '
         ],
         link: '/Process'
       },
@@ -47,8 +48,8 @@ export default {
         color: 'purple darken-1',
         icon: 'fas fa-cog',
         content: [
-          'AAKRUTI contest is always aligned with different themes every year. To make contest more interesting & learning, we have provided themes. Participants have to select any theme/themes to submit models.',
-          'Use below link to know more about themes for AAKRUTI2019 contest.'
+          'AAKRUTI is always aligned with different themes every year. Participants can select any theme/themes to submit models.',
+          'Click on the link to know more about themes for AAKRUTI2019 contest.'
         ],
         date: 'Till registration ends',
         link: '/Process/#themesel'
@@ -57,9 +58,9 @@ export default {
         title: 'Final Design Submission',
         color: 'green lighten-1',
         icon: 'fas fa-upload',
-        date: 'Will be anounced later',
+        date: 'Will be announced shortly',
         content: [
-          'Here we start first phase of contest. Model submission is very important phase of contest. Teams which submits models before last date will only be considered for next phase.',
+          'This is the beginning of the first phase of the contest. Only teams which submit models before the last date will be considered for next phase.',
           'Detailed information can be found here.'
         ],
         link: '/Process/#msubmit'
@@ -70,8 +71,8 @@ export default {
         icon: 'fas fa-award',
         date: '3rd Oct 2019 (Tentative)',
         content: [
-          'Here comes last & final stage of contest. AAKRUTI winners are announced after Final presentation.',
-          'Selected teams after evaluation are announced & gets invitation for Final Presentation in front of our esteemed juries.'
+          'This is the final stage of  the contest. AAKRUTI 2019 winners will be announced after the final presentation.',
+          'Selected teams will be announced will be invited for the Final Presentation before our esteemed Jury. '
         ],
         link: '/Process/#finalday'
       }
@@ -107,14 +108,14 @@ export default {
   letter-spacing: -0.2px;
 }
 .fontz {
-  font-size: calc(12px + 3 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds-light';
   line-height: 1.2;
   letter-spacing: -0.2px;
   text-align: left !important;
 }
 .fontzd {
-  font-size: calc(11px + 2 * ((100vw - 320px) / 880));
+  font-size: calc(12px + 2 * ((100vw - 320px) / 880));
   font-family: '3ds';
   line-height: 1.2;
   letter-spacing: -0.2px;

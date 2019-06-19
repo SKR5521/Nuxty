@@ -40,8 +40,8 @@
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12 class="py-2">
-              <p class="fontz2 grey--text">
-                <span class="black--text ">Small is BIG</span> : Research, Refine and Redesign to Optimize
+              <p class="fontz22 grey--text text--darken-3">
+                <span class="black--text fontz2">Small is BIG</span> : Research, Refine and Redesign to Optimize
               </p>
               <p
                 class="fontz font-weight-regular"
@@ -55,8 +55,8 @@
             </v-flex>
 
             <v-flex xs12 class="py-2">
-              <p class="fontz2 grey--text">
-                <span class="black--text ">Smart ENERGY</span> : Power the Future
+              <p class="fontz22 grey--text text--darken-3">
+                <span class="black--text fontz2">Smart ENERGY</span> : Power the Future
               </p>
               <p
                 class="fontz font-weight-regular"
@@ -70,8 +70,8 @@
             </v-flex>
 
             <v-flex xs12 class="py-2">
-              <p class="fontz2 grey--text">
-                <span class="black--text ">Water is LIFE</span> : Harness and Protect for Future
+              <p class="fontz22 grey--text text--darken-3">
+                <span class="black--text fontz2">Water is LIFE</span> : Harness and Protect for Future
               </p>
               <p
                 class="fontz font-weight-regular"
@@ -85,8 +85,8 @@
             </v-flex>
 
             <v-flex xs12 class="py-2">
-              <p class="fontz2 grey--text">
-                <span class="black--text ">Waste to Wealth to Wonder</span> : REDUCE - REUSE - RECYCLE
+              <p class="fontz22 grey--text text--darken-3">
+                <span class="black--text fontz2">Waste to Wealth to Wonder</span> : REDUCE - REUSE - RECYCLE
               </p>
               <p
                 class="fontz font-weight-regular"
@@ -133,8 +133,8 @@
         <v-container>
           <v-layout row wrap>
             <v-flex xs12>
-              <p class="fontz grey--text">
-                <span class="fontz2" style="color: black;">Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
+              <p class="fontz22 grey--text text--darken-3">
+                <span class="fontz2 black--text" >Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -146,8 +146,8 @@
               </div>
             </v-flex>
             <v-flex xs12>
-              <p class="fontz grey--text">
-                <span class="fontz2" style="color: black;">DIY Manufacturing Content Criteria</span> – (Do It Yourself – Ready for manufacturing Digital content of designed Product) :
+              <p class="fontz22 grey--text text--darken-3">
+                <span class="fontz2 black--text">DIY Manufacturing Content Criteria</span> – (Do It Yourself – Ready for manufacturing Digital content of designed Product) :
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -204,8 +204,9 @@
           </v-layout>
         </v-container>
       </v-layout>
+      <Finalday id="finalday"/>
     </v-container>
-    <Finalday id="finalday"/>
+    
   </div>
 </template>
 
@@ -302,6 +303,10 @@ export default {
 .fontz2 {
   font-size: calc(16px + 5 * ((100vw - 320px) / 880));
   font-family: '3ds-SemiBold';
+}
+.fontz22 {
+  font-size: calc(14px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds';
 }
 .fontz {
   font-size: calc(12px + 3 * ((100vw - 320px) / 880));
