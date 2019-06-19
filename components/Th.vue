@@ -143,7 +143,7 @@ export default {
 
 <style scoped>
 .fontz {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 4 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 500;
   line-height: 1.2;
