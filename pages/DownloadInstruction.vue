@@ -3,7 +3,7 @@
     <v-container>
       <Subtitle subtopic="Download Instructions"/>
       <p class="my-font">
-        <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Dassault Systèmes will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time, to all participants asking for it to design and simulate their product ideas.
+        <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Dassault Systèmes SOLIDWORKS Corp will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time, to all participants asking for it to design and simulate their product ideas.
       </p>
       <!-- 
       <p class="my-font">
@@ -23,11 +23,11 @@
 
       <p class="my-font">
         <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
-        <span class="my-font-cyan">Serial Number:</span> On request, students will be provided with SOLIDWORKS serial number through separate e-mail communication following the successful registration.
+        <span class="my-font-cyan">Serial Number:</span> Registered teams will be provided with SOLIDWORKS serial number through separate e-mail communication following the successful registration.
       </p>
 
       <p class="my-font">
-        <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Please follow below instructions to download and Install SOLIDWORKS 2019-2020 Education Version:
+        <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Please follow below instructions to download and install SOLIDWORKS 2019-2020 Student version:
       </p>
 
       <ol class="my-font ml-4" style="font-size: 1rem !important;">
@@ -38,10 +38,7 @@
             target="_blank"
           >www.solidworks.com/SEK</a>
         </li>
-        <li>
-          On the form enter
-          <span class="my-font-cyan">SEK-ID</span> as
-          <span class="my-font-cyan">XSEK12</span> and fill other information.
+        <li>On the form enter<span class="my-font-cyan">SEK-ID</span> as <span class="my-font-cyan">XSEK12</span> and fill other information.
         </li>
         <li>
           Choose version as
@@ -51,8 +48,7 @@
         <img class="img-fluid" :src="require('~/assets/img/down-inst1.jpg')">
 
         <li class="my-3">
-          On the next page select “
-          <span class="my-font-cyan">Accept Agreement and continue</span>”. Read the download and installation instructions and also ensure to check the security settings required for your browser for correctly downloading application using “
+          On the next page select “<span class="my-font-cyan">Accept Agreement and continue</span>”. Read the download and installation instructions and also ensure to check the security settings required for your browser for correctly downloading application using “
           <span
             class="my-font-cyan"
           >Click here</span>” link.
