@@ -10,22 +10,35 @@
             <v-flex xs12>
               <div v-for="item in reg" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
             </v-flex>
           </v-layout>
           <v-layout row wrap text-xs-center>
-            <v-flex xs12>
+            <!-- <v-flex xs6>
               <v-btn
                 outline
                 round
+                small
                 color="red"
                 target="_blank"
                 href="https://www.surveymonkey.com/r/7T7D2VH"
               >
-                <p class="my-auto caption">Register Here</p>
+                <span class="fontzd">Register Here</span>
+              </v-btn>
+            </v-flex>-->
+            <v-flex xs12>
+              <v-btn
+                outline
+                round
+                :small="onResize()"
+                color="blue darken-2"
+                target="_blank"
+                to="/DownloadInstruction"
+              >
+                <span class="fontzd">Download SOLIDWORKS</span>
               </v-btn>
             </v-flex>
           </v-layout>
@@ -43,7 +56,7 @@
               >Even a small mobile connected the whole world. Think, Re-engineer, simulate and validate existing product and optimize it. The optimized product should be smaller, lighter, faster and efficient and makes life easy.</p>
               <v-flex offset-xs1>
                 <p class="fontz" v-for="i in th1" :key="i">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ i }}
                 </p>
               </v-flex>
@@ -58,7 +71,7 @@
               >In the age of Smart Gadgets, let’s think of Smart Energy Designs. Can we create/convert products which uses only renewable energy in smarter way and be champions of green energy? These products could be for Offices, homes, villages and remote areas.</p>
               <v-flex offset-xs1>
                 <p class="fontz" v-for="i in th2" :key="i">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ i }}
                 </p>
               </v-flex>
@@ -73,7 +86,7 @@
               >While water is viewed as next big challenge for the world, can we explore ways to use water for energy generation and transportation to create green and sustainable environment? Think how to protect ocean and aquatic life from contamination and harmful plants. Can we design a product to design to achieve this? Can we design products for villages and remote communities to avail clean /drinkable water?</p>
               <v-flex offset-xs1>
                 <p class="fontz" v-for="i in th3" :key="i">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ i }}
                 </p>
               </v-flex>
@@ -88,7 +101,7 @@
               >Can we look at ‘waste’ in a different perspective to create greener and sustainable environment? Trigger your imagination and device a mechanism, which can convert solid, liquid, organic waste, recyclable waste & hazardous waste in a meaningful way to generate wealth for country and wonder for world.</p>
               <v-flex offset-xs1>
                 <p class="fontz" v-for="i in th4" :key="i">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ i }}
                 </p>
               </v-flex>
@@ -102,7 +115,7 @@
             <v-flex xs12>
               <div v-for="item in contest" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -116,7 +129,7 @@
             <v-flex xs12>
               <div v-for="item in contest" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -135,7 +148,7 @@
             <v-flex xs10 offset-xs1>
               <div v-for="item in eval1" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -148,7 +161,7 @@
             <v-flex xs10 offset-xs1>
               <div v-for="item in eval2" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -173,13 +186,13 @@
           <v-layout row wrap>
             <v-flex xs12>
               <p class="fontz font-weight-regular">
-                <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>Team needs to submit their Design, Presentations and supporting manufacturing details aligned with themes before last week of August.
+                <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Team needs to submit their Design, Presentations and supporting manufacturing details aligned with themes before last week of August.
               </p>
             </v-flex>
             <v-flex xs12>
               <div v-for="item in eval3" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -191,7 +204,7 @@
             <v-flex xs10 offset-xs1>
               <div v-for="item in evalnote" :key="item">
                 <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pa-0 ma-0">fas fa-caret-right</v-icon>
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
                   {{ item }}
                 </p>
               </div>
@@ -224,6 +237,20 @@ export default {
     Finalday,
     fbtn
   },
+  mounted() {
+    this.onResize()
+  },
+
+  methods: {
+    onResize() {
+      if (window.innerWidth < 700) {
+        return true
+      } else {
+        return false
+      }
+    }
+  },
+
   data() {
     return {
       th1: [
@@ -295,7 +322,7 @@ export default {
 </script>
 <style scoped>
 .para {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880)) !important;
 }
 .bord {
   border: 2px solid #005386;
@@ -304,21 +331,26 @@ export default {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
 }
 .fontz2 {
-  font-size: calc(16px + 5 * ((100vw - 320px) / 880));
+  font-size: calc(16px + 5 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-SemiBold';
 }
 .fontz22 {
-  font-size: calc(15px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(15px + 4 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds';
 }
 .fontz {
-  font-size: calc(13px + 2.5 * ((100vw - 320px) / 880));
+  font-size: calc(13px + 2.5 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds';
-  font-weight: 500;
   margin-bottom: 12px;
   line-height: 1.2;
   letter-spacing: -0.2px;
   color: #757575;
   /* 757575 424242*/
+}
+
+.fontzd {
+  font-size: calc(10px + 3 * ((100vw - 320px) / 880));
+  font-family: '3ds';
+  letter-spacing: -0.2px;
 }
 </style>

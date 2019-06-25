@@ -22,7 +22,7 @@
     <v-container class="hidden-sm-and-up pt-0">
       <v-layout row wrap justify-center text-xs-center>
         <v-flex xs12>
-          <v-btn color="#012D52" class="fontzd" round dark @click="top">
+          <v-btn color="#012D52" class="fontzd" round small dark @click="top">
             <v-icon class="mr-1">fas fa-angle-up</v-icon>Top
           </v-btn>
         </v-flex>
