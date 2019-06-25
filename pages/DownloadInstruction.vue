@@ -3,7 +3,7 @@
     <v-container>
       <Subtitle subtopic="Download Instructions"/>
       <p class="my-font">
-        <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Dassault Systèmes SOLIDWORKS Corp will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time, to all participants asking for it to design and simulate their product ideas.
+        <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Dassault Systèmes SOLIDWORKS Corp will offer a limited period license of SOLIDWORKS Student version to all participant teams after successful registration.
       </p>
       <!-- 
       <p class="my-font">
@@ -23,7 +23,7 @@
 
       <p class="my-font">
         <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
-        <span class="my-font-cyan">Serial Number:</span> Registered teams will be provided with SOLIDWORKS serial number through separate e-mail communication following the successful registration.
+        License serial number will be provided through separate email communication to all registered teams.
       </p>
 
       <p class="my-font">
