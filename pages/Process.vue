@@ -34,9 +34,8 @@
                 outline
                 round
                 :small="onResize()"
-                color="blue darken-2"
-                target="_blank"
-                to="/DownloadInstruction"
+                color="blue darken-2"               
+                router to="/DownloadInstruction"
               >
                 <span class="fontzd">Download SOLIDWORKS</span>
               </v-btn>
