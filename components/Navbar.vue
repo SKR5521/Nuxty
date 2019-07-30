@@ -52,20 +52,42 @@
           <span>{{Gallery.text}}</span>
         </v-btn>
       </v-toolbar-items>
-      <v-btn
-        class="hidden-sm-and-down"
-        round
-        target="_blank"
-        href="https://www.surveymonkey.com/r/7T7D2VH"
-        color="#239DE8"
-      >Register Here</v-btn>
+
+      <v-btn round @click.stop="dialog = true" color="#19A0FE">
+        <v-badge color="purple">
+          <template v-slot:badge>1</template>
+          <v-icon small class="mr-1">fas fa-bell</v-icon>UPDATES
+        </v-badge>
+      </v-btn>
     </v-toolbar>
 
+    <!-- Dialog code here  -->
+    <v-dialog v-model="dialog" max-width="600px">
+      <v-card>
+        <v-card-title class="fontz2 darken-2 white--text">Event Updates</v-card-title>
+
+        <v-card-text>
+          <div v-for="it in updateText" :key="it">
+            <p class="fontz py-1">
+              <v-icon class="grey--text text--darken-2 para pr-1 ma-0">fas fa-caret-right</v-icon>
+              {{ it }}
+            </p>
+          </div>
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="red" small round class="white--text" @click="dialog = false">close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
     <v-navigation-drawer class="navtogglebg" v-model="drawer" app temporary dark>
       <div class="text-uppercase white--text text-xs-center py-1 mt-4 mb-5">
         <span class="font-weight-bold display-1">AAKRUTI</span>
         <span class="thin">2019</span>
-        <br>
+        <br />
         <span class="font-weight-light body-1">Shaping Imagination</span>
       </div>
 
@@ -152,6 +174,10 @@ export default {
     return {
       col: '#E31818',
       drawer: false,
+      dialog: false,
+      updateText: [
+        'The Final Date for the registrations has been extended till 10th August 2019.'
+      ],
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
       Process: { icon: 'fas fa-cogs', text: 'Process', route: '/Process' },
       Oldak: {
@@ -174,6 +200,18 @@ export default {
   font-family: '3ds-light';
   font-size: 34px;
 }
+.para {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880)) !important;
+}
+.fontz {
+  font-size: calc(14px + 2.5 * ((100vw - 320px) / 880)) !important;
+  font-family: '3ds';
+  margin-bottom: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: #012d52;
+  /* 757575 424242*/
+}
 .navtogglebg {
   background: #00345c;
   background: linear-gradient(
@@ -192,5 +230,13 @@ export default {
 .fontbtn {
   font-family: '3ds' !important;
   font-size: 13px !important;
+}
+.fontz2 {
+  font-size: calc(16px + 5 * ((100vw - 320px) / 880)) !important;
+  font-family: '3ds-SemiBold';
+  background-color: #014A7D;
+}
+.v-dialog__content--active {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 </style>

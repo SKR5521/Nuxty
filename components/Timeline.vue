@@ -17,7 +17,7 @@
         <v-card-actions >
           <v-layout row wrap justify-center align-center>
             <v-flex xs12 md6>
-              <p class="fontzd grey--text text--darken-2 mb-0 py-2">Last Date - {{ item.date }}</p>
+              <p class="fontzd grey--text text--darken-2 mb-0 py-2" >Last Date - {{ item.date }}</p>
             </v-flex>
             <v-flex xs12 md6>
               <v-btn :color="item.color" :small="den" class="fontzd" round outline router :to="item.link">Read More</v-btn>
@@ -35,8 +35,8 @@ export default {
       {
         title: 'Registration',
         color: 'red lighten-2',
-        icon: 'fas fa-user-edit',
-        date: '31st July 2019',
+        icon: 'fas fa-user-edit',        
+        date: 'Extended till 10th Aug 2019 ',
         content: [
           'This is first step to participate in this contest.', 
           'Students from all Engineering & Design colleges are eligible. Use registration link to get more details. '
