@@ -33,61 +33,6 @@
           </v-layout>
         </v-container>
 
-        <Subtitle id="idzone" subtopic="HOW AAKRUTI is different this year?" />
-        <v-container>
-          <v-layout row wrap justify-center>
-            <v-flex xs12>
-              <p
-                class="fontz22 grey--text text--darken-3"
-              >This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.</p>
-              <div v-for="item in zone" :key="item">
-                <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
-                  {{ item }}
-                </p>
-              </div>
-            </v-flex>
-          </v-layout>
-          <v-layout row wrap fill-height>
-            <v-flex xs12 md4 class="pa-2">
-              <v-card class="elevation-10">
-                <v-card-title class="text-xs-center ">
-                  <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 1 - NORTH - DELHI</p>
-                </v-card-title>
-                <v-card-text>
-                  <h1
-                    class="fontz grey--text text--darken-1"
-                  >Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 md4 class="pa-2" >
-              <v-card class="elevation-10" height="100%">
-                <v-card-title class="text-xs-center">
-                  <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 2 - SOUTH - CHENNAI</p>
-                </v-card-title>
-                <v-card-text>
-                  <h1
-                    class="fontz grey--text text--darken-1"
-                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, Andaman and Nicobar, Lakshwadeep</h1>
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 md4 class="pa-2">
-              <v-card class="elevation-10" height="100%">
-                <v-card-title class="text-xs-center ">
-                  <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 3 - CENTRAL - AHMEDABAD</p>
-                </v-card-title>
-                <v-card-text>
-                  <h1
-                    class="fontz grey--text text--darken-1"
-                  >Maharashtra, Gujarat, Madhya Pradesh, Goa, Chhattisgarh</h1>
-                </v-card-text>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-
         <Subtitle id="themesel" subtopic="HOW to choose a Theme?" />
         <v-container>
           <v-layout row wrap justify-center>
@@ -256,6 +201,61 @@
           </v-layout>
         </v-container>
       </v-layout>
+      <Subtitle id="idzone" subtopic="HOW AAKRUTI is different this year?" />
+      <v-container>
+        <v-layout row wrap justify-center>
+          <v-flex xs12>
+            <p
+              class="fontz22 grey--text text--darken-3"
+            >This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.</p>
+            <div v-for="item in zone" :key="item">
+              <p class="fontz font-weight-regular">
+                <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
+                {{ item }}
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+        <v-layout row wrap fill-height>
+          <v-flex xs12 md4 class="pa-2">
+            <v-card class="elevation-10">
+              <v-card-title class="text-xs-center">
+                <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 1 - NORTH - DELHI</p>
+              </v-card-title>
+              <v-card-text>
+                <h1
+                  class="fontz grey--text text--darken-1"
+                >UT-Delhi, Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 md4 class="pa-2">
+            <v-card class="elevation-10" height="100%">
+              <v-card-title class="text-xs-center">
+                <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 2 - SOUTH - CHENNAI</p>
+              </v-card-title>
+              <v-card-text>
+                <h1
+                  class="fontz grey--text text--darken-1"
+                >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshwadeep</h1>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 md4 class="pa-2">
+            <v-card class="elevation-10" height="100%">
+              <v-card-title class="text-xs-center">
+                <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 3 - CENTRAL - AHMEDABAD</p>
+              </v-card-title>
+              <v-card-text>
+                <h1
+                  class="fontz grey--text text--darken-1"
+                >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</h1>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+
       <Finalday id="finalday" />
     </v-container>
 

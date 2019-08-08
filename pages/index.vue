@@ -33,7 +33,7 @@
                 <v-card-text>
                   <h1
                     class="fontz2 grey--text text--darken-1"
-                  >Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
+                  >UT-Delhi, Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -45,7 +45,7 @@
                 <v-card-text>
                   <h1
                     class="fontz2 grey--text text--darken-1"
-                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, Andaman and Nicobar, Lakshwadeep</h1>
+                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshwadeep</h1>
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -57,7 +57,7 @@
                 <v-card-text>
                   <h1
                     class="fontz2 grey--text text--darken-1"
-                  >Maharashtra, Gujarat, Madhya Pradesh, Goa, Chhattisgarh</h1>
+                  >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</h1>
                 </v-card-text>
               </v-card>
             </v-flex>
