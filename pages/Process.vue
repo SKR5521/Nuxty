@@ -237,7 +237,7 @@
               <v-card-text>
                 <h1
                   class="fontz grey--text text--darken-1"
-                >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshwadeep</h1>
+                >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</h1>
               </v-card-text>
             </v-card>
           </v-flex>

@@ -22,7 +22,7 @@
 
     <v-container>
       <Title topic="Zones" />
-      <v-layout row wrap>
+      <v-layout row wrap >
         <v-flex xs12 md6>
           <v-layout column wrap>
             <v-flex xs12 class="py-2">
@@ -45,7 +45,7 @@
                 <v-card-text>
                   <h1
                     class="fontz2 grey--text text--darken-1"
-                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshwadeep</h1>
+                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</h1>
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -68,7 +68,7 @@
         </v-flex>
         <v-layout row wrap>
           <v-flex xs12 class="pa-2">
-            <v-img :src="require('~/assets/img/india.jpg')"></v-img>
+            <v-img contain :src="require('~/assets/img/india.jpg')"></v-img>
           </v-flex>
         </v-layout>
       </v-layout>
