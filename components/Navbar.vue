@@ -55,7 +55,7 @@
 
       <v-btn round @click.stop="dialog = true" color="#19A0FE">
         <v-badge color="purple">
-          <template v-slot:badge>1</template>
+          <template v-slot:badge>3</template>
           <v-icon small class="mr-1">fas fa-bell</v-icon>UPDATES
         </v-badge>
       </v-btn>
@@ -176,7 +176,9 @@ export default {
       drawer: false,
       dialog: false,
       updateText: [
-        'The Final Date for the registrations has been extended till 10th August 2019.'
+        'The Final Date for the registrations has been extended till 10th August 2019.',
+        'Initial Design Concept submission has been started and the last date for which is 15th Aug 2019.',
+        'This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting we have divided the contest into 3 Zones. For more information checkout the Process section.'
       ],
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
       Process: { icon: 'fas fa-cogs', text: 'Process', route: '/Process' },

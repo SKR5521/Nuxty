@@ -58,12 +58,23 @@ export default {
         title: 'Final Design Submission',
         color: 'green lighten-1',
         icon: 'fas fa-upload',
-        date: 'Will be announced shortly',
+        date: '31st Aug 2019',
         content: [
           'This is the beginning of the first phase of the contest. Only teams which submit models before the last date will be considered for next phase.',
           'Detailed information can be found here.'
         ],
         link: '/Process/#msubmit'
+      },
+      {
+        title: 'Zonal Phase',
+        color: 'orange lighten-1',
+        icon: 'fas fa-award',
+        date: 'Will be announced shortly',
+        content: [
+          'This year we have recieved an overwhelming response for AAKRUTI from across the country.',
+          'To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.'
+        ],
+        link: '/Process/#idzone'
       },
       {
         title: 'Contest Finale',

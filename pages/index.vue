@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Homehero/>
+    <Homehero />
 
     <div class="py-5 back">
       <v-container id="first">
@@ -18,22 +18,64 @@
       </v-container>
     </div>
 
-    <Theme/>
-    <!-- <v-container>
-      <Title topic="Themes"/>
-      <v-layout row wrap>
-        <v-flex xs6 md3 v-for="stat in 4" :key="stat" pa-3>
-          <v-img
-            class="image-hover-highlight"
-            contain
-            :src="require('~/assets/img/Themes/' + stat + '.png')"
-          ></v-img>
-        </v-flex>
-      </v-layout>
-    </v-container>-->
+    <Theme />
 
     <v-container>
-      <Title topic="Prizes"/>
+      <Title topic="Zones" />
+      <v-layout row wrap>
+        <v-flex xs12 md6>
+          <v-layout column wrap>
+            <v-flex xs12 class="py-2">
+              <v-card class="elevation-10">
+                <v-card-title class="text-xs-center pb-0">
+                  <h1 class="fontz22 grey--text text--darken-3">ZONE 1 - NORTH - DELHI</h1>
+                </v-card-title>
+                <v-card-text>
+                  <h1
+                    class="fontz2 grey--text text--darken-1"
+                  >Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 class="py-2">
+              <v-card class="elevation-10">
+                <v-card-title class="text-xs-center pb-0">
+                  <h1 class="fontz22 grey--text text--darken-3">ZONE 2 - SOUTH - CHENNAI</h1>
+                </v-card-title>
+                <v-card-text>
+                  <h1
+                    class="fontz2 grey--text text--darken-1"
+                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, Andaman and Nicobar, Lakshwadeep</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 class="py-2">
+              <v-card class="elevation-10">
+                <v-card-title class="text-xs-center pb-0">
+                  <h1 class="fontz22 grey--text text--darken-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
+                </v-card-title>
+                <v-card-text>
+                  <h1
+                    class="fontz2 grey--text text--darken-1"
+                  >Maharashtra, Gujarat, Madhya Pradesh, Goa, Chhattisgarh</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12>
+              <v-btn class="fontzd" round outline router to="/Process/#idzone">Read More</v-btn>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+        <v-layout row wrap>
+          <v-flex xs12 class="pa-2">
+            <v-img :src="require('~/assets/img/india.jpg')"></v-img>
+          </v-flex>
+        </v-layout>
+      </v-layout>
+    </v-container>
+
+    <v-container>
+      <Title topic="Prizes" />
       <v-layout row wrap>
         <v-flex xs6 md3 v-for="stat in 4" :key="stat" pa-3>
           <v-img contain :src="require('~/assets/img/Prizes/' + stat + '.png')"></v-img>
@@ -45,18 +87,18 @@
       <v-layout text-xs-center wrap justify-center>
         <v-flex xs12 xl10 mb-4>
           <Title topic="Process"></Title>
-          <Timeline/>
+          <Timeline />
         </v-flex>
       </v-layout>
     </v-container>
-      <v-container fluid class="hidden-xs-only">
+    <v-container fluid class="hidden-xs-only">
       <v-layout row wrap>
         <v-spacer></v-spacer>
-        <fbtn/>
+        <fbtn />
       </v-layout>
     </v-container>
   </div>
-</template>
+</template> 
 
 <script>
 import Homehero from '@/components/HomeHero'
@@ -64,11 +106,13 @@ import Timeline from '@/components/Timeline'
 import Title from '@/components/Title'
 import Theme from '@/components/Th'
 import fbtn from '@/components/floatbtn'
+import Subtitle from '@/components/Subtitle'
 
 export default {
   components: {
     Homehero,
     Timeline,
+    Subtitle,
     Title,
     Theme,
     fbtn
@@ -97,8 +141,15 @@ export default {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  /* color: white; */
-  /* 3f3d3d */
+}
+.fontz2 {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds';
+}
+
+.fontz22 {
+  font-size: calc(15px + 4 * ((100vw - 320px) / 880)) !important;
+  font-family: '3ds';
 }
 
 .image-hover-highlight {

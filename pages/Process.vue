@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-container>
-      <Title topic="Process"/>
+      <Title topic="Process" />
 
       <v-layout row wrap>
-        <Subtitle id="register" subtopic="HOW can I Register?"/>
+        <Subtitle id="register" subtopic="HOW can I Register?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -16,26 +16,16 @@
               </div>
             </v-flex>
           </v-layout>
+
           <v-layout row wrap text-xs-center>
-            <!-- <v-flex xs6>
-              <v-btn
-                outline
-                round
-                small
-                color="red"
-                target="_blank"
-                href="https://www.surveymonkey.com/r/7T7D2VH"
-              >
-                <span class="fontzd">Register Here</span>
-              </v-btn>
-            </v-flex>-->
             <v-flex xs12>
               <v-btn
                 outline
                 round
                 :small="onResize()"
-                color="blue darken-2"               
-                router to="/DownloadInstruction"
+                color="blue darken-2"
+                router
+                to="/DownloadInstruction"
               >
                 <span class="fontzd">Download SOLIDWORKS</span>
               </v-btn>
@@ -43,7 +33,62 @@
           </v-layout>
         </v-container>
 
-        <Subtitle id="themesel" subtopic="HOW to choose a Theme?"/>
+        <Subtitle id="idzone" subtopic="HOW AAKRUTI is different this year?" />
+        <v-container>
+          <v-layout row wrap justify-center>
+            <v-flex xs12>
+              <p
+                class="fontz22 grey--text text--darken-3"
+              >This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.</p>
+              <div v-for="item in zone" :key="item">
+                <p class="fontz font-weight-regular">
+                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
+                  {{ item }}
+                </p>
+              </div>
+            </v-flex>
+          </v-layout>
+          <v-layout row wrap fill-height>
+            <v-flex xs12 md4 class="pa-2">
+              <v-card class="elevation-10">
+                <v-card-title class="text-xs-center ">
+                  <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 1 - NORTH - DELHI</p>
+                </v-card-title>
+                <v-card-text>
+                  <h1
+                    class="fontz grey--text text--darken-1"
+                  >Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md4 class="pa-2" >
+              <v-card class="elevation-10" height="100%">
+                <v-card-title class="text-xs-center">
+                  <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 2 - SOUTH - CHENNAI</p>
+                </v-card-title>
+                <v-card-text>
+                  <h1
+                    class="fontz grey--text text--darken-1"
+                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, Andaman and Nicobar, Lakshwadeep</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md4 class="pa-2">
+              <v-card class="elevation-10" height="100%">
+                <v-card-title class="text-xs-center ">
+                  <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 3 - CENTRAL - AHMEDABAD</p>
+                </v-card-title>
+                <v-card-text>
+                  <h1
+                    class="fontz grey--text text--darken-1"
+                  >Maharashtra, Gujarat, Madhya Pradesh, Goa, Chhattisgarh</h1>
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+
+        <Subtitle id="themesel" subtopic="HOW to choose a Theme?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12 class="py-2">
@@ -108,7 +153,7 @@
           </v-layout>
         </v-container>
 
-        <Subtitle id="msubmit" subtopic="HOW can I submit my Entry?"/>
+        <Subtitle id="msubmit" subtopic="HOW can I submit my Entry?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -136,7 +181,7 @@
           </v-layout>
         </v-container>-->
 
-        <Subtitle id="eval" subtopic="Evaluation Criteria"/>
+        <Subtitle id="eval" subtopic="Evaluation Criteria" />
         <v-container>
           <v-layout row wrap>
             <v-flex xs12>
@@ -211,13 +256,13 @@
           </v-layout>
         </v-container>
       </v-layout>
-      <Finalday id="finalday"/>
+      <Finalday id="finalday" />
     </v-container>
 
     <v-container fluid class="hidden-xs-only">
       <v-layout row wrap>
         <v-spacer></v-spacer>
-        <fbtn/>
+        <fbtn />
       </v-layout>
     </v-container>
   </div>
@@ -252,6 +297,10 @@ export default {
 
   data() {
     return {
+      zone: [
+        '10 Teams will be shortlisted from each zone and will get an oppertunity to present their ideas to an eminent Jury panel.',
+        'Winning teams from each zone will be selected for the final event of AAKRUTI 2019 which will be held in Pune.'
+      ],
       th1: [
         '“Re-engineer” an existing product and reduce weight, thereby improving output / performance ',
         'Product should be made smaller, lighter, or more efficient so that it can be used in beneficial ways which was not possible in current product ',
@@ -334,7 +383,7 @@ export default {
   font-family: '3ds-SemiBold';
 }
 .fontz22 {
-  font-size: calc(15px + 4 * ((100vw - 320px) / 880)) !important;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds';
 }
 .fontz {
