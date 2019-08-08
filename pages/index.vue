@@ -33,7 +33,7 @@
                 <v-card-text>
                   <h1
                     class="fontz2 grey--text text--darken-1"
-                  >UT-Delhi, Jammu & Kashmir, Hariyana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajastan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
+                  >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
                 </v-card-text>
               </v-card>
             </v-flex>
