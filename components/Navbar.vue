@@ -236,7 +236,7 @@ export default {
 .fontz2 {
   font-size: calc(16px + 5 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-SemiBold';
-  background-color: #014A7D;
+  background-color: #014a7d;
 }
 .v-dialog__content--active {
   background-color: rgba(0, 0, 0, 0.5) !important;

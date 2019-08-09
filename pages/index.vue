@@ -23,7 +23,7 @@
     <v-container>
       <Title topic="Zones" />
       <v-layout row wrap>
-        <v-flex class=" px-1 py-2" xs12 md4 justify-center text-xs-center>
+        <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
           <v-card class="bord" height="100%">
             <v-card-text text-xs-center>
               <h1 class="fontz22 pb-3">ZONE 1 - NORTH - DELHI</h1>
@@ -33,7 +33,7 @@
             </v-card-text>
           </v-card>
         </v-flex>
-        <v-flex class=" px-1 py-2" xs12 md4 justify-center text-xs-center>
+        <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
           <v-card class="bord" height="100%">
             <v-card-text text-xs-center>
               <h1 class="fontz22 pb-3">ZONE 2 - SOUTH - CHENNAI</h1>
@@ -43,7 +43,7 @@
             </v-card-text>
           </v-card>
         </v-flex>
-        <v-flex class=" px-1 py-2" xs12 md4 justify-center text-xs-center>
+        <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
           <v-card class="bord" height="100%">
             <v-card-text text-xs-center>
               <h1 class="fontz22 pb-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
@@ -53,12 +53,11 @@
             </v-card-text>
           </v-card>
         </v-flex>
-
       </v-layout>
-      
-      <v-layout row wrap >
+
+      <v-layout row wrap>
         <v-flex xs12 justify-center text-xs-center>
-          <v-btn  round outline router to="/process/#idzone">Read More</v-btn>
+          <v-btn round outline router to="/process/#idzone">Read More</v-btn>
         </v-flex>
       </v-layout>
 
@@ -111,7 +110,7 @@
             <v-img contain :src="require('~/assets/img/india.jpg')"></v-img>
           </v-flex>
         </v-layout>
-      </v-layout> -->
+      </v-layout>-->
     </v-container>
 
     <v-container>
