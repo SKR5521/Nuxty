@@ -176,7 +176,7 @@ export default {
       drawer: false,
       dialog: false,
       updateText: [
-        'The Final Date for the registrations has been extended till 10th August 2019.',
+        'Registration ends on 10th August 2019.',
         'Initial Design Concept submission has been started and the last date for which is 15th Aug 2019.',
         'This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting we have divided the contest into 3 Zones. For more information checkout the Process section.'
       ],

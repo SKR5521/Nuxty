@@ -201,6 +201,7 @@
           </v-layout>
         </v-container>
       </v-layout>
+
       <Subtitle id="idzone" subtopic="HOW AAKRUTI is different this year?" />
       <v-container>
         <v-layout row wrap justify-center>
@@ -216,42 +217,42 @@
             </div>
           </v-flex>
         </v-layout>
-        <v-layout row wrap fill-height>
-          <v-flex xs12 md4 class="pa-2">
-            <v-card class="elevation-10">
-              <v-card-title class="text-xs-center">
-                <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 1 - NORTH - DELHI</p>
-              </v-card-title>
-              <v-card-text>
-                <h1
-                  class="fontz grey--text text--darken-1"
-                >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
+        <v-layout row wrap>
+          <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
+            <v-card class="bord" height="100%">
+              <v-card-text text-xs-center>
+                <h1 class="fontz22 pb-3">ZONE 1 - NORTH - DELHI</h1>
+                <p
+                  class="fontz"
+                >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex xs12 md4 class="pa-2">
-            <v-card class="elevation-10" height="100%">
-              <v-card-title class="text-xs-center">
-                <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 2 - SOUTH - CHENNAI</p>
-              </v-card-title>
-              <v-card-text>
-                <h1
-                  class="fontz grey--text text--darken-1"
-                >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</h1>
+          <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
+            <v-card class="bord" height="100%">
+              <v-card-text text-xs-center>
+                <h1 class="fontz22 pb-3">ZONE 2 - SOUTH - CHENNAI</h1>
+                <p
+                  class="fontz"
+                >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</p>
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex xs12 md4 class="pa-2">
-            <v-card class="elevation-10" height="100%">
-              <v-card-title class="text-xs-center">
-                <p class="fontz22 grey--text text--darken-3 mb-0">ZONE 3 - CENTRAL - AHMEDABAD</p>
-              </v-card-title>
-              <v-card-text>
-                <h1
-                  class="fontz grey--text text--darken-1"
-                >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</h1>
+          <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
+            <v-card class="bord" height="100%">
+              <v-card-text text-xs-center>
+                <h1 class="fontz22 pb-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
+                <p
+                  class="fontz"
+                >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</p>
               </v-card-text>
             </v-card>
+          </v-flex>
+        </v-layout>
+
+        <v-layout row wrap justify-center text-xs-center>
+          <v-flex xs6 class="pa-2">
+            <v-img contain :src="require('~/assets/img/india.jpg')"></v-img>
           </v-flex>
         </v-layout>
       </v-container>

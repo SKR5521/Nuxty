@@ -22,7 +22,47 @@
 
     <v-container>
       <Title topic="Zones" />
+      <v-layout row wrap>
+        <v-flex class=" px-1 py-2" xs12 md4 justify-center text-xs-center>
+          <v-card class="bord" height="100%">
+            <v-card-text text-xs-center>
+              <h1 class="fontz22 pb-3">ZONE 1 - NORTH - DELHI</h1>
+              <p
+                class="fontz"
+              >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex class=" px-1 py-2" xs12 md4 justify-center text-xs-center>
+          <v-card class="bord" height="100%">
+            <v-card-text text-xs-center>
+              <h1 class="fontz22 pb-3">ZONE 2 - SOUTH - CHENNAI</h1>
+              <p
+                class="fontz"
+              >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</p>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex class=" px-1 py-2" xs12 md4 justify-center text-xs-center>
+          <v-card class="bord" height="100%">
+            <v-card-text text-xs-center>
+              <h1 class="fontz22 pb-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
+              <p
+                class="fontz"
+              >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</p>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+
+      </v-layout>
+      
       <v-layout row wrap >
+        <v-flex xs12 justify-center text-xs-center>
+          <v-btn  round outline router to="/process/#idzone">Read More</v-btn>
+        </v-flex>
+      </v-layout>
+
+      <!-- <v-layout row wrap>
         <v-flex xs12 md6>
           <v-layout column wrap>
             <v-flex xs12 class="py-2">
@@ -71,7 +111,7 @@
             <v-img contain :src="require('~/assets/img/india.jpg')"></v-img>
           </v-flex>
         </v-layout>
-      </v-layout>
+      </v-layout> -->
     </v-container>
 
     <v-container>
@@ -150,6 +190,13 @@ export default {
 .fontz22 {
   font-size: calc(15px + 4 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds';
+}
+
+.bord {
+  border: 2px solid #005386;
+  border-radius: 30px;
+  opacity: 0.9;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 .image-hover-highlight {
