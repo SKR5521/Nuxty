@@ -1,18 +1,12 @@
 <template>
   <v-container fluid class="home-hero" style="height: 100vh;">
-    <!-- <v-layout class="mt-4 py-2">
-      <v-flex xs4 sm3 md2 class="py-3">
-        <v-img class="animated fadeInLeft img-fluid" :src="require('../assets/img/DS1.png')"></v-img>
-      </v-flex>
-      <v-spacer></v-spacer>
-      <v-flex xs4 sm3 md2 class="py-3">
-        <v-img class="animated fadeInRight img-fluid" :src="require('../assets/img/DS.png')"></v-img>
-      </v-flex>
-    </v-layout> -->
+    <HomeSlides/>
+    <!-- <v-layout justify-center align-center column style="margin-top: 15vh;">
 
-    <v-layout justify-center align-center column style="margin-top: 15vh;">
       <div justify-center text-xs-center class="white--text animated fadeInDown">
-        <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span>
+        <h1 class="fontz">
+          AAKRUTI
+          <span class="lightfont">2019</span>
         </h1>
         <h2 class="fontz2 px-auto">Shaping Imagination</h2>
       </div>
@@ -37,15 +31,19 @@
       >
         <v-icon dark>fas fa-angle-down</v-icon>
       </v-btn>
-    </v-layout>
+    </v-layout> -->
   </v-container>
 </template>
 
 <script>
 import * as easings from 'vuetify/es5/util/easing-patterns'
+import HomeSlides from '@/components/HomeSlides'
 
 export default {
   name: 'HomeHero',
+  components: {
+    HomeSlides
+  },
   computed: {
     options() {
       return {
