@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="home-hero" style="height: 100vh;">
+  <v-container fluid class="home-hero px-0" style="height: 100vh;">
     <HomeSlides/>
     <!-- <v-layout justify-center align-center column style="margin-top: 15vh;">
 
