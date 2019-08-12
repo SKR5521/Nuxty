@@ -252,7 +252,7 @@
 
         <v-layout row wrap justify-center text-xs-center>
           <v-flex xs6 class="pa-2">
-            <v-img contain :src="require('~/assets/img/india.jpg')"></v-img>
+            <v-img contain :src="require('~/assets/img/india.png')"></v-img>
           </v-flex>
         </v-layout>
       </v-container>
