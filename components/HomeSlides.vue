@@ -38,6 +38,7 @@
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
           <v-flex xs11 class="white--text px-2">
+             <h2 class="fontz2 px-auto pt-5">Zonal Phase</h2>
             <p
               class="zonetitle px-auto pb-5 pt-5"
             >This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.</p>
