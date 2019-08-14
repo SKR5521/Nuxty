@@ -230,7 +230,7 @@
                 </p>
 
                 <p class="fontz black--text">
-                  <span class="fontz">VENUE :</span> SRM Institute Of Science And Technology, City Campus 
+                  <span class="fontz">VENUE :</span> SRM Institute Of Science And Technology, City Campus, Chennai
                 </p>
                 <p
                   class="fontz"
@@ -247,7 +247,7 @@
                 </p>
 
                 <p class="fontz black--text">
-                  <span class="fontz">VENUE :</span> Gujarat Technological University
+                  <span class="fontz">VENUE :</span> Gujarat Technological University, Ahmedabad
                 </p>
                 <p
                   class="fontz"

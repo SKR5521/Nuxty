@@ -58,7 +58,7 @@
                   </p>
 
                   <p class="fontz2venue white--text">
-                    <span class="grey--text fontzdate">VENUE :</span> SRM Institute Of Science And Technology, City Campus 
+                    <span class="grey--text fontzdate">VENUE :</span> SRM Institute Of Science And Technology, City Campus, Chennai
                   </p>
                 </div>
               </v-flex>
@@ -70,7 +70,7 @@
                   </p>
 
                   <p class="fontz2venue white--text">
-                    <span class="grey--text fontzdate">VENUE :</span> Gujarat Technological University
+                    <span class="grey--text fontzdate">VENUE :</span> Gujarat Technological University, Ahmedabad
                   </p>
                 </div>
               </v-flex>
