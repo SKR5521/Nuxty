@@ -35,7 +35,7 @@
 
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
-          <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Event</h2>
+          <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Events</h2>
           <v-flex xs11 class="white--text px-5">
             <v-layout row wrap  text-xs-left justify-center>
               <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
