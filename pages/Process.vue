@@ -194,7 +194,7 @@
           <v-flex xs12>
             <p
               class="fontz22 grey--text text--darken-3"
-            >This year we have recieved an overwhelming response for AAKRUTI from across the country. To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.</p>
+            >This year we have received an overwhelming response for AAKRUTI from across the country. To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.</p>
             <div v-for="item in zone" :key="item">
               <p class="fontz font-weight-regular">
                 <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
@@ -306,7 +306,7 @@ export default {
   data() {
     return {
       zone: [
-        '10 Teams will be shortlisted from each zone and will get an oppertunity to present their ideas to an eminent Jury panel.',
+        '10 Teams will be shortlisted from each zone and will get an opportunity to present their ideas to an eminent Jury panel.',
         'Winning teams from each zone will be selected for the final event of AAKRUTI 2019 which will be held in Pune.'
       ],
       th1: [
