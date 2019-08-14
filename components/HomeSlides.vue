@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="py-0 ma-0">
-    <v-carousel :cycle="false" height="85vh" hide-delimiters>
+    <v-carousel hide-controls height="85vh" hide-delimiters>
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
           <v-flex xs11 class="white--text animated fadeInDown pt-3">
@@ -46,7 +46,7 @@
                   </p>
 
                   <p class="fontz2venue white--text">
-                    <span class="grey--text fontzdate">VENUE :</span> Army Institute of Technology, Pune
+                    <span class="grey--text fontzdate">VENUE :</span> Pearl Academy, Rajouri Garden, New Delhi
                   </p>
                 </div>
               </v-flex>
@@ -58,7 +58,7 @@
                   </p>
 
                   <p class="fontz2venue white--text">
-                    <span class="grey--text fontzdate">VENUE :</span> Army Institute of Technology, Pune
+                    <span class="grey--text fontzdate">VENUE :</span> SRM Institute Of Science And Technology, City Campus 
                   </p>
                 </div>
               </v-flex>
@@ -70,7 +70,7 @@
                   </p>
 
                   <p class="fontz2venue white--text">
-                    <span class="grey--text fontzdate">VENUE :</span> Army Institute of Technology, Pune
+                    <span class="grey--text fontzdate">VENUE :</span> Gujarat Technological University
                   </p>
                 </div>
               </v-flex>
@@ -88,7 +88,7 @@
         </v-layout>
       </v-carousel-item>
 
-      <v-carousel-item>
+      <!-- <v-carousel-item>
         <v-layout row wrap text-xs-left>
           <v-flex xs12>
             <h2 class="fontz2 white--text px-auto pb-5 pt-5">Product Submission</h2>
@@ -103,7 +103,7 @@
             </v-layout>
           </v-flex>
         </v-layout>
-      </v-carousel-item>
+      </v-carousel-item> -->
 
     </v-carousel>
   </v-container>

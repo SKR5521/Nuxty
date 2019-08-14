@@ -213,7 +213,7 @@
                 </p>
 
                 <p class="fontz black--text">
-                  <span class="fontz">VENUE :</span> Army Institute of Technology, Pune
+                  <span class="fontz">VENUE :</span> Pearl Academy, Rajouri Garden, New Delhi
                 </p>
                 <p
                   class="fontz"
@@ -230,7 +230,7 @@
                 </p>
 
                 <p class="fontz black--text">
-                  <span class="fontz">VENUE :</span> Army Institute of Technology, Pune
+                  <span class="fontz">VENUE :</span> SRM Institute Of Science And Technology, City Campus 
                 </p>
                 <p
                   class="fontz"
@@ -247,7 +247,7 @@
                 </p>
 
                 <p class="fontz black--text">
-                  <span class="fontz">VENUE :</span> Army Institute of Technology, Pune
+                  <span class="fontz">VENUE :</span> Gujarat Technological University
                 </p>
                 <p
                   class="fontz"
@@ -258,7 +258,7 @@
         </v-layout>
 
         <v-layout row wrap justify-center text-xs-center>
-          <v-flex xs6 class="pa-2">
+          <v-flex xs10 class="pa-2">
             <v-img contain :src="require('~/assets/img/india.png')"></v-img>
           </v-flex>
         </v-layout>
