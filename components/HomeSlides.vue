@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="py-0 ma-0">
-    <v-carousel hide-controls height="85vh" hide-delimiters>
+    <v-carousel height="85vh" hide-delimiters>
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
           <v-flex xs11 class="white--text animated fadeInDown pt-3">
@@ -37,9 +37,9 @@
         <v-layout column fill-height justify-center text-xs-center>
           <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Phase</h2>
           <v-flex xs11 class="white--text px-5">
-            <v-layout row wrap text-xs-left justify-center>
-              <v-flex xs12 md3 class="pa-2">
-                <div style="border-bottom: 4px solid #34ABFE;">
+            <v-layout row wrap  text-xs-left justify-center>
+              <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
+                <div  >
                   <p class="zonetitle">ZONE 1-CENTER-DELHI</p>
                   <p class="fontz2venue white--text">
                     <span class="grey--text fontzdate">DATE :</span> 13th September 2019
@@ -50,8 +50,8 @@
                   </p>
                 </div>
               </v-flex>
-              <v-flex xs12 md3 class="pa-2">
-                <div style="border-bottom: 4px solid #34ABFE;">
+              <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
+                <div >
                   <p class="zonetitle">ZONE 2-CENTER-CHENNAI</p>
                   <p class="fontz2venue white--text">
                     <span class="grey--text fontzdate">DATE :</span> 16th September 2019
@@ -62,8 +62,8 @@
                   </p>
                 </div>
               </v-flex>
-              <v-flex xs12 md3 class="pa-2">
-                <div style="border-bottom: 4px solid #34ABFE;">
+              <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
+                <div >
                   <p class="zonetitle">ZONE 3-CENTER-AHMEDABAD</p>
                   <p class="fontz2venue white--text">
                     <span class="grey--text fontzdate">DATE :</span> 24th September 2019
