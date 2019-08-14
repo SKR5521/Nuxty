@@ -55,7 +55,7 @@
 
       <v-btn round @click.stop="dialog = true" color="#19A0FE">
         <v-badge color="purple">
-          <template v-slot:badge>3</template>
+          <template v-slot:badge>2</template>
           <v-icon small class="mr-1">fas fa-bell</v-icon>UPDATES
         </v-badge>
       </v-btn>
@@ -176,8 +176,7 @@ export default {
       drawer: false,
       dialog: false,
       updateText: [
-        'Registration Ends on 10th August 2019.',
-        'Last date of Initial Design Concept and Product Synopsis submission - 15th August 2019.',
+        'Product submission Ends on 31st September 2019.',
         'Announcing Zonal Rounds - Zonal qualifier rounds will happen in three zones Delhi, Ahmedabad and Chennai. For more details checkout Process section.'
       ],
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },

@@ -4,7 +4,7 @@
       <Title topic="Process" />
 
       <v-layout row wrap>
-        <Subtitle id="register" subtopic="HOW can I Register?" />
+        <!-- <Subtitle id="register" subtopic="HOW can I Register?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -31,9 +31,9 @@
               </v-btn>
             </v-flex>
           </v-layout>
-        </v-container>
+        </v-container>-->
 
-        <Subtitle id="themesel" subtopic="HOW to choose a Theme?" />
+        <!-- <Subtitle id="themesel" subtopic="HOW to choose a Theme?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12 class="py-2">
@@ -96,7 +96,7 @@
               </v-flex>
             </v-flex>
           </v-layout>
-        </v-container>
+        </v-container>-->
 
         <Subtitle id="msubmit" subtopic="HOW can I submit my Entry?" />
         <v-container>
@@ -111,20 +111,6 @@
             </v-flex>
           </v-layout>
         </v-container>
-
-        <!-- <Subtitle id="contest" subtopic="Contest Process"/>
-        <v-container>
-          <v-layout row wrap justify-center>
-            <v-flex xs12>
-              <div v-for="item in contest" :key="item">
-                <p class="fontz font-weight-regular">
-                  <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>
-                  {{ item }}
-                </p>
-              </div>
-            </v-flex>
-          </v-layout>
-        </v-container>-->
 
         <Subtitle id="eval" subtopic="Evaluation Criteria" />
         <v-container>
@@ -218,30 +204,51 @@
           </v-flex>
         </v-layout>
         <v-layout row wrap>
-          <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
+          <v-flex class="px-1 py-2" xs12 md4 justify-center>
             <v-card class="bord" height="100%">
-              <v-card-text text-xs-center>
-                <h1 class="fontz22 pb-3">ZONE 1 - NORTH - DELHI</h1>
+              <v-card-text>
+                <h1 class="fontz22 pb-3">ZONE 1 - CENTER- DELHI</h1>
+                <p class="fontz black--text">
+                  <span class="fontz">DATE :</span> 13th September 2019
+                </p>
+
+                <p class="fontz black--text">
+                  <span class="fontz">VENUE :</span> Army Institute of Technology, Pune
+                </p>
                 <p
                   class="fontz"
                 >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
+          <v-flex class="px-1 py-2" xs12 md4 justify-center>
             <v-card class="bord" height="100%">
-              <v-card-text text-xs-center>
-                <h1 class="fontz22 pb-3">ZONE 2 - SOUTH - CHENNAI</h1>
+              <v-card-text>
+                <h1 class="fontz22 pb-3">ZONE 2 - CENTER- CHENNAI</h1>
+                <p class="fontz black--text">
+                  <span class="fontz">DATE :</span> 16th September 2019
+                </p>
+
+                <p class="fontz black--text">
+                  <span class="fontz">VENUE :</span> Army Institute of Technology, Pune
+                </p>
                 <p
                   class="fontz"
                 >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</p>
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
+          <v-flex class="px-1 py-2" xs12 md4 justify-center>
             <v-card class="bord" height="100%">
-              <v-card-text text-xs-center>
-                <h1 class="fontz22 pb-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
+              <v-card-text>
+                <h1 class="fontz22 pb-3">ZONE 3 - CENTER- AHMEDABAD</h1>
+                <p class="fontz black--text">
+                  <span class="fontz">DATE :</span> 24th September 2019
+                </p>
+
+                <p class="fontz black--text">
+                  <span class="fontz">VENUE :</span> Army Institute of Technology, Pune
+                </p>
                 <p
                   class="fontz"
                 >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</p>
