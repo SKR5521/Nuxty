@@ -108,7 +108,18 @@
                   {{ item }}
                 </p>
               </div>
+              
             </v-flex>
+            <v-btn
+                outline
+                round
+                :small="onResize()"
+                color="blue darken-2"
+                router
+                to="/ProductSubmission"
+              >
+                <span class="fontzd">Product Submission Guide</span>
+              </v-btn>
           </v-layout>
         </v-container>
 
