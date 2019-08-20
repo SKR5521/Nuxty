@@ -36,7 +36,7 @@ export default {
         title: 'Registration',
         color: 'red lighten-2',
         icon: 'fas fa-user-edit',        
-        date: 'Extended till 20th Aug 2019 ',
+        date: 'Extended till 17th Aug 2019 ',
         content: [
           'This is the first step to participate in this contest.', 
           'Students from all Engineering & Design colleges are eligible. Use registration link to get more details. '

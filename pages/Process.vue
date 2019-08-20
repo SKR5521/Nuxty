@@ -370,7 +370,7 @@ export default {
         'Feasibility of design, design validations, design calculations.',
         'Any workable/minimum viable prototype made.',
         'Simulations done (CAE/CFD/Kinematic Analysis etc).',
-        'Use of Product Design application tools for modeling, visualization, rendering of the product and modelling design integrity.'
+        'Use of Product Design application tools for modeling, visualization, rendering of the product and modeling design integrity.'
       ],
       eval3: [
         'Any duplicate/existing product design/idea or Copyright ideas/design will stand for rejection.',
@@ -381,7 +381,7 @@ export default {
       evalnote: [
         'A ‘Certificate of Participation” will be given to all the qualified entries who will submit the complete models and product report.',
         'A ‘Certificate of Excellence’ will be given to top ten teams.',
-        "Jury's es decisions and results will be final and binding on all."
+        "Jury's decisions and results will be final and binding on all."
       ]
     }
   }
