@@ -10,22 +10,22 @@
             <v-layout row wrap justify-center class="my-3 px-3">
               <v-flex xs6 md2 text-xs-center class="pa-1">
                 <v-icon class="iconsize">fas fa-university</v-icon>
-                <p class="fontzstat mb-0">152</p>
+                <p class="fontzstat mb-0">372</p>
                 <p class="fontzstat2">Colleges</p>
               </v-flex>
               <v-flex xs6 md2 text-xs-center class="pa-1">
                 <v-icon class="iconsize">fas fa-map-marker-alt</v-icon>
-                <p class="fontzstat mb-0">27</p>
+                <p class="fontzstat mb-0">26</p>
                 <p class="fontzstat2">States</p>
               </v-flex>
               <v-flex xs6 md2 text-xs-center class="pa-1">
                 <v-icon class="iconsize">fas fa-user-graduate</v-icon>
-                <p class="fontzstat mb-0">4600</p>
+                <p class="fontzstat mb-0">4932</p>
                 <p class="fontzstat2">Students</p>
               </v-flex>
               <v-flex xs6 md2 text-xs-center class="pa-1">
                 <v-icon class="iconsize">fas fa-users</v-icon>
-                <p class="fontzstat mb-0">2300</p>
+                <p class="fontzstat mb-0">2466</p>
                 <p class="fontzstat2">Teams</p>
               </v-flex>
             </v-layout>
@@ -36,7 +36,7 @@
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
           <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Events</h2>
-          <v-flex xs11 class="white--text px-5">
+          <v-flex xs11 class="white--text animated fadeInDown px-5">
             <v-layout row wrap  text-xs-left justify-center>
               <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
                 <div  >

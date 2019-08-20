@@ -3,8 +3,7 @@
     <v-container>
       <Subtitle subtopic="AAKRUTI2019 – Product Submission Guide" />
       <p class="my-font">
-        <span class="my-font-cyan">Final Product Report Content :</span> For final evaluation teams will need to submit following data in the format. Please refer the attached document to know the detailed component of following
-        categories.
+        <span class="my-font-cyan">Final Product Report Content :</span> For final evaluation teams will need to submit following data in the format.
       </p>
 
       <p class="my-font black--text">1. Design CAD Data</p>
@@ -39,11 +38,11 @@
       <Subtitle class="pt-3" subtopic="Product submission round 1" />
 
       <p class="my-font">
-        <span class="my-font-cyan">Final Product Report Content :</span> For final evaluation teams will need to submit following data in the format explained in the “Submission Folder Structure” section in this email. ( Note that this is the final evaluation round of the contest.)
+        <span class="my-font-cyan">Final Product Report Content :</span> For final evaluation teams will need to submit following data in the format explained in the “Submission Folder Structure” section in this page. Note that this is the final evaluation round of the contest.
       </p>
 
       <p class="my-font">
-        <span class="my-font-cyan">1. Design CAD Data :</span> Folder containing all the required CAD files e.g. Parts, assemblies and drawings, standard components used from CAD library within CAD Software, Simulation Reports, CAD Costing reports if any.
+        <span class="my-font-cyan">1. Design CAD Data :</span> Folder containing all the required CAD files e.g. parts, assemblies and drawings, standard components used from CAD library within CAD Software, Simulation Reports, CAD Costing reports if any.
       </p>
 
       <ul class="my-font">
@@ -66,7 +65,7 @@
         <li>Solutions available to problem statement</li>
 
         <li>Market Survey for problem and solution</li>
-        <li>What is your solution product</li>
+        <li>What is your solution product?</li>
         <li>How it suits best over other solutions, usability, feasibility etc.</li>
         <li>Describe your product with details e.g. Working principal, Mechanism, product structure, actual working simulation</li>
         <li>Benefits of your product overcoming drawback of existing solutions. Drawbacks of your products that can be optimize in future study.</li>
@@ -88,8 +87,7 @@
       <Subtitle class="pt-3" subtopic="Product submission round 2" />
 
       <p class="my-font">
-        <span class="my-font-cyan">DIY Report :</span> (Applicable for the participating teams who have qualified for the zonal rounds)
-      </p>
+        <span class="my-font-cyan">DIY Report (Do It Yourself) :</span> <br> Teams who gets qualify for the zonal rounds, will need to submit DIY report along with their product designs. These teams will be communicated individually after results of Zonal rounds are declared.</p>
 
       <p
         class="my-font"
@@ -112,10 +110,7 @@
         </v-flex>
         <v-flex text-xs-center>
           <p class="my-font mt-3">
-            Let us know if you have any query related to installation on
-            <span
-              class="my-font-cyan"
-            >aakruti.contests@3ds.com</span>
+            For an queries contact: <span class="my-font-cyan">aakruti.contests@3ds.com</span>
           </p>
         </v-flex>
       </v-layout>

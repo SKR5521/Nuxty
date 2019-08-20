@@ -26,7 +26,7 @@
 
           <p
             class="grey--text text--darken-2 fontz"
-          >Each team will get 15 minutes to present their design to the AAKRUTI2019 jury panel, followed by a round of questions</p>
+          >Each team will get 15 minutes to present their design to the AAKRUTI2019 jury panel, followed by a round of questions.</p>
           <p
             class="grey--text text--darken-2 fontz"
           >Results will be announced during the prize distribution ceremony after the presentation round.</p>

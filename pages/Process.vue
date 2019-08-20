@@ -98,7 +98,7 @@
           </v-layout>
         </v-container>-->
 
-        <Subtitle id="msubmit" subtopic="HOW can I submit my Entry?" />
+        <Subtitle id="msubmit" subtopic="How can I Submit my Entry?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -128,7 +128,7 @@
           <v-layout row wrap>
             <v-flex xs12>
               <p class="fontz22 grey--text text--darken-3">
-                <span class="fontz2 black--text">Design Content Criteria</span> – Design of the product will be evaluated on the basis of :
+                <span class="fontz2 black--text">Design Content Criteria</span> – Design of the product will be evaluated on the basis of:
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -141,7 +141,7 @@
             </v-flex>
             <v-flex xs12>
               <p class="fontz22 grey--text text--darken-3">
-                <span class="fontz2 black--text">DIY Manufacturing Content Criteria</span> – (Do It Yourself – Ready for manufacturing Digital content of designed Product) :
+                <span class="fontz2 black--text">DIY Manufacturing Content Criteria</span> – (Do It Yourself – Ready for manufacturing digital content of designed product):
               </p>
             </v-flex>
             <v-flex xs10 offset-xs1>
@@ -159,12 +159,12 @@
               <v-flex xs12>
                 <blockquote
                   class="para font-italic grey--text text--darken-1"
-                >How YOUR innovative ideas can be taken to masses and provide them in a form so that it can be even manufactured at any village. Any artisan in a rural area should be able to manufacture the innovative product and make it available for local community.</blockquote>
+                >How YOUR innovative ideas can be taken to masses and provide them in a form so that it can be even manufactured at any village. Any artisan in a rural area should be able to manufacture the innovative product and make it available for the local community.</blockquote>
               </v-flex>
               <v-flex xs12>
                 <blockquote
                   class="para font-italic grey--text text--darken-1"
-                >Hence we request all the innovators to come forward and contribute for the betterment of community and utilize your creativity, knowledge and skills to help a needy.</blockquote>
+                >Hence we request all the innovators to come forward and contribute for the betterment of community and utilize your creativity, knowledge and skills to help the needy.</blockquote>
               </v-flex>
             </div>
           </v-layout>
@@ -172,7 +172,7 @@
           <v-layout row wrap>
             <v-flex xs12>
               <p class="fontz font-weight-regular">
-                <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Team needs to submit their Design, Presentations and supporting manufacturing details aligned with themes before last week of August.
+                <v-icon class="black--text para pr-2 ma-0">fas fa-caret-right</v-icon>Team needs to submit their design, presentations and supporting manufacturing details aligned with themes before the last week of August.
               </p>
             </v-flex>
             <v-flex xs12>
@@ -228,7 +228,7 @@
                 </p>
                 <p
                   class="fontz"
-                >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
+                >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttarakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
               </v-card-text>
             </v-card>
           </v-flex>
@@ -318,70 +318,70 @@ export default {
     return {
       zone: [
         '10 Teams will be shortlisted from each zone and will get an opportunity to present their ideas to an eminent Jury panel.',
-        'Winning teams from each zone will be selected for the final event of AAKRUTI 2019 which will be held in Pune.'
+        'Winning teams from each zone will be selected for the final event of AAKRUTI2019 which will be held in Pune.'
       ],
-      th1: [
-        '“Re-engineer” an existing product and reduce weight, thereby improving output / performance ',
-        'Product should be made smaller, lighter, or more efficient so that it can be used in beneficial ways which was not possible in current product ',
-        'Product must be specifically re-designed to derive benefits of ‘Additive Manufacturing’, Topology Optimization ',
-        'Improvement should benefit manual workers or labor by reducing effort and providing safety '
-      ],
-      th2: [
-        'Renewable energy powered products for homes and offices in Urban and Rural areas (for example “Solar Operated pump for agriculture”)',
-        'To make cities cleaner and more energy efficient, reduce pollution and create sustainable and great places to Live ',
-        'Innovative, efficient and faster recharging solutions for Electric Vehicles'
-      ],
-      th3: [
-        'Harnessing Ocean, Rivers for betterment of human life (e.g. Products to utilize tidal wave energy, under water farming, water transport) ',
-        'Protecting oceans and rivers from pollution, Oil spills, plastic, harmful hyacinth ',
-        'Innovative products for villages and remote communities to avail clean /drinkable water'
-      ],
-      th4: [
-        'Products designed by utilizing/reusing/recycling waste (including e-waste)',
-        'Products which can recycle biodegradable (Bio-waste) & non-biodegradable Waste for better use'
-      ],
+      // th1: [
+      //   '“Re-engineer” an existing product and reduce weight, thereby improving output / performance ',
+      //   'Product should be made smaller, lighter, or more efficient so that it can be used in beneficial ways which was not possible in current product ',
+      //   'Product must be specifically re-designed to derive benefits of ‘Additive Manufacturing’, Topology Optimization ',
+      //   'Improvement should benefit manual workers or labor by reducing effort and providing safety '
+      // ],
+      // th2: [
+      //   'Renewable energy powered products for homes and offices in Urban and Rural areas (for example “Solar Operated pump for agriculture”)',
+      //   'To make cities cleaner and more energy efficient, reduce pollution and create sustainable and great places to Live ',
+      //   'Innovative, efficient and faster recharging solutions for Electric Vehicles'
+      // ],
+      // th3: [
+      //   'Harnessing Ocean, Rivers for betterment of human life (e.g. Products to utilize tidal wave energy, under water farming, water transport) ',
+      //   'Protecting oceans and rivers from pollution, Oil spills, plastic, harmful hyacinth ',
+      //   'Innovative products for villages and remote communities to avail clean /drinkable water'
+      // ],
+      // th4: [
+      //   'Products designed by utilizing/reusing/recycling waste (including e-waste)',
+      //   'Products which can recycle biodegradable (Bio-waste) & non-biodegradable Waste for better use'
+      // ],
 
-      reg: [
-        'Register using the Registration link.',
-        'Students from all engineering and design colleges can participate and submit their innovative designs. ',
-        'Each participating team should have ONLY two students. ',
-        'Once registered, you will receive an email with your Team_ID which should be used for all further communications.',
-        'Dassault Systèmes will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time period.'
-      ],
+      // reg: [
+      //   'Register using the Registration link.',
+      //   'Students from all engineering and design colleges can participate and submit their innovative designs. ',
+      //   'Each participating team should have ONLY two students. ',
+      //   'Once registered, you will receive an email with your Team_ID which should be used for all further communications.',
+      //   'Dassault Systèmes will offer a license of SOLIDWORKS education edition to all the registered teams for the necessary time period.'
+      // ],
 
       contest: [
-        'Submission of ideas will be done in two phases "Initial Design Concept" phase and "Final Model Submission" phase. ',
-        'Teams need to provide products Synopsis & design concept during "Initial Design Concept" phase. Submission date will be announced separately.',
-        'Teams need to submit their complete design with details to pass the evaluation criteria before last date of Final Model submission phase.',
+        'Submission of ideas will be done in two phases: "Initial Design Concept" phase and "Final Model Submission" phase. ',
+        'Teams need to provide product synopsis & design concept during "Initial Design Concept" phase. Submission date will be announced separately.',
+        'Teams need to submit their complete design with details to pass the evaluation criteria before the last date of "Final Model Submission" phase.',
         'Only teams submitting detailed design will be considered as qualifying entries. Details for model submission will be communicated through e-mail. ',
         'Any duplicate/existing product design/idea or Copyright ideas/design will stand for rejection. ',
         'The design can either be an improved existing product, a brand new product or a machine or an entire solution architecture itself. ',
-        'The Product Design Idea must be compatible for Manufacturing and ready to use'
+        'The product design idea must be compatible for manufacture and be ready-to-use'
       ],
       eval1: [
         'Creativity, originality of design concept.',
         'Feasibility of design, design validations, design calculations.',
         'Any workable/minimum viable prototype made.',
-        'Simulations done (CAE/CFD/Kinematic Analysis etc.',
-        'Use of Product Design application tools for Modelling, Visualization, rendering of the product and modelling design integrity.'
+        'Simulations done (CAE/CFD/Kinematic Analysis etc).',
+        'Use of Product Design application tools for modeling, visualization, rendering of the product and modeling design integrity.'
       ],
       eval2: [
         'Creativity, originality of design concept.',
         'Feasibility of design, design validations, design calculations.',
         'Any workable/minimum viable prototype made.',
-        'Simulations done (CAE/CFD/Kinematic Analysis etc.',
-        'Use of Product Design application tools for Modelling, Visualization, rendering of the product and modelling design integrity.'
+        'Simulations done (CAE/CFD/Kinematic Analysis etc).',
+        'Use of Product Design application tools for modeling, visualization, rendering of the product and modelling design integrity.'
       ],
       eval3: [
         'Any duplicate/existing product design/idea or Copyright ideas/design will stand for rejection.',
         'The design can either be an improved existing product, a brand new product or a machine or an entire solution architecture itself.',
-        'The Product Design Idea must be compatible for Manufacturing and ready to use.',
+        'The product design idea must be compatible for manufacture and be ready-to-use.',
         'Team agrees to share this digital content on an open forum for utilization by masses (if feasible). We will ensure that due credits are given to respective teams.'
       ],
       evalnote: [
         'A ‘Certificate of Participation” will be given to all the qualified entries who will submit the complete models and product report.',
         'A ‘Certificate of Excellence’ will be given to top ten teams.',
-        'Juries decisions and results will be final and binding on all.'
+        "Jury's es decisions and results will be final and binding on all."
       ]
     }
   }

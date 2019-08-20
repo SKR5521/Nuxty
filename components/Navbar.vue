@@ -151,7 +151,7 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-      <v-layout text-xs-center row wrap>
+      <!-- <v-layout text-xs-center row wrap>
         <v-flex xs12>
           <v-btn
             outline
@@ -163,7 +163,7 @@
             style="border: 2px solid !important; font"
           >Register Here</v-btn>
         </v-flex>
-      </v-layout>
+      </v-layout> -->
     </v-navigation-drawer>
   </nav>
 </template>

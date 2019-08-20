@@ -36,9 +36,9 @@ export default {
         title: 'Registration',
         color: 'red lighten-2',
         icon: 'fas fa-user-edit',        
-        date: 'Extended till 10th Aug 2019 ',
+        date: 'Extended till 20th Aug 2019 ',
         content: [
-          'This is first step to participate in this contest.', 
+          'This is the first step to participate in this contest.', 
           'Students from all Engineering & Design colleges are eligible. Use registration link to get more details. '
         ],
         link: '/Process'
@@ -48,7 +48,7 @@ export default {
         color: 'purple darken-1',
         icon: 'fas fa-cog',
         content: [
-          'AAKRUTI is always aligned with different themes every year. Participants can select any theme/themes to submit models.',
+          'AAKRUTI is always aligned with different themes every year. Participants can select any theme(s) to submit models.',
           'Click on the link to know more about themes for AAKRUTI2019 contest.'
         ],
         date: 'Till registration ends',
@@ -60,7 +60,7 @@ export default {
         icon: 'fas fa-upload',
         date: '31st Aug 2019',
         content: [
-          'This is the beginning of the first phase of the contest. Only teams which submit models before the last date will be considered for next phase.',
+          'This is the beginning of the first phase of the contest. Only teams which submit models before the last date will be considered for the next phase.',
           'Detailed information can be found here.'
         ],
         link: '/Process/#msubmit'
@@ -82,8 +82,8 @@ export default {
         icon: 'fas fa-award',
         date: '3rd Oct 2019 (Tentative)',
         content: [
-          'This is the final stage of  the contest. AAKRUTI 2019 winners will be announced after the final presentation.',
-          'Selected teams will be announced will be invited for the Final Presentation before our esteemed Jury. '
+          'This is the final stage of  the contest. AAKRUTI2019 winners will be announced after the final presentation.',
+          'Selected teams will be invited for the Final Presentation before our esteemed jury. '
         ],
         link: '/Process/#finalday'
       }
