@@ -110,7 +110,7 @@
         </v-flex>
         <v-flex text-xs-center>
           <p class="my-font mt-3">
-            For an queries contact: <span class="my-font-cyan">aakruti.contests@3ds.com</span>
+            For any queries contact: <span class="my-font-cyan">aakruti.contests@3ds.com</span>
           </p>
         </v-flex>
       </v-layout>
