@@ -10,7 +10,7 @@
             <v-layout row wrap justify-center class="my-3 px-3">
               <v-flex xs6 md2 text-xs-center class="pa-1">
                 <v-icon class="iconsize">fas fa-university</v-icon>
-                <p class="fontzstat mb-0">372</p>
+                <p class="fontzstat mb-0">332</p>
                 <p class="fontzstat2">Colleges</p>
               </v-flex>
               <v-flex xs6 md2 text-xs-center class="pa-1">
