@@ -36,7 +36,7 @@ export default {
         title: 'Registration',
         color: 'red lighten-2',
         icon: 'fas fa-user-edit',        
-        date: 'Extended till 17th Aug 2019 ',
+        date: '17th Aug 2019 ',
         content: [
           'This is the first step to participate in this contest.', 
           'Students from all Engineering & Design colleges are eligible. Use registration link to get more details. '
@@ -69,7 +69,7 @@ export default {
         title: 'Zonal Phase',
         color: 'orange lighten-1',
         icon: 'fas fa-award',
-        date: 'Will be announced shortly',
+        date: 'Click the read more button for dates',
         content: [
           'This year we have recieved an overwhelming response for AAKRUTI from across the country.',
           'To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.'
@@ -77,10 +77,10 @@ export default {
         link: '/Process/#idzone'
       },
       {
-        title: 'Contest Finale',
+        title: 'Contest Finale - Pune',
         color: 'indigo',
         icon: 'fas fa-award',
-        date: '3rd Oct 2019 (Tentative)',
+        date: '3rd Oct 2019 ',
         content: [
           'This is the final stage of  the contest. AAKRUTI2019 winners will be announced after the final presentation.',
           'Selected teams will be invited for the Final Presentation before our esteemed jury. '
