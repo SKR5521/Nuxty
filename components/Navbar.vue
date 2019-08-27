@@ -178,7 +178,7 @@ export default {
       un: 3,
       updateText: [
         'Final product submission has been started. Submissions links has been emailed to all the participants.',
-        'Final product submission ends on 31st September 2019.',
+        'Final product submission ends on 31st August 2019.',
         'Announcing Zonal Rounds - Zonal qualifier rounds will happen in three zones Delhi, Ahmedabad and Chennai. For more details checkout Process section.'
       ],
       Home: { icon: 'fas fa-home', text: 'Home', route: '/' },
