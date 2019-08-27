@@ -5,8 +5,8 @@ export default {
   mode: 'spa',
 
   router: {    
-    base: '/aakruti/'
-    // base: '/Nuxty/'
+    // base: '/aakruti/'
+    base: '/Nuxty/'
   },
 
   devtool: 'source-map',
