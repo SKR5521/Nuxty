@@ -3,8 +3,8 @@
     <v-container>
       <Title topic="Process" />
 
-      <v-layout row wrap>
-        <!-- <Subtitle id="register" subtopic="HOW can I Register?" />
+      <!-- <v-layout row wrap> -->
+      <!-- <Subtitle id="register" subtopic="HOW can I Register?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -31,9 +31,9 @@
               </v-btn>
             </v-flex>
           </v-layout>
-        </v-container>-->
+      </v-container>-->
 
-        <!-- <Subtitle id="themesel" subtopic="HOW to choose a Theme?" />
+      <!-- <Subtitle id="themesel" subtopic="HOW to choose a Theme?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12 class="py-2">
@@ -96,9 +96,9 @@
               </v-flex>
             </v-flex>
           </v-layout>
-        </v-container>-->
+      </v-container>-->
 
-        <Subtitle id="msubmit" subtopic="How can I Submit my Entry?" />
+      <!-- <Subtitle id="msubmit" subtopic="How can I Submit my Entry?" />
         <v-container>
           <v-layout row wrap justify-center>
             <v-flex xs12>
@@ -121,9 +121,9 @@
                 <span class="fontzd">Product Submission Guide</span>
               </v-btn>
           </v-layout>
-        </v-container>
+      </v-container>-->
 
-        <Subtitle id="eval" subtopic="Evaluation Criteria" />
+      <!-- <Subtitle id="eval" subtopic="Evaluation Criteria" />
         <v-container>
           <v-layout row wrap>
             <v-flex xs12>
@@ -197,7 +197,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </v-layout>
+      </v-layout>-->
 
       <Subtitle id="idzone" subtopic="HOW AAKRUTI is different this year?" />
       <v-container>
@@ -230,11 +230,24 @@
                   class="fontz"
                 >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttarakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
               </v-card-text>
+              <v-card-actions>
+                <v-layout row wrap>
+                  <v-flex xs12 text-xs-center>
+                    <v-btn
+                      class="fontzd blue--text text--darken-3"
+                      color="#EED2A3"
+                      round
+                      router
+                      to="/#zonefinalist"
+                    >Zone Finalist</v-btn>
+                  </v-flex>
+                </v-layout>
+              </v-card-actions>
             </v-card>
           </v-flex>
           <v-flex class="px-1 py-2" xs12 md4 justify-center>
-            <v-card class="bord" height="100%">
-              <v-card-text>
+            <v-card class="bord flexcard" height="100%">
+              <v-card-text class="grow">
                 <h1 class="fontz22 pb-3">ZONE 2 - CENTER- CHENNAI</h1>
                 <p class="fontz black--text">
                   <span class="fontz">DATE :</span> 16th September 2019
@@ -247,11 +260,24 @@
                   class="fontz"
                 >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</p>
               </v-card-text>
+              <v-card-actions>
+                <v-layout row wrap>
+                  <v-flex xs12 text-xs-center>
+                    <v-btn
+                      class="fontzd blue--text text--darken-3"
+                      color="#E97E2E"
+                      round
+                      router
+                      to="/#zonefinalist"
+                    >Zone Finalist</v-btn>
+                  </v-flex>
+                </v-layout>
+              </v-card-actions>
             </v-card>
           </v-flex>
           <v-flex class="px-1 py-2" xs12 md4 justify-center>
-            <v-card class="bord" height="100%">
-              <v-card-text>
+            <v-card class="bord flexcard" height="100%">
+              <v-card-text class="grow">
                 <h1 class="fontz22 pb-3">ZONE 3 - CENTER- AHMEDABAD</h1>
                 <p class="fontz black--text">
                   <span class="fontz">DATE :</span> 24th September 2019
@@ -264,6 +290,19 @@
                   class="fontz"
                 >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</p>
               </v-card-text>
+              <v-card-actions>
+                <v-layout row wrap>
+                  <v-flex xs12 text-xs-center>
+                    <v-btn
+                      class="fontzd blue--text text--darken-3"
+                      color="#53BA45"
+                      round
+                      router
+                      to="/#zonefinalist"
+                    >Zone Finalist</v-btn>
+                  </v-flex>
+                </v-layout>
+              </v-card-actions>
             </v-card>
           </v-flex>
         </v-layout>
@@ -397,6 +436,11 @@ export default {
   opacity: 0.9;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
 }
+.flexcard {
+  display: flex;
+  flex-direction: column;
+}
+
 .fontz2 {
   font-size: calc(16px + 5 * ((100vw - 320px) / 880)) !important;
   font-family: '3ds-SemiBold';
@@ -417,7 +461,7 @@ export default {
 
 .fontzd {
   font-size: calc(10px + 3 * ((100vw - 320px) / 880));
-  font-family: '3ds';
+  font-family: '3ds-semibold';
   letter-spacing: -0.2px;
 }
 </style>

@@ -18,11 +18,30 @@
       </v-container>
     </div>
 
-    <Theme />
+    <!-- <Theme /> -->
 
-    <v-container>
-      <Title topic="Zones" />
-      <v-layout row wrap>
+    <v-container  >
+      <Title id="zonefinalist"  topic="Zone Finalists" />
+      <Subtitle  subtopic="Zone1-DELHI" />
+      <v-container  fill-height fluid>
+        <zonefinalist />
+      </v-container>
+      
+      <!-- <v-layout row wrap justify-center align-center>
+        <v-flex xs12 md3 class="pa-1">
+          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
+        </v-flex>
+      <v-flex xs12 md3 class="pa-1">
+          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
+        </v-flex>
+        <v-flex xs12 md3 class="pa-1">
+          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
+        </v-flex>
+        <v-flex xs12 md3 class="pa-1">
+          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
+        </v-flex>
+      </v-layout> -->
+      <!-- <v-layout row wrap>
         <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
           <v-card class="bord" height="100%">
             <v-card-text text-xs-center>
@@ -53,13 +72,13 @@
             </v-card-text>
           </v-card>
         </v-flex>
-      </v-layout>
-
+      </v-layout> -->
+<!-- 
       <v-layout row wrap>
         <v-flex xs12 justify-center text-xs-center>
           <v-btn round outline router to="/process/#idzone">Read More</v-btn>
         </v-flex>
-      </v-layout>
+      </v-layout> -->
 
       <!-- <v-layout row wrap>
         <v-flex xs12 md6>
@@ -146,6 +165,8 @@ import Title from '@/components/Title'
 import Theme from '@/components/Th'
 import fbtn from '@/components/floatbtn'
 import Subtitle from '@/components/Subtitle'
+// import zonecard from '@/components/zonecard'
+import zonefinalist from '@/components/zonefinalist'
 
 export default {
   components: {
@@ -154,6 +175,8 @@ export default {
     Subtitle,
     Title,
     Theme,
+    
+    zonefinalist,
     fbtn
   },
 

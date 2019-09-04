@@ -20,7 +20,7 @@
               <p class="fontzd grey--text text--darken-2 mb-0 py-2" >Last Date - {{ item.date }}</p>
             </v-flex>
             <v-flex xs12 md6>
-              <v-btn :color="item.color" :small="den" class="fontzd" round outline router :to="item.link">Read More</v-btn>
+              <v-btn :color="item.color" :disabled="item.dis"  :small="den" class="fontzd" round outline router :to="item.link">Read More</v-btn>
             </v-flex>
           </v-layout>
         </v-card-actions>
@@ -37,6 +37,7 @@ export default {
         color: 'red lighten-2',
         icon: 'fas fa-user-edit',        
         date: '17th Aug 2019 ',
+        dis: true,
         content: [
           'This is the first step to participate in this contest.', 
           'Students from all Engineering & Design colleges are eligible. Use registration link to get more details. '
@@ -47,6 +48,7 @@ export default {
         title: 'Theme Selection',
         color: 'purple darken-1',
         icon: 'fas fa-cog',
+        dis: true,
         content: [
           'AAKRUTI is always aligned with different themes every year. Participants can select any theme(s) to submit models.',
           'Click on the link to know more about themes for AAKRUTI2019 contest.'
@@ -59,6 +61,7 @@ export default {
         color: 'green lighten-1',
         icon: 'fas fa-upload',
         date: '31st Aug 2019',
+        dis: true,
         content: [
           'This is the beginning of the first phase of the contest. Only teams which submit models before the last date will be considered for the next phase.',
           'Detailed information can be found here.'
@@ -70,6 +73,7 @@ export default {
         color: 'orange lighten-1',
         icon: 'fas fa-award',
         date: 'Click the read more button for dates',
+        dis: false,
         content: [
           'This year we have recieved an overwhelming response for AAKRUTI from across the country.',
           'To make the contest more exciting and give more students an opportunity to present their ideas, we have divided the contest into 3 Zones.'
@@ -81,6 +85,7 @@ export default {
         color: 'indigo',
         icon: 'fas fa-award',
         date: '3rd Oct 2019 ',
+        dis: false,
         content: [
           'This is the final stage of  the contest. AAKRUTI2019 winners will be announced after the final presentation.',
           'Selected teams will be invited for the Final Presentation before our esteemed jury. '

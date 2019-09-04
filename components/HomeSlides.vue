@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="py-0 ma-0">
-    <v-carousel height="85vh" hide-delimiters>
+    <v-carousel  hide-controls height="85vh" hide-delimiters>
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
           <v-flex xs11 class="white--text animated fadeInDown pt-3">
@@ -34,11 +34,11 @@
       </v-carousel-item>
 
       <v-carousel-item>
-        <v-layout column fill-height justify-center text-xs-center>
-          <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Events</h2>
-          <v-flex xs11 class="white--text animated fadeInDown px-5">
-            <v-layout row wrap  text-xs-left justify-center>
-              <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
+        <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Events</h2>
+        <v-layout column justify-center text-xs-center>          
+          <v-flex xs11 class="white--text animated fadeInDown px-auto" >
+            <v-layout row wrap text-xs-left justify-center >
+              <v-flex xs12 md3 class="ma-3" style="border-bottom: 5px solid #34ABFE !important;">
                 <div  >
                   <p class="zonetitle">ZONE 1-CENTER-DELHI</p>
                   <p class="fontz2venue white--text">
@@ -50,7 +50,7 @@
                   </p>
                 </div>
               </v-flex>
-              <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
+              <v-flex xs12 md3 class="ma-3" style="border-bottom: 5px solid #34ABFE !important;">
                 <div >
                   <p class="zonetitle">ZONE 2-CENTER-CHENNAI</p>
                   <p class="fontz2venue white--text">
@@ -62,7 +62,7 @@
                   </p>
                 </div>
               </v-flex>
-              <v-flex xs12 md3 class="ma-2" style="border-bottom: 4px solid #34ABFE !important;">
+              <v-flex xs12 md3 class="ma-3" style="border-bottom: 5px solid #34ABFE !important;">
                 <div >
                   <p class="zonetitle">ZONE 3-CENTER-AHMEDABAD</p>
                   <p class="fontz2venue white--text">
