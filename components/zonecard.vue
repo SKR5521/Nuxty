@@ -10,7 +10,7 @@
             Team ID:
             <span class="fontzd">{{ Tid }}</span>
           </p>
-          <p class="fontzd pb-1 text-capitalize">
+          <p class="fontzd pb-2 text-capitalize">
             {{ member1 }}
             <span class="fontz">&amp;</span>
             {{ member2 }}
