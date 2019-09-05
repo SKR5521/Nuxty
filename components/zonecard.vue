@@ -10,13 +10,13 @@
             Team ID:
             <span class="fontzd">{{ Tid }}</span>
           </p>
-          <p class="fontzd pb-1">
+          <p class="fontzd pb-1 text-capitalize">
             {{ member1 }}
             <span class="fontz">&amp;</span>
             {{ member2 }}
           </p>
           <!-- <p class="fontz  mb-0 py-1">Member 2 : <span class="fontzd ">{{ member2 }}</span></p> -->
-          <p class="fontzd pb-1">{{ college }}</p>
+          <p class="fontzd text-capitalize pb-1">{{ college }}</p>
         </v-card-text>
       </v-card>
     </v-flex>
