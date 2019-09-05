@@ -53,11 +53,13 @@
         </v-btn>
       </v-toolbar-items>
 
-      <v-btn round @click.stop="dialog = true" color="#19A0FE">
-        <v-badge color="purple">
+      <v-btn round @click="top" color="#19A0FE">
+        <!-- <v-badge color="purple">
           <template v-slot:badge>{{ un }}</template>
           <v-icon small class="mr-1">fas fa-bell</v-icon>UPDATES
-        </v-badge>
+        </v-badge> -->
+
+        zone finalist
       </v-btn>
     </v-toolbar>
 
@@ -151,25 +153,28 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-      <!-- <v-layout text-xs-center row wrap>
-        <v-flex xs12>
-          <v-btn
-            outline
-            class="fontbtn"
-            target="_blank"
-            href="https://www.surveymonkey.com/r/7T7D2VH"
-            round
-            color="red"
-            style="border: 2px solid !important; font"
-          >Register Here</v-btn>
-        </v-flex>
-      </v-layout> -->
+
     </v-navigation-drawer>
   </nav>
 </template>
 
 <script>
 export default {
+  methods: {
+    top() {
+      if (this.$route.path == '/') {
+        // $vuetify.goto('#zonefinalist')
+        var el = document.getElementById('zonefinalist')
+        console.log(el)
+         window.scrollTo({  top: el.offsetTop , left: 0,  behavior: 'smooth'  })
+      }
+      else
+      {
+        this.$router.push({  path: '/#zonefinalist' })
+      }
+      
+    }
+  },
   data() {
     return {
       col: '#E31818',
