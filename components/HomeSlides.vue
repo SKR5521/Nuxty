@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="py-0 ma-0">
-    <v-carousel  hide-controls height="85vh" hide-delimiters>
+    <v-carousel  hide-controls height="95vh" hide-delimiters>
       <v-carousel-item>
         <v-layout column fill-height justify-center text-xs-center>
           <v-flex xs11 class="white--text animated fadeInDown pt-3">
@@ -34,7 +34,7 @@
       </v-carousel-item>
 
       <v-carousel-item>
-        <h2 class="fontz2 white--text px-auto pb-5 pt-4">Zonal Events</h2>
+        <h2 class="fontz2 white--text px-auto pb-4 pt-4">Zonal Events</h2>
         <v-layout column justify-center text-xs-center>          
           <v-flex xs11 class="white--text animated fadeInDown px-auto" >
             <v-layout row wrap text-xs-left justify-center >
