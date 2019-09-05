@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap justify-center>
-    <v-flex xs12 md3 class="pa-1"  v-for="item in delhi" :key="item">
+    <v-flex xs12 md3 class="pa-1" v-for="item in delhi" :key="item">
       <zonecard
         :Tname="item[0]"
         :Tid="item[1]"
@@ -21,45 +21,78 @@ export default {
   },
   data: () => ({
     delhi: [
-      ['ARG-Bots', '10913396847', 'gyan', 'bharat', 'Narsi Munji pune'],
-      ['ARG-Bots2', '10913396834', 'gyancd', 'bharatet', 'Narsi Munji pmpl'],
       [
-        'ARG-Bots3',
-        '10913396345',
-        'gyanwe',
-        'bharatesa',
-        'NarsiMunji chinchwad pindi'
+        'GearHeads',
+        '10885386219',
+        'Ankush Sharma',
+        'Aayush Srivastava',
+        'ABES Engineering College, Ghaziabad , UttarPradesh'
       ],
       [
-        'ARG-Bots4',
-        '10913396322',
-        'gyanwe',
-        'bharatesa',
-        'NarsiMunji chinchwad pindi Punjab'
-      ],
-       ['ARG-Bots', '10913396847', 'gyan', 'bharat', 'Narsi Munji pune'],
-      ['ARG-Bots2', '10913396834', 'gyancd', 'bharatet', 'Narsi Munji pmpl'],
-      [
-        'ARG-Bots3',
-        '10913396345',
-        'gyanwe',
-        'bharatesa',
-        'NarsiMunji chinchwad pindi'
+        'GenBrains',
+        '10882803577',
+        'BISWAJIT TRIPATHY',
+        'SIDHI SAGAR MISHRA',
+        'Veer Surendra Sai University of Technology, Burla, Odisha'
       ],
       [
-        'ARG-Bots4',
-        '10913396322',
-        'gyanwe',
-        'bharatesa',
-        'NarsiMunji chinchwad pindi Punjab'
+        'AAVISHKAAR',
+        '10889533219',
+        'ADITYA KUMAR',
+        'AYUSH CHATURVEDI',
+        'University Of Petroleum And Energy Studies, Dehradun, Uttarakhand'
       ],
-       ['ARG-Bots', '10913396847', 'gyan', 'bharat', 'Narsi Munji pune'],
-      ['ARG-Bots2', '10913396834', 'gyancd', 'bharatet', 'Narsi Munji pmpl']
-
-
-    ]
-
-
+      [
+        'Poseidon',
+        '10892061433',
+        'Souradeep Bhowmick',
+        'Anik Das',
+        'Birla Institute of Technology, Mesra, Jharkhand'
+      ],
+      [
+        'AAVISHKAAR',
+        '10913729315',
+        'ADITYA KUMAR',
+        'AYUSH CHATURVEDI',
+        'University Of Petroleum And Energy Studies, Dehradun, Uttarakhand'
+      ],
+      [
+        'Hybrix',
+        '10915485193',
+        'Nikhil Sharma',
+        'Aaishwarika Raj Sharma',
+        'Chitkara University, Chandigarh, Punjab'
+      ],
+      [
+        '1729',
+        '10916357890',
+        'KALPIT RAJAPATI',
+        'PRAKHAR YADAV',
+        'J.S.S. Academy of Technical Education, Noida, Uttar Pradesh'
+      ],
+      [
+        'Stormbreakers',
+        '10916544676',
+        'Hemant Garg',
+        'Chandan Gupta',
+        'University Institute of Engineering and Technology , Panjab University , Chandigarh'
+      ],
+      [
+        'Srijan',
+        '10916479101',
+        'Sachin Arya',
+        'Kamal Kant',
+        'JC Bose University of Science and Technology,YMCA ,Faridabad'
+      ],
+      [
+        'Enigma',
+        '10918287990',
+        'Biswajit Tripathy',
+        'Jaya Jasomati Bir',
+        'Veer Surendra Sai University of Technology,Burla, Odisha'
+      ]
+    ],
+    chennai: []
   })
 }
 </script>
