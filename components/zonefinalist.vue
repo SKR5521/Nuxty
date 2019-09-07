@@ -36,7 +36,7 @@ export default {
         'Veer Surendra Sai University of Technology, Burla, Odisha'
       ],
       [
-        'AAVISHKAAR',
+        'Aavishkaar',
         '10889533219',
         'ADITYA KUMAR',
         'AYUSH CHATURVEDI',
@@ -50,7 +50,7 @@ export default {
         'Birla Institute of Technology, Mesra, Jharkhand'
       ],
       [
-        'AAVISHKAAR',
+        'Aavishkaar',
         '10913729315',
         'ADITYA KUMAR',
         'AYUSH CHATURVEDI',
@@ -75,14 +75,14 @@ export default {
         '10916544676',
         'Hemant Garg',
         'Chandan Gupta',
-        'University Institute of Engineering and Technology , Panjab University , Chandigarh'
+        'University Institute of Engineering and Technology , Punjab University , Chandigarh'
       ],
       [
         'Srijan',
         '10916479101',
         'Sachin Arya',
         'Kamal Kant',
-        'JC Bose University of Science and Technology,YMCA ,Faridabad'
+        'JC Bose University of Science and Technology, YMCA ,Faridabad'
       ],
       [
         'Enigma',
