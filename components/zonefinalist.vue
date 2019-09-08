@@ -13,7 +13,7 @@
       </v-flex>
     </v-layout>
 
-    <Subtitle class="pt-3" subtopic="Zone 2-CHENNAI" />
+    <Subtitle id="chennai" class="pt-3" subtopic="Zone 2-CHENNAI" />
     <v-layout row wrap justify-center>
       <v-flex xs12 md3 class="pa-1" v-for="item in chennai" :key="item[1]">
         <zonecard
@@ -44,7 +44,7 @@ export default {
         '10885386219',
         'Ankush Sharma',
         'Aayush Srivastava',
-        'ABES Engineering College, Ghaziabad , UttarPradesh'
+        'ABES Engineering College, Ghaziabad, UttarPradesh'
       ],
       [
         'GenBrains',

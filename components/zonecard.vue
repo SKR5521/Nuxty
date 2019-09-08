@@ -34,13 +34,14 @@ p {
   margin-bottom: 0px;
 }
 .fontz {
-  font-size: calc(15px + 0.5 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 0.5 * ((100vw - 320px) / 880));
   font-family: '3ds-light';
   text-align: left !important;
 }
 .fontzd {
-  font-size: calc(15px + 0.5 * ((100vw - 320px) / 880));
+  font-size: calc(14px + 0.5 * ((100vw - 320px) / 880));
   font-family: '3ds';
+  color: #AEFFFF;
   text-align: left !important;
 }
 .bord {
@@ -50,9 +51,10 @@ p {
 }
 
 .fontz2 {
-  font-size: calc(20px + 3 * ((100vw - 320px) / 880));
+  font-size: calc(18px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 400;
+  color: #00FFCC;
   text-align: center !important;
 }
 </style>
