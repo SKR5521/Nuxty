@@ -49,15 +49,15 @@ export default {
       [
         'GenBrains',
         '10882803577',
-        'BISWAJIT TRIPATHY',
-        'SIDHI SAGAR MISHRA',
+        'Biswajit Tripathy',
+        'Sidhi Sagar Mishra',
         'Veer Surendra Sai University of Technology, Burla, Odisha'
       ],
       [
         'Aavishkaar',
         '10889533219',
-        'ADITYA KUMAR',
-        'AYUSH CHATURVEDI',
+        'Aditya Kumar',
+        'Ayush Chaturvedi',
         'University Of Petroleum And Energy Studies, Dehradun, Uttarakhand'
       ],
       [
@@ -70,8 +70,8 @@ export default {
       [
         'Aavishkaar',
         '10913729315',
-        'ADITYA KUMAR',
-        'AYUSH CHATURVEDI',
+        'Aditya Kumar',
+        'Ayush Chaturvedi',
         'University Of Petroleum And Energy Studies, Dehradun, Uttarakhand'
       ],
       [
@@ -84,8 +84,8 @@ export default {
       [
         '1729',
         '10916357890',
-        'KALPIT RAJAPATI',
-        'PRAKHAR YADAV',
+        'Kalpit Rajapati',
+        'Prakhar Yadav',
         'J.S.S. Academy of Technical Education, Noida, Uttar Pradesh'
       ],
       [
@@ -93,21 +93,21 @@ export default {
         '10916544676',
         'Hemant Garg',
         'Chandan Gupta',
-        'University Institute of Engineering and Technology , Punjab University , Chandigarh'
+        'University Institute of Engineering and Technology, Punjab University, Chandigarh'
       ],
       [
         'Srijan',
         '10916479101',
         'Sachin Arya',
         'Kamal Kant',
-        'JC Bose University of Science and Technology, YMCA ,Faridabad'
+        'JC Bose University of Science and Technology, YMCA, Faridabad'
       ],
       [
         'Enigma',
         '10918287990',
         'Biswajit Tripathy',
         'Jaya Jasomati Bir',
-        'Veer Surendra Sai University of Technology,Burla, Odisha'
+        'Veer Surendra Sai University of Technology, Burla, Odisha'
       ]
     ],
     chennai: [
@@ -121,8 +121,8 @@ export default {
       [
         'Ørachna',
         '10892967891',
-        'SHREYASH SHANKAR',
-        'satrudhan kumar sah',
+        'Shreyash Shankar',
+        'Satrudhan Kumar Sah',
         'SRM Institute of Science and Technology, Chennai, Tamil Nadu'
       ],
       [
@@ -130,14 +130,14 @@ export default {
         '10931331308',
         'Ishan jain',
         'Amit Chowdhary',
-        'SRM Institute of Science and Technology,Chennai, Tamil Nadu'
+        'SRM Institute of Science and Technology, Chennai, Tamil Nadu'
       ],
       [
         'Mech Spartans',
         '10906970543',
         'Venkatesh R',
         'Jagasirpiyan K',
-        'Sri Eshwar college of engineering,Kondampatti, Tamil Nadu'
+        'Sri Eshwar college of engineering, Kondampatti, Tamil Nadu'
       ],
       [
         'Phantasie',
@@ -179,7 +179,7 @@ export default {
         '10891776774',
         'Ravi Maurya',
         'Ashutosh Pandey',
-        'Dayananda Sagar College of Engineering,Bengaluru,Karnataka'
+        'Dayananda Sagar College of Engineering, Bengaluru, Karnataka'
       ]
     ]
   })
