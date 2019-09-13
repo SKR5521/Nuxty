@@ -1,8 +1,8 @@
 <template>
-  <v-layout row wrap fill-height >
-    <v-flex xs12 class="py-1" >
-      <v-card dark class="bord " height="100%">
-        <v-card-title class="pb-0 justify-center" >
+  <v-layout row wrap fill-height>
+    <v-flex xs12 class="py-1">
+      <v-card dark class="bord" height="100%">
+        <v-card-title class="pb-0 justify-center">
           <h6 class="fontz2 mb-0">Team {{ Tname }}</h6>
         </v-card-title>
         <v-card-text>
@@ -14,8 +14,7 @@
             {{ member1 }}
             <span class="fontz">&amp;</span>
             {{ member2 }}
-          </p>
-          <!-- <p class="fontz  mb-0 py-1">Member 2 : <span class="fontzd ">{{ member2 }}</span></p> -->
+          </p>          
           <p class="fontzd text-capitalize pb-1">{{ college }}</p>
         </v-card-text>
       </v-card>
@@ -41,12 +40,12 @@ p {
 .fontzd {
   font-size: calc(14px + 0.5 * ((100vw - 320px) / 880));
   font-family: '3ds';
-  color: #AEFFFF;
+  color: #aeffff;
   text-align: left !important;
 }
 .bord {
   border-radius: 14px;
-  background-color: #044B7C;
+  background-color: #044b7c;
   border-bottom: 10px solid #3098e1;
 }
 
@@ -54,7 +53,7 @@ p {
   font-size: calc(18px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds';
   font-weight: 400;
-  color: #00FFCC;
+  color: #00ffcc;
   text-align: center !important;
 }
 </style>
