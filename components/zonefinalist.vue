@@ -119,7 +119,7 @@ export default {
         'Banglore Institute Of Science and Technology, Bengaluru, Karnataka'
       ],
       [
-        'Ørachna',
+        'Rachna',
         '10892967891',
         'Shreyash Shankar',
         'Satrudhan Kumar Sah',
@@ -165,7 +165,7 @@ export default {
         '10927327401',
         'Vignesh S',
         'Subasre S R',
-        'Bannari Amman Institute Of Technology, Sathmangalam, Tamil Nadu'
+        'Bannari Amman Institute Of Technology, Sathyamangalam, Tamil Nadu'
       ],
       [
         'Godspeed-Alpha',
