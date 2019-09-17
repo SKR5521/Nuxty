@@ -208,7 +208,7 @@ export default {
         '10860304495',
         'Ayush Agrawal',
         'Revati Bohra',
-        'Dr. D.Y. Patil Institute of Engineering, Management and Research, Nigdi, Maharashtra'
+        'Dr. D. Y. Patil Institute of Engineering, Management and Research, Nigdi, Pune, Maharashtra'
       ],
       [
         'Crio',
@@ -229,7 +229,7 @@ export default {
         '10916864785',
         'Shreyan Shastri',
         'Anuj Goyal',
-        'Vishwakarma Institute of Technology, Bibwewadi, Pune, Maharashtra'
+        'Vishwakarma Institute of Technology, Pune, Maharashtra'
       ],
       [
         'Trailblazers',
@@ -250,7 +250,7 @@ export default {
         '10894505330',
         'Sourabh Vijay Katare',
         'Parmeshwar Bansode',
-        'N K Orchid College of Engineering & Technology, Solapur'
+        'N K Orchid College of Engineering & Technology, Solapur, Maharashtra'
       ],
       [
         'Rahi',
