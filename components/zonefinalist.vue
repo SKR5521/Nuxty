@@ -208,7 +208,7 @@ export default {
         '10860304495',
         'Ayush Agrawal',
         'Revati Bohra',
-        'Dr. D. Y. Patil Institute of Engineering, Management and Research, Nigdi, Pune, Maharashtra'
+        'Dr. D.Y. Patil Institute of Engineering, Management and Research, Pune, Maharashtra'
       ],
       [
         'Crio',
