@@ -25,6 +25,19 @@
         />
       </v-flex>
     </v-layout>
+
+        <Subtitle id="ahm" class="pt-3" subtopic="Zone 3-AHMEDABAD" />
+    <v-layout row wrap justify-center>
+      <v-flex xs12 md3 class="pa-1" v-for="item in ahm" :key="item[1]">
+        <zonecard
+          :Tname="item[0]"
+          :Tid="item[1]"
+          :member1="item[2]"
+          :member2="item[3]"
+          :college="item[4]"
+        />
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -180,6 +193,78 @@ export default {
         'Ravi Maurya',
         'Ashutosh Pandey',
         'Dayananda Sagar College of Engineering, Bengaluru, Karnataka'
+      ]
+    ],
+    ahm: [
+      [
+        'Designwale',
+        '10917616486',
+        'Rishav Ranjeet Sharma',
+        'Ruchi Nilesh Pourana',
+        'Thakur College of Engineering and Technology, Mumbai, Maharashtra'
+      ],
+      [
+        'Thermo',
+        '10860304495',
+        'Ayush Agrawal',
+        'Revati Bohra',
+        'Dr. D.Y. Patil Institute of Engineering, Management and Research, Nigdi, Maharashtra'
+      ],
+      [
+        'Crio',
+        '10892239886',
+        'Sumedh Manjrekar',
+        'Nilesh Gandhi',
+        'K. J. Somaiya College of Engineering, Mumbai, Maharashtra'
+      ],
+      [
+        'Technovus',
+        '10869839098',
+        'Abhishek Chaudhari',
+        'Kalpesh Narendra Patil',
+        'Pimpri Chinchwad College of Engineering, Pune, Maharashtra'
+      ],
+      [
+        'TechAngels',
+        '10916864785',
+        'Shreyan Shastri',
+        'Anuj Goyal',
+        'Vishwakarma Institute of Technology, Bibwewadi, Pune, Maharashtra'
+      ],
+      [
+        'Trailblazers',
+        '10892847455',
+        'Utkarsh Urkade',
+        'Rijul Jain',
+        'National Institute of Technology, Raipur, Chhattisgarh'
+      ],
+      [
+        'R S Energy',
+        '10840536103',
+        'Onkar Narharshettiwar',
+        'Virag Umathe',
+        'Pimpri Chinchwad College of Engineering, Pune, Maharashtra'
+      ],
+      [
+        'Unoya',
+        '10894505330',
+        'Sourabh Vijay Katare',
+        'Parmeshwar Bansode',
+        'N K Orchid College of Engineering & Technology, Solapur'
+      ],
+      [
+        'Rahi',
+        '10885707970',
+        'Atharva Mahesh Shirsath',
+        'Vaishnav Shelke',
+        'Visvesvaraya National Institute of Technology, Nagpur, Maharashtra'
+      ],
+      [
+        'Agrobots',
+        '10887378734',
+        'Kunal Bharat Aglave',
+        'Sakshi Rajshekhar Bhuse',
+        'Sanjivani College of Engineering, Kopergaon, Maharashtra'
       ]
     ]
   })
