@@ -79,7 +79,7 @@ export default {
       [
         '1729',
         '10916357890',
-        'Kalpit Rajapati',
+        'Kalpit Prajapati',
         'Prakhar Yadav',
         'J.S.S. Academy of Technical Education, Noida, Uttar Pradesh',
         'win-th',
