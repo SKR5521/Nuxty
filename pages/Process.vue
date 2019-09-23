@@ -239,7 +239,7 @@
                       round
                       router
                       to="/#zonefinalist"
-                    >Zone Finalist</v-btn>
+                    >Zone Winners</v-btn>
                   </v-flex>
                 </v-layout>
               </v-card-actions>
@@ -269,7 +269,7 @@
                       round
                       router
                       to="/#chennai"
-                    >Zone Finalist</v-btn>
+                    >Zone Winners</v-btn>
                   </v-flex>
                 </v-layout>
               </v-card-actions>
@@ -299,7 +299,7 @@
                       round
                       router
                       to="/#ahm"
-                    >Zone Finalist</v-btn>
+                    >Zone Winners</v-btn>
                   </v-flex>
                 </v-layout>
               </v-card-actions>

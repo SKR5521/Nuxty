@@ -21,7 +21,7 @@
     <!-- <Theme /> -->
 
     <v-container  >
-      <Title id="zonefinalist"  topic="Zone Finalists" />      
+      <Title id="zonefinalist"  topic="Zone Winners" />      
       <v-container  fill-height fluid>
         <zonefinalist />
       </v-container>

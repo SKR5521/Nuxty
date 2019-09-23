@@ -53,13 +53,13 @@
         </v-btn>
       </v-toolbar-items>
 
-      <v-btn round @click="top" color="#19A0FE">
+      <v-btn round @click="top" color="#182952">
         <!-- <v-badge color="purple">
           <template v-slot:badge>{{ un }}</template>
           <v-icon small class="mr-1">fas fa-bell</v-icon>UPDATES
         </v-badge> -->
 
-        zone finalist
+        Zone Winners
       </v-btn>
     </v-toolbar>
 

@@ -6,7 +6,7 @@
           <v-flex xs11 class="white--text animated fadeInDown pt-3">
             <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span></h1>
             <h2 class="fontz2 px-auto" style="line-height: 0.5;">Shaping Imagination</h2>
-            <h2 class="fontz2 px-auto pb-4 pt-4">Thanks for the Overwhelming Response</h2>
+            <h2 class="fontz2 px-auto pb-4 pt-4">Zonal Winners Announced</h2>
             <v-layout row wrap justify-center class="my-3 px-3">
               <v-flex xs6 md2 text-xs-center class="pa-1">
                 <v-icon class="iconsize">fas fa-university</v-icon>
@@ -33,7 +33,7 @@
         </v-layout>
       </v-carousel-item>
 
-      <v-carousel-item>
+      <!-- <v-carousel-item>
         <h2 class="fontz2 white--text px-auto pb-4 pt-4">Zonal Events</h2>
         <v-layout column justify-center text-xs-center>          
           <v-flex xs11 class="white--text animated fadeInDown px-auto" >
@@ -86,7 +86,7 @@
             >Read More</v-btn>
           </v-flex>
         </v-layout>
-      </v-carousel-item>
+      </v-carousel-item> -->
 
       <!-- <v-carousel-item>
         <v-layout row wrap text-xs-left>
