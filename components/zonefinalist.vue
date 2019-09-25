@@ -249,8 +249,8 @@ export default {
         'Ayush Agrawal',
         'Revati Bohra',
         'Dr. D.Y. Patil Institute of Engineering, Management and Research, Pune, Maharashtra',
-        'blue-th',
-        false
+        'win-th',
+        true
       ],
       [
         'Crio',
@@ -258,8 +258,8 @@ export default {
         'Sumedh Manjrekar',
         'Nilesh Gandhi',
         'K. J. Somaiya College of Engineering, Mumbai, Maharashtra',
-        'blue-th',
-        false
+        'win-th',
+        true
       ],
       [
         'TechAngels',
@@ -267,8 +267,8 @@ export default {
         'Shreyan Shastri',
         'Anuj Goyal',
         'Vishwakarma Institute of Technology, Pune, Maharashtra',
-        'blue-th',
-        false
+        'win-th',
+        true
       ],
       [
         'Designwale',
