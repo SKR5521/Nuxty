@@ -244,15 +244,6 @@ export default {
     ],
     ahm: [
       [
-        'Designwale',
-        '10917616486',
-        'Rishav Ranjeet Sharma',
-        'Ruchi Nilesh Pourana',
-        'Thakur College of Engineering and Technology, Mumbai, Maharashtra',
-        'blue-th',
-        false
-      ],
-      [
         'Thermo',
         '10860304495',
         'Ayush Agrawal',
@@ -271,15 +262,6 @@ export default {
         false
       ],
       [
-        'Technovus',
-        '10869839098',
-        'Abhishek Chaudhari',
-        'Kalpesh Narendra Patil',
-        'Pimpri Chinchwad College of Engineering, Pune, Maharashtra',
-        'blue-th',
-        false
-      ],
-      [
         'TechAngels',
         '10916864785',
         'Shreyan Shastri',
@@ -288,6 +270,25 @@ export default {
         'blue-th',
         false
       ],
+      [
+        'Designwale',
+        '10917616486',
+        'Rishav Ranjeet Sharma',
+        'Ruchi Nilesh Pourana',
+        'Thakur College of Engineering and Technology, Mumbai, Maharashtra',
+        'blue-th',
+        false
+      ],
+      [
+        'Technovus',
+        '10869839098',
+        'Abhishek Chaudhari',
+        'Kalpesh Narendra Patil',
+        'Pimpri Chinchwad College of Engineering, Pune, Maharashtra',
+        'blue-th',
+        false
+      ],
+
       [
         'Trailblazers',
         '10892847455',
