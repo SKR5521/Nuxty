@@ -20,115 +20,33 @@
 
     <!-- <Theme /> -->
 
-    <v-container  >
-      <Title id="zonefinalist"  topic="Zone Winners" />      
-      <v-container  fill-height fluid>
+    <v-container>
+      <Title id="zonefinalist" topic="AAKRUTI2019 Finalists" />
+
+      <v-layout row justify-center wrap>
+        <v-flex xs10>
+          <v-layout row text-xs-left wrap></v-layout>
+          <p class="fontz2">
+            <span class="black--text fontz">Venue</span> – Dassault Systèmes R&D Center, Pune
+          </p>
+          <p class="fontz2">
+            <span class="black--text fontz">Date</span> – 3rd October 2019
+          </p>
+          <p class="fontz2">
+            <span class="black--text fontz">Participants</span> – Top 10 zonal finalist teams
+            <v-icon color="#FFBF00">fas fa-plane-departure</v-icon>
+          </p>
+          <p
+            class="fontz2"
+          >Each team will get 15 minutes to present their design to the AAKRUTI2019 jury panel, followed by a round of questions.</p>
+          <p
+            class="fontz2"
+          >Results will be announced during the prize distribution ceremony after the presentation round.</p>
+        </v-flex>
+      </v-layout>
+      <v-container fill-height fluid>
         <zonefinalist />
       </v-container>
-      
-      <!-- <v-layout row wrap justify-center align-center>
-        <v-flex xs12 md3 class="pa-1">
-          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
-        </v-flex>
-      <v-flex xs12 md3 class="pa-1">
-          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
-        </v-flex>
-        <v-flex xs12 md3 class="pa-1">
-          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
-        </v-flex>
-        <v-flex xs12 md3 class="pa-1">
-          <zonecard Tname = 'ARG-Bots' Tid='10913396847' member1='gyan' member2='bharat' college='Narsi Munji pune'/>
-        </v-flex>
-      </v-layout> -->
-      <!-- <v-layout row wrap>
-        <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
-          <v-card class="bord" height="100%">
-            <v-card-text text-xs-center>
-              <h1 class="fontz22 pb-3">ZONE 1 - NORTH - DELHI</h1>
-              <p
-                class="fontz"
-              >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttarakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</p>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
-          <v-card class="bord" height="100%">
-            <v-card-text text-xs-center>
-              <h1 class="fontz22 pb-3">ZONE 2 - SOUTH - CHENNAI</h1>
-              <p
-                class="fontz"
-              >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</p>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex class="px-1 py-2" xs12 md4 justify-center text-xs-center>
-          <v-card class="bord" height="100%">
-            <v-card-text text-xs-center>
-              <h1 class="fontz22 pb-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
-              <p
-                class="fontz"
-              >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</p>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-      </v-layout> -->
-<!-- 
-      <v-layout row wrap>
-        <v-flex xs12 justify-center text-xs-center>
-          <v-btn round outline router to="/process/#idzone">Read More</v-btn>
-        </v-flex>
-      </v-layout> -->
-
-      <!-- <v-layout row wrap>
-        <v-flex xs12 md6>
-          <v-layout column wrap>
-            <v-flex xs12 class="py-2">
-              <v-card class="elevation-10">
-                <v-card-title class="text-xs-center pb-0">
-                  <h1 class="fontz22 grey--text text--darken-3">ZONE 1 - NORTH - DELHI</h1>
-                </v-card-title>
-                <v-card-text>
-                  <h1
-                    class="fontz2 grey--text text--darken-1"
-                  >UT-Delhi, Jammu & Kashmir, Haryana, Punjab, Himachal Pradesh, Uttar Pradesh, Uttrakhand, Rajasthan, West Bengal, Bihar, UT-Chandigarh, Arunachal Pradesh, Assam, Meghalaya, Manipur, Nagaland, Tripura, Jharkhand, Sikkim, Odisha</h1>
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 class="py-2">
-              <v-card class="elevation-10">
-                <v-card-title class="text-xs-center pb-0">
-                  <h1 class="fontz22 grey--text text--darken-3">ZONE 2 - SOUTH - CHENNAI</h1>
-                </v-card-title>
-                <v-card-text>
-                  <h1
-                    class="fontz2 grey--text text--darken-1"
-                  >Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Karnataka, UT-Andaman and Nicobar Islands, UT-Pondicherry-Puducherry, UT-Lakshadweep</h1>
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 class="py-2">
-              <v-card class="elevation-10">
-                <v-card-title class="text-xs-center pb-0">
-                  <h1 class="fontz22 grey--text text--darken-3">ZONE 3 - CENTRAL - AHMEDABAD</h1>
-                </v-card-title>
-                <v-card-text>
-                  <h1
-                    class="fontz2 grey--text text--darken-1"
-                  >Maharashtra, Gujarat, Madhya Pradesh, Goa, UT-Daman and Diu, UT-Dadra and Nagar Haveli, Chhattisgarh</h1>
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12>
-              <v-btn class="fontzd" round outline router to="/Process/#idzone">Read More</v-btn>
-            </v-flex>
-          </v-layout>
-        </v-flex>
-        <v-layout row wrap>
-          <v-flex xs12 class="pa-2">
-            <v-img contain :src="require('~/assets/img/india.jpg')"></v-img>
-          </v-flex>
-        </v-layout>
-      </v-layout>-->
     </v-container>
 
     <v-container>
@@ -174,7 +92,7 @@ export default {
     Subtitle,
     Title,
     Theme,
-    
+
     zonefinalist,
     fbtn
   },
@@ -197,15 +115,16 @@ export default {
 }
 
 .fontz {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
-  font-family: '3ds-light';
+  font-size: calc(14px + 4 * ((100vw - 320px) / 880));
+  font-family: '3ds';
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.2px;
 }
 .fontz2 {
-  font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  font-size: calc(16px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds';
+  color: #01406c;
 }
 
 .fontz22 {

@@ -54,12 +54,7 @@
       </v-toolbar-items>
 
       <v-btn round @click="top" color="#182952">
-        <!-- <v-badge color="purple">
-          <template v-slot:badge>{{ un }}</template>
-          <v-icon small class="mr-1">fas fa-bell</v-icon>UPDATES
-        </v-badge> -->
-
-        Zone Winners
+        AAKRUTI2019 Finalists
       </v-btn>
     </v-toolbar>
 

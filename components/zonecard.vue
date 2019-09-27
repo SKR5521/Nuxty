@@ -1,13 +1,16 @@
 <template>
   <v-layout row wrap fill-height>
     <v-flex xs12 class="py-1">
-      <v-card  :class="cls" height="100%">
+      <v-card :class="cls" height="100%">
         <v-card-title class="pb-0 justify-center">
           <!-- fas fa-trophy -->
-          <h6 class="fontz2 mb-0"><v-icon v-if="zwin" left color="#FFBF00">fas fa-plane-departure</v-icon> Team {{ Tname }}  </h6>
-          <h6 class="wc-th" >{{ wc }} </h6>
+          <h6 class="fontz2 mb-0">
+            <v-icon v-if="zwin" left color="#FFBF00">fas fa-plane-departure</v-icon>
+            Team {{ Tname }}
+          </h6>
+          <h6 class="wc-th"> {{ wc }}</h6>
         </v-card-title>
-        
+
         <v-card-text>
           <p class="fontz white--text pb-1">
             Team ID:
@@ -20,8 +23,6 @@
           </p>
           <p class="fontzd text-capitalize pb-1">{{ college }}</p>
         </v-card-text>
-
-        
       </v-card>
     </v-flex>
   </v-layout>
@@ -29,7 +30,7 @@
 
 <script>
 export default {
-  props: ['Tname', 'Tid', 'member1', 'member2', 'college','cls','zwin', 'wc']
+  props: ['Tname', 'Tid', 'member1', 'member2', 'college', 'cls', 'zwin', 'wc']
 }
 </script>
 
@@ -57,18 +58,18 @@ p {
 .win-th {
   border-radius: 14px;
   background-color: #182952;
-  border-bottom: 10px solid #FFBF00;
+  border-bottom: 10px solid #ffbf00;
 }
 .win-th2 {
   border-radius: 14px;
   background-color: rgb(5, 96, 170);
-  border-bottom: 10px solid #FFBF00;
+  border-bottom: 10px solid #ffbf00;
 }
 .wc-th {
-  color: #FFBF00;
+  color: #ffbf00;
   font-size: calc(16px + 3 * ((100vw - 320px) / 880));
   font-family: '3ds';
-  font-weight: 400;  
+  font-weight: 400;
   text-align: center !important;
 }
 
