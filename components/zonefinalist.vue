@@ -271,6 +271,15 @@ export default {
         true
       ],
       [
+        'Agrobots   (Wild Card Entry)',
+        '10887378734',
+        'Kunal Bharat Aglave',
+        'Sakshi Rajshekhar Bhuse',
+        'Sanjivani College of Engineering, Kopergaon, Maharashtra',
+        'win-th2',
+        true
+      ],
+      [
         'Designwale',
         '10917616486',
         'Rishav Ranjeet Sharma',
@@ -322,15 +331,6 @@ export default {
         'Atharva Mahesh Shirsath',
         'Vaishnav Shelke',
         'Visvesvaraya National Institute of Technology, Nagpur, Maharashtra',
-        'blue-th',
-        false
-      ],
-      [
-        'Agrobots',
-        '10887378734',
-        'Kunal Bharat Aglave',
-        'Sakshi Rajshekhar Bhuse',
-        'Sanjivani College of Engineering, Kopergaon, Maharashtra',
         'blue-th',
         false
       ]

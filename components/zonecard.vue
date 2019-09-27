@@ -55,6 +55,11 @@ p {
   background-color: #182952;
   border-bottom: 10px solid #FFBF00;
 }
+.win-th2 {
+  border-radius: 14px;
+  background-color: rgb(5, 96, 170);
+  border-bottom: 10px solid #FFBF00;
+}
 
 .fontz2 {
   font-size: calc(18px + 3 * ((100vw - 320px) / 880));
