@@ -4,8 +4,10 @@
       <v-card  :class="cls" height="100%">
         <v-card-title class="pb-0 justify-center">
           <!-- fas fa-trophy -->
-          <h6 class="fontz2 mb-0"><v-icon v-if="zwin" left color="#FFBF00">fas fa-plane-departure</v-icon> Team {{ Tname }}</h6>
+          <h6 class="fontz2 mb-0"><v-icon v-if="zwin" left color="#FFBF00">fas fa-plane-departure</v-icon> Team {{ Tname }}  </h6>
+          <h6 class="wc-th" >{{ wc }} </h6>
         </v-card-title>
+        
         <v-card-text>
           <p class="fontz white--text pb-1">
             Team ID:
@@ -18,6 +20,8 @@
           </p>
           <p class="fontzd text-capitalize pb-1">{{ college }}</p>
         </v-card-text>
+
+        
       </v-card>
     </v-flex>
   </v-layout>
@@ -25,7 +29,7 @@
 
 <script>
 export default {
-  props: ['Tname', 'Tid', 'member1', 'member2', 'college','cls','zwin']
+  props: ['Tname', 'Tid', 'member1', 'member2', 'college','cls','zwin', 'wc']
 }
 </script>
 
@@ -59,6 +63,13 @@ p {
   border-radius: 14px;
   background-color: rgb(5, 96, 170);
   border-bottom: 10px solid #FFBF00;
+}
+.wc-th {
+  color: #FFBF00;
+  font-size: calc(16px + 3 * ((100vw - 320px) / 880));
+  font-family: '3ds';
+  font-weight: 400;  
+  text-align: center !important;
 }
 
 .fontz2 {

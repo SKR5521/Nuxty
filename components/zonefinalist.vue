@@ -41,6 +41,7 @@
           :college="item[4]"
           :cls="item[5]"
           :zwin="item[6]"
+          :wc="item[7]"
         />
       </v-flex>
     </v-layout>
@@ -271,13 +272,14 @@ export default {
         true
       ],
       [
-        'Agrobots   (Wild Card Entry)',
+        'Agrobots',
         '10887378734',
         'Kunal Bharat Aglave',
         'Sakshi Rajshekhar Bhuse',
         'Sanjivani College of Engineering, Kopergaon, Maharashtra',
-        'win-th2',
-        true
+        'win-th',
+        true,
+        '(Wild Card Entry)'
       ],
       [
         'Designwale',
