@@ -279,7 +279,7 @@ export default {
         'Sanjivani College of Engineering, Kopergaon, Maharashtra',
         'win-th',
         true,
-        '(Wild Card Entry)'
+        ' (Wild Card Entry)'
       ],
       [
         'Designwale',
