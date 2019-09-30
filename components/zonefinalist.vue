@@ -156,7 +156,8 @@ export default {
         '10887987420',
         'Kartik Dhadwal',
         'Shilpa Thakur',
-        'Banglore Institute Of Science and Technology, Bengaluru, Karnataka',
+        'BIT, Bangalore, Karnataka & SRM IST, Chenna',
+        // 'Bangalore Institute of Technology, Bangalore & SRM Institute of Science & Technology, Chennai',
         'win-th',
         true
       ],
