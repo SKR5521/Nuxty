@@ -123,8 +123,9 @@
               </v-list-tile-content>
             </v-list-tile>
           </template>
-
+          
           <v-list-tile
+          
             v-for="subItem in Oldak.items"
             :key="subItem.title"
             router
@@ -187,6 +188,7 @@ export default {
         icon: 'fas fa-location-arrow',
         text: 'Journey So Far',
         items: [
+          { text: 'AAKRUTI2019', route: '/Previous/19' },
           { text: 'AAKRUTI2018', route: '/Previous/18' },
           { text: 'AAKRUTI2017', route: '/Previous/17' },
           { text: 'AAKRUTI2016', route: '/Previous/16' }

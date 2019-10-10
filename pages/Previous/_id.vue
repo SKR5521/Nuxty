@@ -113,6 +113,17 @@
             </v-flex>
           </v-layout>
         </template>
+        <template v-if="this.$route.params.id == 19 ">
+          <v-layout py-4 row wrap>
+            <v-flex xs6 md3 v-for="(stat, index) in 7" :key="index" pa-3>
+              <v-img
+                class="elevation-10"
+                contain
+                :src="require('~/assets/img/PreviousYear/'+ $route.params.id + '/jury/' + (index+1) + '.jpg')"
+              ></v-img>
+            </v-flex>
+          </v-layout>
+        </template>
       </v-container>
 
       <v-container>
@@ -155,6 +166,15 @@ export default {
     return {
       themes: [
         {
+          year: '19',
+          subthems: [
+            'Small Is Big',
+            'Smart Energy',
+            'Water Is Life',
+            'Waste to Wealth to Wonder'
+          ]
+        },
+        {
           year: '18',
           subthems: [
             'Innovative Products to Boost Rural Economy',
@@ -189,6 +209,13 @@ export default {
         }
       ],
       stats: [
+        {
+          year: '19',
+          student: '4932',
+          state: '26',
+          college: '332',
+          teams: '2466'
+        },
         {
           year: '18',
           student: '2240',
