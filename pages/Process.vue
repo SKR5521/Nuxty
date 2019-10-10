@@ -268,7 +268,7 @@
                       color="#E97E2E"
                       round
                       router
-                      to="/#chennai"
+                      to="/#zonefinalist"
                     >Zone Winners</v-btn>
                   </v-flex>
                 </v-layout>
@@ -298,7 +298,7 @@
                       color="#53BA45"
                       round
                       router
-                      to="/#ahm"
+                      to="/#zonefinalist"
                     >Zone Winners</v-btn>
                   </v-flex>
                 </v-layout>

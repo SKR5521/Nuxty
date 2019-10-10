@@ -21,9 +21,9 @@
     <!-- <Theme /> -->
 
     <v-container>
-      <Title id="zonefinalist" topic="AAKRUTI2019 Finalists" />
+      <Title id="zonefinalist" topic="AAKRUTI2019 Winners" />
 
-      <v-layout row justify-center wrap>
+      <!-- <v-layout row justify-center wrap>
         <v-flex xs10>
           <v-layout row text-xs-left wrap></v-layout>
           <p class="fontz2">
@@ -43,6 +43,16 @@
             class="fontz2"
           >Results will be announced during the prize distribution ceremony after the presentation round.</p>
         </v-flex>
+      </v-layout> -->
+
+      <v-layout row wrap>
+        <v-flex v-for="i in 4" :key="i" xs12 md6 pa-3>
+          <v-img
+          class="elevation-10"
+            contain            
+            :src="require('~/assets/img/win/' + i + '.png')"
+          ></v-img>
+        </v-flex>        
       </v-layout>
       <v-container fill-height fluid>
         <zonefinalist />
@@ -57,15 +67,46 @@
         </v-flex>
       </v-layout>
     </v-container>
-
+    <Theme/>
     <v-container>
+      <Title topic="Jury Members" />
+      <v-layout row wrap>
+        <v-flex xs6 md3 v-for="stat in 7" :key="stat" pa-3>
+          <v-img class="elevation-5" contain :src="require('~/assets/img/jury/' + stat + '.png')"></v-img>
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <!-- <v-container>
       <v-layout text-xs-center wrap justify-center>
         <v-flex xs12 xl10 mb-4>
           <Title topic="Process"></Title>
           <Timeline />
         </v-flex>
       </v-layout>
-    </v-container>
+    </v-container> -->
+
+    <v-container>
+        <v-layout row justify-space-around>
+          <v-flex xs10 >
+            <v-carousel hide-delimiters height="auto" width="auto">
+              <v-carousel-item
+                class="elevation-10"
+                v-for="i in 10"
+                height="auto"
+                width="auto"
+                :key="i"
+              >
+                <v-img
+                  :src="require('~/assets/img/glimps/' + i + '.jpg')"
+                ></v-img>
+              </v-carousel-item>
+            </v-carousel>
+          </v-flex>
+        </v-layout>
+      </v-container>
+   
+
     <v-container fluid class="hidden-xs-only">
       <v-layout row wrap>
         <v-spacer></v-spacer>

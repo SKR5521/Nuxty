@@ -54,7 +54,7 @@
       </v-toolbar-items>
 
       <v-btn round @click="top" color="#182952">
-        AAKRUTI2019 Finalists
+        Winners Are
       </v-btn>
     </v-toolbar>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Subtitle subtopic="Zone 1-DELHI" />
+    <Subtitle subtopic="AAKRUTI2019 Finalists" />
     <v-layout row wrap justify-center>
       <v-flex xs12 md3 class="pa-1" v-for="item in delhi" :key="item[1]">
         <zonecard
@@ -11,11 +11,12 @@
           :college="item[4]"
           :cls="item[5]"
           :zwin="item[6]"
+          :wc="item[7]"
         />
       </v-flex>
     </v-layout>
 
-    <Subtitle id="chennai" class="pt-3" subtopic="Zone 2-CHENNAI" />
+    <!-- <Subtitle id="chennai" class="pt-3" subtopic="Zone 2-CHENNAI" />
     <v-layout row wrap justify-center>
       <v-flex xs12 md3 class="pa-1" v-for="item in chennai" :key="item[1]">
         <zonecard
@@ -44,7 +45,7 @@
           :wc="item[7]"
         />
       </v-flex>
-    </v-layout>
+    </v-layout>-->
   </div>
 </template>
 
@@ -87,71 +88,6 @@ export default {
         true
       ],
       [
-        'GearHeads',
-        '10885386219',
-        'Ankush Sharma',
-        'Aayush Srivastava',
-        'ABES Engineering College, Ghaziabad, UttarPradesh',
-        'blue-th',
-        false
-      ],
-      [
-        'Aavishkaar',
-        '10889533219',
-        'Aditya Kumar',
-        'Ayush Chaturvedi',
-        'University Of Petroleum And Energy Studies, Dehradun, Uttarakhand',
-        'blue-th',
-        false
-      ],
-      [
-        'Poseidon',
-        '10892061433',
-        'Souradeep Bhowmick',
-        'Anik Das',
-        'Birla Institute of Technology, Mesra, Jharkhand',
-        'blue-th',
-        false
-      ],
-      [
-        'Aavishkaar',
-        '10913729315',
-        'Aditya Kumar',
-        'Ayush Chaturvedi',
-        'University Of Petroleum And Energy Studies, Dehradun, Uttarakhand',
-        'blue-th',
-        false
-      ],
-      [
-        'Stormbreakers',
-        '10916544676',
-        'Hemant Garg',
-        'Chandan Gupta',
-        'University Institute of Engineering and Technology, Punjab University, Chandigarh',
-        'blue-th',
-        false
-      ],
-      [
-        'Srijan',
-        '10916479101',
-        'Sachin Arya',
-        'Kamal Kant',
-        'JC Bose University of Science and Technology, YMCA, Faridabad',
-        'blue-th',
-        false
-      ],
-      [
-        'Enigma',
-        '10918287990',
-        'Biswajit Tripathy',
-        'Jaya Jasomati Bir',
-        'Veer Surendra Sai University of Technology, Burla, Odisha',
-        'blue-th',
-        false
-      ]
-    ],
-    chennai: [
-      [
         'Runoff Generation',
         '10887987420',
         'Kartik Dhadwal',
@@ -179,6 +115,45 @@ export default {
         'win-th',
         true
       ],
+      [
+        'Thermo',
+        '10860304495',
+        'Ayush Agrawal',
+        'Revati Bohra',
+        'Dr. D.Y. Patil Institute of Engineering, Management and Research, Pune, Maharashtra',
+        'win-th',
+        true
+      ],
+      [
+        'Crio',
+        '10892239886',
+        'Sumedh Manjrekar',
+        'Nilesh Gandhi',
+        'K. J. Somaiya College of Engineering, Mumbai, Maharashtra',
+        'win-th',
+        true
+      ],
+      [
+        'TechAngels',
+        '10916864785',
+        'Shreyan Shastri',
+        'Anuj Goyal',
+        'Vishwakarma Institute of Technology, Pune, Maharashtra',
+        'win-th',
+        true
+      ],
+      [
+        'Agrobots',
+        '10887378734',
+        'Kunal Bharat Aglave',
+        'Sakshi Rajshekhar Bhuse',
+        'Sanjivani College of Engineering, Kopergaon, Maharashtra',
+        'win-th',
+        true,
+        ' (Wild Card Entry)'
+      ]
+    ],
+    chennai: [
       [
         'Rachna',
         '10892967891',
@@ -245,43 +220,6 @@ export default {
       ]
     ],
     ahm: [
-      [
-        'Thermo',
-        '10860304495',
-        'Ayush Agrawal',
-        'Revati Bohra',
-        'Dr. D.Y. Patil Institute of Engineering, Management and Research, Pune, Maharashtra',
-        'win-th',
-        true
-      ],
-      [
-        'Crio',
-        '10892239886',
-        'Sumedh Manjrekar',
-        'Nilesh Gandhi',
-        'K. J. Somaiya College of Engineering, Mumbai, Maharashtra',
-        'win-th',
-        true
-      ],
-      [
-        'TechAngels',
-        '10916864785',
-        'Shreyan Shastri',
-        'Anuj Goyal',
-        'Vishwakarma Institute of Technology, Pune, Maharashtra',
-        'win-th',
-        true
-      ],
-      [
-        'Agrobots',
-        '10887378734',
-        'Kunal Bharat Aglave',
-        'Sakshi Rajshekhar Bhuse',
-        'Sanjivani College of Engineering, Kopergaon, Maharashtra',
-        'win-th',
-        true,
-        ' (Wild Card Entry)'
-      ],
       [
         'Designwale',
         '10917616486',

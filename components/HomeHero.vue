@@ -1,17 +1,19 @@
 <template>
   <v-container fluid class="home-hero px-0" style="height: 100vh;">
-    <HomeSlides/>
-    <!-- <v-layout justify-center align-center column style="margin-top: 15vh;">
+    <!-- <HomeSlides/> -->
+    <v-layout justify-center align-center column style="margin-top: 15vh;">
 
       <div justify-center text-xs-center class="white--text animated fadeInDown">
         <h1 class="fontz">
           AAKRUTI
           <span class="lightfont">2019</span>
         </h1>
-        <h2 class="fontz2 px-auto">Shaping Imagination</h2>
-      </div>
+        <h2 class="fontz2 px-auto pb-4">Shaping Imagination</h2>
 
-      <v-btn
+        <h2 class="fontz2 white--text px-auto pt-4">And the WINNERS are...</h2>
+      </div>
+      
+      <!-- <v-btn
         outline
         large
         class="mt-5 animated fadeInDown"
@@ -20,18 +22,18 @@
         round
         color="#E31818"
         style="border: 2px solid !important;"
-      >Register Here</v-btn>
+      >Register Here</v-btn> -->
       <v-btn
         fab
         dark
         small
         class="mt-5 animated infinite bounce"
         color="#3DA9EB"
-        @click="$vuetify.goTo('#first', options)"
+        @click="$vuetify.goTo('#zonefinalist', options)"
       >
         <v-icon dark>fas fa-angle-down</v-icon>
       </v-btn>
-    </v-layout> -->
+    </v-layout>
   </v-container>
 </template>
 
