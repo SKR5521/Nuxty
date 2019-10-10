@@ -4,9 +4,7 @@
     <v-layout justify-center align-center column style="margin-top: 15vh;">
 
       <div justify-center text-xs-center class="white--text animated fadeInDown">
-        <h1 class="fontz">
-          AAKRUTI
-          <span class="lightfont">2019</span>
+        <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span>
         </h1>
         <h2 class="fontz2 px-auto pb-4">Shaping Imagination</h2>
 
