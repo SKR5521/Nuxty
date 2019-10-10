@@ -93,7 +93,7 @@
             <v-carousel hide-delimiters height="auto" width="auto">
               <v-carousel-item
                 class="elevation-10"
-                v-for="i in 10"
+                v-for="i in 11"
                 height="auto"
                 width="auto"
                 :key="i"
