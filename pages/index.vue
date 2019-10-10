@@ -87,6 +87,7 @@
     </v-container> -->
 
     <v-container>
+      <Title topic="Glimpse of AAKRUTI2019" />
         <v-layout row justify-space-around>
           <v-flex xs10 >
             <v-carousel hide-delimiters height="auto" width="auto">
