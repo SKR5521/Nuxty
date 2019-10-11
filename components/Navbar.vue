@@ -15,14 +15,15 @@
           <v-icon small left>{{Home.icon}}</v-icon>
           <span>{{Home.text}}</span>
         </v-btn>
-        <v-btn flat router :to="Process.route">
+        <v-btn flat router :to="Process.route" disabled>
           <v-icon small left>{{Process.icon}}</v-icon>
           <span>{{Process.text}}</span>
         </v-btn>
 
         <v-menu
-          open-on-hover
+          open-on-hover                
           bottom
+          absolute
           close-delay="150"
           origin="center center"
           transition="scale-transition"
@@ -35,8 +36,10 @@
             </v-btn>
           </template>
 
-          <v-list>
-            <v-list-tile
+          <v-list dense >
+            <v-list-tile 
+            
+              class="bg pa-0"
               color="#012D52"
               v-for="(item, index) in Oldak.items"
               :key="index"
@@ -204,6 +207,11 @@ export default {
 .thin {
   font-family: '3ds-light';
   font-size: 34px;
+}
+
+.bg:hover {
+  color: white;
+  background-color:#012d52;
 }
 .para {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880)) !important;

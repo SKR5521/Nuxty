@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="home-hero px-0" style="height: 100vh;">
     <!-- <HomeSlides/> -->
-    <v-layout justify-center align-center column style="margin-top: 15vh;">
+    <v-layout justify-center align-center column style="margin-top: 15vh;" >
 
       <div justify-center text-xs-center class="white--text animated fadeInDown">
         <h1 class="fontz">AAKRUTI<span class="lightfont">2019</span>
