@@ -22,8 +22,7 @@
 
         <v-menu
           open-on-hover                
-          bottom
-          absolute
+          bottom          
           close-delay="150"
           origin="center center"
           transition="scale-transition"
@@ -37,9 +36,8 @@
           </template>
 
           <v-list dense >
-            <v-list-tile 
-            
-              class="bg pa-0"
+            <v-list-tile             
+              class="bg "
               color="#012D52"
               v-for="(item, index) in Oldak.items"
               :key="index"
