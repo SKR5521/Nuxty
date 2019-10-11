@@ -1,5 +1,20 @@
 <template>
   <nav>
+    <v-container fluid py-3>
+      <v-layout row>
+        <v-flex xs3>
+          <a target="_blank" href="https://www.3ds.com/">
+            <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
+          </a>
+        </v-flex>
+        <v-spacer></v-spacer>
+        <v-flex xs3>
+          <v-layout row wrap justify-end text-xs-right>
+            <v-img max-width="120px" :src="require('../assets/img/logo.png')"></v-img>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <v-toolbar flat dark :color="col">
       <v-toolbar-side-icon @click="drawer=!drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase white--text ml-0">
@@ -20,13 +35,7 @@
           <span>{{Process.text}}</span>
         </v-btn>
 
-        <v-menu
-          open-on-hover                
-          bottom          
-          close-delay="150"
-          origin="center center"
-          transition="scale-transition"
-        >
+        <v-menu open-on-hover offset-y bottom origin="center center" transition="scale-transition">
           <template v-slot:activator="{ on }">
             <v-btn flat v-on="on">
               <v-icon small left>{{Oldak.icon}}</v-icon>
@@ -35,9 +44,9 @@
             </v-btn>
           </template>
 
-          <v-list dense >
-            <v-list-tile             
-              class="bg "
+          <v-list>
+            <v-list-tile
+              class="bg"
               color="#012D52"
               v-for="(item, index) in Oldak.items"
               :key="index"
@@ -54,9 +63,7 @@
         </v-btn>
       </v-toolbar-items>
 
-      <v-btn round @click="top" color="#182952">
-        Winners Are
-      </v-btn>
+      <v-btn round @click="top" color="#182952">Winners Are</v-btn>
     </v-toolbar>
 
     <!-- Dialog code here  -->
@@ -124,9 +131,8 @@
               </v-list-tile-content>
             </v-list-tile>
           </template>
-          
+
           <v-list-tile
-          
             v-for="subItem in Oldak.items"
             :key="subItem.title"
             router
@@ -150,7 +156,6 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-
     </v-navigation-drawer>
   </nav>
 </template>
@@ -163,13 +168,10 @@ export default {
         // $vuetify.goto('#zonefinalist')
         var el = document.getElementById('zonefinalist')
         console.log(el)
-         window.scrollTo({  top: el.offsetTop , left: 0,  behavior: 'smooth'  })
+        window.scrollTo({ top: el.offsetTop, left: 0, behavior: 'smooth' })
+      } else {
+        this.$router.push({ path: '/#zonefinalist' })
       }
-      else
-      {
-        this.$router.push({  path: '/#zonefinalist' })
-      }
-      
     }
   },
   data() {
@@ -209,7 +211,7 @@ export default {
 
 .bg:hover {
   color: white;
-  background-color:#012d52;
+  background-color: #012d52;
 }
 .para {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880)) !important;

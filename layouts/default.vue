@@ -1,34 +1,20 @@
 <template>
-  <div class="body-all" id="body">
-    <v-container app fluid py-3>
-      <v-layout row>
-        <v-flex xs3>
-          <a target="_blank" href="https://www.3ds.com/">
-            <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
-          </a>
-        </v-flex>
-        <v-spacer></v-spacer>
-        <v-flex xs3>
-          <v-layout row wrap justify-end text-xs-right>
-            <v-img max-width="120px" :src="require('../assets/img/logo.png')"></v-img>
-          </v-layout>
-        </v-flex>
-      </v-layout>
-    </v-container>
-    <navbar/>
+  <div >
+    <v-app class="body-all" id="body">
+      <navbar />
+      <nuxt />
 
-    <nuxt/>
-  
-    <v-container class="hidden-sm-and-up pt-0">
-      <v-layout row wrap justify-center text-xs-center>
-        <v-flex xs12>
-          <v-btn color="#012D52" class="fontzd" round small dark @click="top">
-            <v-icon class="mr-1">fas fa-angle-up</v-icon>Top
-          </v-btn>
-        </v-flex>
-      </v-layout>
-    </v-container>
-    <Footer/>
+      <v-container class="hidden-sm-and-up pt-0">
+        <v-layout row wrap justify-center text-xs-center>
+          <v-flex xs12>
+            <v-btn color="#012D52" class="fontzd" round small dark @click="top">
+              <v-icon class="mr-1">fas fa-angle-up</v-icon>Top
+            </v-btn>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      <Footer />
+    </v-app>
   </div>
 </template>
 
