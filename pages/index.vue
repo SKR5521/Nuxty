@@ -50,7 +50,7 @@
           <v-img
           class="elevation-10"
             contain            
-            :src="require('~/assets/img/win/' + i + '.png')"
+            :src="require('~/assets/img/PreviousYear/19/' + i + '.png')"
           ></v-img>
         </v-flex>        
       </v-layout>
@@ -72,7 +72,7 @@
       <Title topic="Jury Members" />
       <v-layout row wrap>
         <v-flex xs6 md3 v-for="stat in 7" :key="stat" pa-3>
-          <v-img class="elevation-5" contain :src="require('~/assets/img/jury/' + stat + '.png')"></v-img>
+          <v-img class="elevation-5" contain :src="require('~/assets/img/PreviousYear/19/jury/' + stat + '.jpg')"></v-img>
         </v-flex>
       </v-layout>
     </v-container>
